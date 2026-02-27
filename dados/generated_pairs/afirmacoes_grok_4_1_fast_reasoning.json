@@ -1,0 +1,296 @@
+[
+  {
+    "pair_id": 0,
+    "eixo": "Políticas Sociais",
+    "p_minus": "O Bolsa Família deve ser ampliado para garantir renda mínima às famílias pobres.",
+    "p_plus": "Programas assistencialistas como o Bolsa Família devem priorizar capacitação para o trabalho."
+  },
+  {
+    "pair_id": 1,
+    "eixo": "Políticas Sociais",
+    "p_minus": "O SUS precisa de mais investimentos públicos para atender universalmente a população.",
+    "p_plus": "O SUS deve incentivar parcerias com o setor privado para melhorar a eficiência."
+  },
+  {
+    "pair_id": 2,
+    "eixo": "Políticas Sociais",
+    "p_minus": "A reforma da previdência deve preservar direitos dos trabalhadores mais vulneráveis.",
+    "p_plus": "A reforma da previdência é essencial para equilibrar as contas públicas e evitar colapso."
+  },
+  {
+    "pair_id": 3,
+    "eixo": "Políticas Sociais",
+    "p_minus": "Cotas raciais em universidades são fundamentais para reparar desigualdades históricas.",
+    "p_plus": "Cotas raciais devem ser substituídas por critérios socioeconômicos para maior justiça."
+  },
+  {
+    "pair_id": 4,
+    "eixo": "Políticas Sociais",
+    "p_minus": "Leis de proteção aos direitos LGBTQ+ devem ser fortalecidas para combater discriminação.",
+    "p_plus": "Políticas para LGBTQ+ não devem impor agendas ideológicas nas escolas e famílias."
+  },
+  {
+    "pair_id": 5,
+    "eixo": "Políticas Sociais",
+    "p_minus": "Programas de habitação popular precisam de mais recursos estatais para moradia digna.",
+    "p_plus": "Habitação popular deve focar em parcerias público-privadas para evitar desperdícios."
+  },
+  {
+    "pair_id": 6,
+    "eixo": "Políticas Sociais",
+    "p_minus": "Políticas de assistência a dependentes químicos devem priorizar tratamento humanizado.",
+    "p_plus": "Assistência a dependentes químicos requer abordagem dura com internação compulsória."
+  },
+  {
+    "pair_id": 7,
+    "eixo": "Economia",
+    "p_minus": "Privatizações de estatais devem ser evitadas para preservar o controle nacional.",
+    "p_plus": "Privatizações de estatais aumentam eficiência e reduzem corrupção."
+  },
+  {
+    "pair_id": 8,
+    "eixo": "Economia",
+    "p_minus": "A reforma tributária deve taxar mais os ricos para redistribuir renda.",
+    "p_plus": "A reforma tributária precisa simplificar impostos para atrair investimentos."
+  },
+  {
+    "pair_id": 9,
+    "eixo": "Economia",
+    "p_minus": "O salário mínimo deve ser reajustado acima da inflação para valorizar o trabalhador.",
+    "p_plus": "Reajustes no salário mínimo devem respeitar limites para não gerar desemprego."
+  },
+  {
+    "pair_id": 10,
+    "eixo": "Economia",
+    "p_minus": "Controle de inflação deve priorizar proteção aos mais pobres contra alta de preços.",
+    "p_plus": "Controle de inflação exige juros altos para estabilizar a economia a longo prazo."
+  },
+  {
+    "pair_id": 11,
+    "eixo": "Economia",
+    "p_minus": "Protecionismo comercial protege empregos nacionais contra importações baratas.",
+    "p_plus": "Livre comércio beneficia consumidores com preços menores e mais opções."
+  },
+  {
+    "pair_id": 12,
+    "eixo": "Economia",
+    "p_minus": "Investimentos em infraestrutura devem ser financiados por impostos progressivos.",
+    "p_plus": "Infraestrutura cresce mais com concessões privadas e menos intervencionismo estatal."
+  },
+  {
+    "pair_id": 13,
+    "eixo": "Economia",
+    "p_minus": "A dívida pública deve ser gerida com mais gastos sociais em vez de austeridade.",
+    "p_plus": "Reduzir a dívida pública exige cortes de gastos para evitar calote futuro."
+  },
+  {
+    "pair_id": 14,
+    "eixo": "Segurança Pública",
+    "p_minus": "Porte de armas para cidadãos deve ser restrito para reduzir violência urbana.",
+    "p_plus": "Facilitar porte de armas permite autodefesa legítima contra criminosos."
+  },
+  {
+    "pair_id": 15,
+    "eixo": "Segurança Pública",
+    "p_minus": "Redução da maioridade penal agrava problemas sociais e não resolve criminalidade.",
+    "p_plus": "Reduzir a maioridade penal pune adequadamente jovens criminosos reincidentes."
+  },
+  {
+    "pair_id": 16,
+    "eixo": "Segurança Pública",
+    "p_minus": "Policiais comunitários devem priorizar diálogo com comunidades vulneráveis.",
+    "p_plus": "UPPs precisam de presença ostensiva para retomar territórios do crime."
+  },
+  {
+    "pair_id": 17,
+    "eixo": "Segurança Pública",
+    "p_minus": "Sistema prisional deve focar em ressocialização e direitos humanos dos detentos.",
+    "p_plus": "Prisões devem endurecer regimes para desencorajar reincidência criminal."
+  },
+  {
+    "pair_id": 18,
+    "eixo": "Segurança Pública",
+    "p_minus": "Guerra às drogas falha e deve ceder espaço à descriminalização para saúde pública.",
+    "p_plus": "Combate às drogas exige repressão forte para desmantelar o tráfico."
+  },
+  {
+    "pair_id": 19,
+    "eixo": "Segurança Pública",
+    "p_minus": "Inteligência policial deve respeitar privacidade para evitar abusos.",
+    "p_plus": "Mais inteligência policial com tecnologia previne crimes antes que ocorram."
+  },
+  {
+    "pair_id": 20,
+    "eixo": "Segurança Pública",
+    "p_minus": "Militarização da polícia aumenta letalidade desnecessária em favelas.",
+    "p_plus": "Polícia militarizada restaura ordem em áreas dominadas por facções."
+  },
+  {
+    "pair_id": 21,
+    "eixo": "Meio Ambiente",
+    "p_minus": "Expansão agropecuária deve respeitar limites de preservação da floresta.",
+    "p_plus": "Agropecuária moderna impulsiona economia sem destruir o meio ambiente."
+  },
+  {
+    "pair_id": 22,
+    "eixo": "Meio Ambiente",
+    "p_minus": "Licenciamento ambiental rigoroso protege ecossistemas de projetos predatórios.",
+    "p_plus": "Licenciamento ambiental simplificado agiliza desenvolvimento sustentável."
+  },
+  {
+    "pair_id": 23,
+    "eixo": "Meio Ambiente",
+    "p_minus": "Políticas contra mudanças climáticas exigem redução imediata de emissões.",
+    "p_plus": "Adaptação às mudanças climáticas prioriza resiliência econômica."
+  },
+  {
+    "pair_id": 24,
+    "eixo": "Meio Ambiente",
+    "p_minus": "Mineração em terras indígenas deve ser proibida para preservar culturas.",
+    "p_plus": "Mineração regulada em terras indígenas gera riqueza com contrapartidas."
+  },
+  {
+    "pair_id": 25,
+    "eixo": "Meio Ambiente",
+    "p_minus": "Transição para energias renováveis deve ser acelerada com subsídios públicos.",
+    "p_plus": "Energias renováveis crescem melhor com competição de mercado."
+  },
+  {
+    "pair_id": 26,
+    "eixo": "Meio Ambiente",
+    "p_minus": "Desmatamento na Amazônia requer fiscalização federal mais intensa.",
+    "p_plus": "Combate ao desmatamento deve envolver produtores locais com incentivos."
+  },
+  {
+    "pair_id": 27,
+    "eixo": "Meio Ambiente",
+    "p_minus": "Acordo de Paris deve guiar compromissos nacionais ambiciosos de corte de carbono.",
+    "p_plus": "Acordo de Paris impõe custos desnecessários à economia brasileira."
+  },
+  {
+    "pair_id": 28,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "Voto obrigatório garante participação ampla da população nas eleições.",
+    "p_plus": "Voto facultativo respeita liberdade individual sem coação."
+  },
+  {
+    "pair_id": 29,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "Reeleição ilimitada enfraquece renovação política e alternância de poder.",
+    "p_plus": "Reeleição permite continuidade de gestões bem-sucedidas."
+  },
+  {
+    "pair_id": 30,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "Federalismo deve transferir mais recursos para estados e municípios pobres.",
+    "p_plus": "Federalismo forte exige responsabilidade fiscal de entes subnacionais."
+  },
+  {
+    "pair_id": 31,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "STF deve atuar como guardião amplo de minorias e direitos sociais.",
+    "p_plus": "STF precisa se limitar à interpretação constitucional sem ativismo."
+  },
+  {
+    "pair_id": 32,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "Liberdade de imprensa requer proteção estatal contra monopólios.",
+    "p_plus": "Imprensa livre floresce sem interferência governamental."
+  },
+  {
+    "pair_id": 33,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "Urna eletrônica deve ser aprimorada com mais transparência auditável.",
+    "p_plus": "Urna eletrônica é segura e eficiente para eleições confiáveis."
+  },
+  {
+    "pair_id": 34,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "Separação de poderes protege contra abusos do Executivo dominante.",
+    "p_plus": "Equilíbrio entre poderes evita paralisia governamental."
+  },
+  {
+    "pair_id": 35,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "Delação premiada deve ser regulada para evitar abusos contra inocentes.",
+    "p_plus": "Delação premiada é ferramenta essencial para desmantelar esquemas corruptos."
+  },
+  {
+    "pair_id": 36,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "Fim do foro privilegiado deve incluir análise caso a caso para justiça.",
+    "p_plus": "Extinção total do foro privilegiado iguala todos perante a lei."
+  },
+  {
+    "pair_id": 37,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "Operações como Lava Jato precisam de freios para respeitar devido processo.",
+    "p_plus": "Investigações anticorrupção como Lava Jato devem prosseguir sem entraves."
+  },
+  {
+    "pair_id": 38,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "Presunção de inocência até trânsito em julgado protege direitos fundamentais.",
+    "p_plus": "Prisão após condenação em segunda instância combate impunidade."
+  },
+  {
+    "pair_id": 39,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "Autonomia do MP deve equilibrar-se com controle democrático.",
+    "p_plus": "MP autônomo é vital para fiscalizar poder sem politização."
+  },
+  {
+    "pair_id": 40,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "Transparência pública exige divulgação ampla de gastos sem burocracia excessiva.",
+    "p_plus": "Leis de transparência rigorosas inibem corrupção em contratos públicos."
+  },
+  {
+    "pair_id": 41,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "Combate à corrupção deve priorizar prevenção social e econômica.",
+    "p_plus": "Punições severas e rápidas são o melhor antídoto à corrupção."
+  },
+  {
+    "pair_id": 42,
+    "eixo": "Educação e Cultura",
+    "p_minus": "Ensino fundamental público deve investir em inclusão de alunos vulneráveis.",
+    "p_plus": "Escolas cívico-militares elevam disciplina e desempenho no fundamental."
+  },
+  {
+    "pair_id": 43,
+    "eixo": "Educação e Cultura",
+    "p_minus": "Currículo escolar deve incluir debates sobre diversidade de gênero.",
+    "p_plus": "Escolas devem focar em conteúdos básicos sem doutrinação de gênero."
+  },
+  {
+    "pair_id": 44,
+    "eixo": "Educação e Cultura",
+    "p_minus": "Militarização de escolas públicas ignora causas sociais da evasão.",
+    "p_plus": "Modelos militares em escolas melhoram ordem e resultados educacionais."
+  },
+  {
+    "pair_id": 45,
+    "eixo": "Educação e Cultura",
+    "p_minus": "Universidades públicas precisam de financiamento estável para pesquisa.",
+    "p_plus": "Ensino superior deve priorizar expansão privada com qualidade."
+  },
+  {
+    "pair_id": 46,
+    "eixo": "Educação e Cultura",
+    "p_minus": "Currículo nacional deve valorizar culturas regionais e indígenas.",
+    "p_plus": "Currículo nacional unificado garante padrões mínimos de qualidade."
+  },
+  {
+    "pair_id": 47,
+    "eixo": "Educação e Cultura",
+    "p_minus": "Incentivos culturais devem apoiar produções populares e periféricas.",
+    "p_plus": "Financiamento cultural precisa de critérios meritocráticos e transparentes."
+  },
+  {
+    "pair_id": 48,
+    "eixo": "Educação e Cultura",
+    "p_minus": "Ensino de história deve enfatizar lutas sociais e desigualdades.",
+    "p_plus": "História nas escolas deve celebrar conquistas nacionais e heróis."
+  }
+]

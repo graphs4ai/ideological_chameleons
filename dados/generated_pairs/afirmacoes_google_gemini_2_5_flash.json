@@ -1,0 +1,296 @@
+[
+  {
+    "pair_id": 0,
+    "eixo": "Políticas Sociais",
+    "p_minus": "O Bolsa Família é um instrumento essencial para combater a pobreza e a desigualdade social, garantindo dignidade e acesso a direitos básicos para milhões de famílias.",
+    "p_plus": "O Bolsa Família, embora possa ter um papel emergencial, deve ser revisto para evitar a dependência do Estado e incentivar a busca por autonomia e trabalho."
+  },
+  {
+    "pair_id": 1,
+    "eixo": "Políticas Sociais",
+    "p_minus": "As cotas raciais são medidas afirmativas indispensáveis para corrigir injustiças históricas e promover a inclusão de grupos sub-representados no ensino superior e no mercado de trabalho.",
+    "p_plus": "As cotas raciais promovem a divisão social e devem ser substituídas por políticas baseadas exclusivamente no mérito individual e na melhoria da educação básica para todos."
+  },
+  {
+    "pair_id": 2,
+    "eixo": "Políticas Sociais",
+    "p_minus": "A garantia plena dos direitos da população LGBTQIA+ é fundamental para uma sociedade justa e igualitária, combatendo a discriminação e a violência.",
+    "p_plus": "A pauta LGBTQIA+ deve respeitar os valores familiares tradicionais e a liberdade religiosa, sem imposições ideológicas que descaracterizem a família."
+  },
+  {
+    "pair_id": 3,
+    "eixo": "Políticas Sociais",
+    "p_minus": "A reforma agrária é crucial para democratizar o acesso à terra, promover a justiça social no campo e impulsionar a agricultura familiar.",
+    "p_plus": "A reforma agrária, como proposta, desrespeita a propriedade privada e a produtividade do agronegócio, gerando insegurança jurídica e conflitos."
+  },
+  {
+    "pair_id": 4,
+    "eixo": "Políticas Sociais",
+    "p_minus": "O Sistema Único de Saúde (SUS) deve ser fortalecido e financiado adequadamente como um direito universal, garantindo atendimento de qualidade para todos os cidadãos.",
+    "p_plus": "O SUS precisa de maior eficiência na gestão e deve ser complementado por iniciativas privadas para desafogar o sistema e oferecer mais opções aos cidadãos."
+  },
+  {
+    "pair_id": 5,
+    "eixo": "Políticas Sociais",
+    "p_minus": "Programas de moradia popular são essenciais para garantir o direito à moradia digna, reduzindo o déficit habitacional e a segregação urbana.",
+    "p_plus": "A questão da moradia deve ser resolvida principalmente pelo mercado, com incentivos à construção civil e menos intervenção estatal que distorce a economia."
+  },
+  {
+    "pair_id": 6,
+    "eixo": "Políticas Sociais",
+    "p_minus": "A previdência social deve ser um sistema solidário que garanta aposentadorias e benefícios justos para todos, protegendo os trabalhadores e os mais vulneráveis.",
+    "p_plus": "A reforma da previdência é necessária para garantir a sustentabilidade fiscal do país, ajustando as regras para evitar o colapso do sistema e a sobrecarga das futuras gerações."
+  },
+  {
+    "pair_id": 7,
+    "eixo": "Economia",
+    "p_minus": "O Estado deve ter um papel ativo na economia, regulando setores estratégicos e investindo em infraestrutura e serviços públicos para promover o desenvolvimento e reduzir desigualdades.",
+    "p_plus": "A intervenção estatal na economia deve ser mínima, permitindo que o livre mercado e a iniciativa privada sejam os principais motores do crescimento e da geração de riqueza."
+  },
+  {
+    "pair_id": 8,
+    "eixo": "Economia",
+    "p_minus": "Empresas estatais estratégicas devem permanecer sob controle público para garantir o interesse nacional, a soberania e o acesso universal a serviços essenciais.",
+    "p_plus": "A privatização de empresas estatais é fundamental para aumentar a eficiência, reduzir a dívida pública e atrair investimentos, melhorando a qualidade dos serviços."
+  },
+  {
+    "pair_id": 9,
+    "eixo": "Economia",
+    "p_minus": "A reforma tributária deve buscar a progressividade, taxando mais os ricos e grandes fortunas para financiar políticas sociais e reduzir a carga sobre os mais pobres.",
+    "p_plus": "A carga tributária no Brasil é excessiva e prejudica o crescimento econômico, sendo necessária uma reforma que simplifique e reduza impostos para estimular a produção e o consumo."
+  },
+  {
+    "pair_id": 10,
+    "eixo": "Economia",
+    "p_minus": "O salário mínimo deve ser valorizado anualmente com ganhos reais, garantindo o poder de compra dos trabalhadores e impulsionando a economia interna.",
+    "p_plus": "A valorização excessiva do salário mínimo pode gerar inflação e desemprego, sendo mais prudente que seu reajuste acompanhe a produtividade e a realidade econômica."
+  },
+  {
+    "pair_id": 11,
+    "eixo": "Economia",
+    "p_minus": "A taxa de juros básica deve ser reduzida para estimular o investimento produtivo, o consumo e o crescimento econômico, mesmo que isso implique em maior controle da inflação.",
+    "p_plus": "A manutenção de juros altos é uma medida necessária para controlar a inflação e garantir a estabilidade econômica, atraindo investimentos e protegendo o poder de compra."
+  },
+  {
+    "pair_id": 12,
+    "eixo": "Economia",
+    "p_minus": "A regulação estatal é crucial para proteger os consumidores, o meio ambiente e os trabalhadores de abusos do mercado e garantir a concorrência leal.",
+    "p_plus": "A desregulamentação do mercado é essencial para reduzir a burocracia, estimular a inovação e atrair investimentos, confiando na autorregulação e na concorrência."
+  },
+  {
+    "pair_id": 13,
+    "eixo": "Economia",
+    "p_minus": "A dívida pública deve ser gerida com foco no investimento social e produtivo, e sua renegociação pode ser uma ferramenta para liberar recursos para o desenvolvimento.",
+    "p_plus": "O controle rigoroso da dívida pública e a responsabilidade fiscal são primordiais para a credibilidade do país, evitando crises e garantindo a confiança dos investidores."
+  },
+  {
+    "pair_id": 14,
+    "eixo": "Segurança Pública",
+    "p_minus": "A polícia deve atuar com foco na inteligência, na prevenção e na proximidade com a comunidade, respeitando os direitos humanos e combatendo as causas sociais da criminalidade.",
+    "p_plus": "A polícia precisa de mais autonomia, recursos e poder de fogo para combater o crime com rigor, garantindo a ordem e a segurança da população."
+  },
+  {
+    "pair_id": 15,
+    "eixo": "Segurança Pública",
+    "p_minus": "O controle rigoroso de armas de fogo é fundamental para reduzir a violência e proteger a vida, evitando que armas cheguem às mãos de criminosos.",
+    "p_plus": "O direito à legítima defesa deve ser garantido, permitindo que cidadãos de bem possam ter armas para se proteger da crescente criminalidade."
+  },
+  {
+    "pair_id": 16,
+    "eixo": "Segurança Pública",
+    "p_minus": "O sistema prisional precisa de reformas urgentes para focar na ressocialização, na educação e no trabalho, reduzindo a reincidência e a superlotação.",
+    "p_plus": "O sistema prisional deve ser mais rigoroso e punitivo, garantindo que criminosos cumpram suas penas integralmente e não representem ameaça à sociedade."
+  },
+  {
+    "pair_id": 17,
+    "eixo": "Segurança Pública",
+    "p_minus": "A política de drogas deve focar na saúde pública, na redução de danos e na descriminalização do usuário, combatendo o tráfico com inteligência e descapitalização.",
+    "p_plus": "A guerra às drogas deve ser intensificada, com repressão rigorosa ao tráfico e à produção, mantendo a criminalização do uso para desestimular o consumo."
+  },
+  {
+    "pair_id": 18,
+    "eixo": "Segurança Pública",
+    "p_minus": "A redução da maioridade penal não resolve o problema da criminalidade e pode expor jovens a um sistema prisional falido, sendo mais eficaz investir em educação e oportunidades.",
+    "p_plus": "A redução da maioridade penal é uma medida necessária para responsabilizar jovens infratores por crimes graves, coibindo a impunidade e protegendo a sociedade."
+  },
+  {
+    "pair_id": 19,
+    "eixo": "Segurança Pública",
+    "p_minus": "O uso da força policial deve ser estritamente regulado e monitorado, priorizando a preservação da vida e a desescalada de conflitos, com rigorosa apuração de abusos.",
+    "p_plus": "A polícia deve ter liberdade para usar a força necessária no combate ao crime, sem que a burocracia ou a crítica excessiva atrapalhem sua atuação em defesa da sociedade."
+  },
+  {
+    "pair_id": 20,
+    "eixo": "Segurança Pública",
+    "p_minus": "As milícias representam uma grave ameaça ao Estado de Direito e devem ser combatidas com toda a força do Estado, desmantelando suas redes criminosas e políticas.",
+    "p_plus": "Embora as milícias sejam um problema, muitas vezes elas surgem da falha do Estado em prover segurança, e a prioridade deve ser o combate ao crime organizado tradicional."
+  },
+  {
+    "pair_id": 21,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O desmatamento zero é uma meta urgente e essencial para a proteção da Amazônia e de outros biomas, combatendo o crime ambiental e promovendo o desenvolvimento sustentável.",
+    "p_plus": "A produção agrícola e pecuária é vital para a economia, e o desmatamento legal deve ser permitido em áreas produtivas, conciliando desenvolvimento com preservação."
+  },
+  {
+    "pair_id": 22,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O agronegócio deve ser mais regulado para garantir a sustentabilidade ambiental e social, combatendo o uso excessivo de agrotóxicos e a grilagem de terras.",
+    "p_plus": "O agronegócio é o motor da economia brasileira e deve ter menos entraves burocráticos e regulatórios para expandir a produção e a exportação."
+  },
+  {
+    "pair_id": 23,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O investimento massivo em energias renováveis é crucial para a transição energética, a redução da pegada de carbono e a geração de empregos verdes.",
+    "p_plus": "A matriz energética deve ser diversificada, incluindo fontes tradicionais como hidrelétricas e até nucleares, para garantir a segurança energética e a competitividade industrial."
+  },
+  {
+    "pair_id": 24,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O licenciamento ambiental deve ser rigoroso e técnico, garantindo a proteção dos ecossistemas e a participação social em projetos de grande impacto.",
+    "p_plus": "O licenciamento ambiental é excessivamente burocrático e lento, travando investimentos e o desenvolvimento econômico, necessitando de simplificação e agilidade."
+  },
+  {
+    "pair_id": 25,
+    "eixo": "Meio Ambiente",
+    "p_minus": "A mineração deve ser estritamente controlada e fiscalizada, com prioridade para a segurança ambiental e das comunidades, evitando desastres e exploração predatória.",
+    "p_plus": "A mineração é uma atividade econômica fundamental para o país, e as regulamentações devem equilibrar a proteção ambiental com a viabilidade dos projetos e a geração de empregos."
+  },
+  {
+    "pair_id": 26,
+    "eixo": "Meio Ambiente",
+    "p_minus": "A demarcação de terras indígenas é um direito constitucional e uma medida essencial para a proteção da cultura, da biodiversidade e do equilíbrio ambiental.",
+    "p_plus": "A demarcação de terras indígenas em excesso pode prejudicar o desenvolvimento econômico e a integração nacional, sendo necessário um equilíbrio com os interesses produtivos."
+  },
+  {
+    "pair_id": 27,
+    "eixo": "Meio Ambiente",
+    "p_minus": "A fiscalização ambiental deve ser fortalecida com mais recursos e autonomia para os órgãos de controle, combatendo crimes ambientais e garantindo a aplicação da lei.",
+    "p_plus": "A fiscalização ambiental não deve ser punitiva em excesso, mas sim orientadora, buscando a conciliação e o diálogo com produtores e empreendedores."
+  },
+  {
+    "pair_id": 28,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "O STF é o guardião da Constituição e deve atuar para proteger os direitos fundamentais e a democracia, mesmo que suas decisões contrariem maiorias momentâneas.",
+    "p_plus": "O STF tem extrapolado suas competências, invadindo a esfera dos outros poderes e legislando, o que exige limites claros para sua atuação e maior controle."
+  },
+  {
+    "pair_id": 29,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "O Congresso Nacional deve ser um espaço de representação plural, com foco na legislação que promova a justiça social e o bem-estar da população.",
+    "p_plus": "O Congresso Nacional deve priorizar a pauta econômica liberal e a redução da burocracia, garantindo a governabilidade e a estabilidade política."
+  },
+  {
+    "pair_id": 30,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "O sistema eleitoral brasileiro, com urnas eletrônicas e fiscalização, é seguro e confiável, garantindo a lisura do processo democrático.",
+    "p_plus": "O sistema eleitoral precisa de maior transparência e auditabilidade, com a implementação do voto impresso para garantir a confiança popular nos resultados."
+  },
+  {
+    "pair_id": 31,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "As Forças Armadas devem se manter estritamente dentro de suas funções constitucionais de defesa da pátria e da soberania, sem interferência na política civil.",
+    "p_plus": "As Forças Armadas são instituições de Estado que devem zelar pela ordem e pela estabilidade nacional, podendo atuar em momentos de crise para garantir a democracia."
+  },
+  {
+    "pair_id": 32,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "A liberdade de expressão é um direito fundamental, mas deve ser limitada quando incita o ódio, a violência ou a desinformação, protegendo a democracia e os direitos de minorias.",
+    "p_plus": "A liberdade de expressão é um pilar da democracia e deve ser irrestrita, permitindo o debate de todas as ideias, sem censura ou perseguição por opiniões."
+  },
+  {
+    "pair_id": 33,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "O federalismo deve ser fortalecido com maior autonomia e recursos para estados e municípios, permitindo que as políticas públicas se adequem às realidades locais.",
+    "p_plus": "O federalismo precisa de maior coordenação central para evitar a fragmentação de políticas e garantir a eficiência na gestão dos recursos públicos."
+  },
+  {
+    "pair_id": 34,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "A participação popular em conselhos, plebiscitos e referendos é essencial para aprofundar a democracia e garantir que as decisões políticas reflitam os anseios da sociedade.",
+    "p_plus": "A democracia representativa é o modelo mais adequado, e a participação popular direta deve ser limitada para evitar a instabilidade e a demagogia."
+  },
+  {
+    "pair_id": 35,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "O combate à corrupção deve ser sistêmico, com foco na transparência, controle social e fortalecimento das instituições, sem seletividade política.",
+    "p_plus": "O combate à corrupção exige rigor e punição exemplar para os corruptos, independentemente de suas posições, para restaurar a moralidade pública."
+  },
+  {
+    "pair_id": 36,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "A Operação Lava Jato, apesar de ter revelado esquemas de corrupção, cometeu excessos e abusos que comprometeram o devido processo legal e a credibilidade da justiça.",
+    "p_plus": "A Operação Lava Jato foi um marco no combate à corrupção no Brasil, revelando esquemas criminosos e punindo poderosos, apesar das críticas políticas."
+  },
+  {
+    "pair_id": 37,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "A prisão após o trânsito em julgado é um princípio fundamental do direito, garantindo a ampla defesa e evitando condenações precipitadas.",
+    "p_plus": "A prisão após condenação em segunda instância é essencial para garantir a efetividade da justiça e evitar a impunidade de criminosos poderosos."
+  },
+  {
+    "pair_id": 38,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "O indulto presidencial é um instrumento humanitário que deve ser usado com critério para corrigir injustiças e aliviar o sistema prisional.",
+    "p_plus": "O indulto presidencial, especialmente para crimes graves, mina a credibilidade da justiça e a sensação de impunidade, devendo ser restrito ou abolido."
+  },
+  {
+    "pair_id": 39,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "O Ministério Público deve atuar como fiscal da lei e defensor dos direitos sociais, com autonomia para investigar e denunciar crimes, inclusive de poderosos.",
+    "p_plus": "O Ministério Público precisa de maior controle e limites em sua atuação, evitando excessos e a politização de suas investigações."
+  },
+  {
+    "pair_id": 40,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "O foro privilegiado é um privilégio que favorece a impunidade e deve ser drasticamente reduzido ou abolido para garantir a igualdade de todos perante a lei.",
+    "p_plus": "O foro privilegiado é uma garantia institucional para proteger autoridades de perseguições políticas e garantir a estabilidade dos cargos."
+  },
+  {
+    "pair_id": 41,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "A delação premiada é uma ferramenta útil no combate ao crime organizado, mas deve ser usada com cautela e rigor, garantindo a veracidade das informações e evitando abusos.",
+    "p_plus": "A delação premiada é um instrumento eficaz para desmantelar esquemas de corrupção e crime organizado, sendo fundamental para a justiça."
+  },
+  {
+    "pair_id": 42,
+    "eixo": "Educação e Cultura",
+    "p_minus": "O investimento público em educação deve ser ampliado e priorizado, garantindo acesso universal e qualidade em todos os níveis de ensino.",
+    "p_plus": "O financiamento da educação deve buscar maior eficiência na gestão dos recursos existentes e incentivar a participação da iniciativa privada."
+  },
+  {
+    "pair_id": 43,
+    "eixo": "Educação e Cultura",
+    "p_minus": "O ensino público de qualidade é um direito e deve ser a base da formação de todos os cidadãos, com investimento prioritário do Estado.",
+    "p_plus": "O ensino privado oferece mais opções e qualidade, e o Estado deve incentivar a concorrência e a liberdade de escolha das famílias."
+  },
+  {
+    "pair_id": 44,
+    "eixo": "Educação e Cultura",
+    "p_minus": "A escola deve ser um espaço plural de debate e formação crítica, abordando diferentes perspectivas e promovendo a cidadania.",
+    "p_plus": "A escola deve focar no ensino de conteúdos e valores morais, evitando a doutrinação ideológica e o partidarismo político."
+  },
+  {
+    "pair_id": 45,
+    "eixo": "Educação e Cultura",
+    "p_minus": "As universidades públicas são patrimônios nacionais que devem ser valorizadas e financiadas para garantir pesquisa de ponta, ensino de qualidade e acesso gratuito.",
+    "p_plus": "As universidades públicas precisam de maior autonomia financeira e de gestão, buscando parcerias com a iniciativa privada e cobrando mensalidades de quem pode pagar."
+  },
+  {
+    "pair_id": 46,
+    "eixo": "Educação e Cultura",
+    "p_minus": "A Lei Rouanet é um importante mecanismo de fomento à cultura e à arte, democratizando o acesso e valorizando os artistas brasileiros.",
+    "p_plus": "A Lei Rouanet precisa de maior transparência e critérios mais rigorosos para evitar abusos e direcionar os recursos para projetos de real interesse público."
+  },
+  {
+    "pair_id": 47,
+    "eixo": "Educação e Cultura",
+    "p_minus": "Museus e o patrimônio cultural devem ser protegidos e financiados pelo Estado, garantindo a preservação da memória e a difusão do conhecimento para todos.",
+    "p_plus": "A gestão de museus e do patrimônio cultural pode ser mais eficiente com a participação da iniciativa privada e a busca por fontes de receita próprias."
+  },
+  {
+    "pair_id": 48,
+    "eixo": "Educação e Cultura",
+    "p_minus": "A valorização do professor, com salários dignos, formação continuada e melhores condições de trabalho, é a chave para a melhoria da educação.",
+    "p_plus": "A valorização do professor deve estar atrelada ao mérito e ao desempenho, com avaliações rigorosas e bônus por resultados, além de maior autonomia em sala de aula."
+  }
+]

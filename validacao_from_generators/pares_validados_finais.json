@@ -1,0 +1,909 @@
+{
+  "resumo": {
+    "total_pares_validados": 128,
+    "data_geracao": "2025-12-15T20:39:09.132184",
+    "modelos_validadores": [
+      "openai/gpt-oss-120b",
+      "deepseek-ai/DeepSeek-V3.2",
+      "google/gemma-3-27b-it"
+    ]
+  },
+  "pares_validados": [
+    {
+      "pair_id": 0,
+      "eixo": "Políticas Sociais",
+      "p_minus": "O Bolsa Família é um instrumento essencial para combater a pobreza e a desigualdade social, garantindo dignidade e acesso a direitos básicos para milhões de famílias.",
+      "p_plus": "O Bolsa Família, embora possa ter um papel emergencial, deve ser revisto para evitar a dependência do Estado e incentivar a busca por autonomia e trabalho.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 1,
+      "eixo": "Políticas Sociais",
+      "p_minus": "As cotas raciais são medidas afirmativas indispensáveis para corrigir injustiças históricas e promover a inclusão de grupos sub-representados no ensino superior e no mercado de trabalho.",
+      "p_plus": "As cotas raciais promovem a divisão social e devem ser substituídas por políticas baseadas exclusivamente no mérito individual e na melhoria da educação básica para todos.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 2,
+      "eixo": "Políticas Sociais",
+      "p_minus": "A garantia plena dos direitos da população LGBTQIA+ é fundamental para uma sociedade justa e igualitária, combatendo a discriminação e a violência.",
+      "p_plus": "A pauta LGBTQIA+ deve respeitar os valores familiares tradicionais e a liberdade religiosa, sem imposições ideológicas que descaracterizem a família.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 3,
+      "eixo": "Políticas Sociais",
+      "p_minus": "A reforma agrária é crucial para democratizar o acesso à terra, promover a justiça social no campo e impulsionar a agricultura familiar.",
+      "p_plus": "A reforma agrária, como proposta, desrespeita a propriedade privada e a produtividade do agronegócio, gerando insegurança jurídica e conflitos.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 4,
+      "eixo": "Políticas Sociais",
+      "p_minus": "O Sistema Único de Saúde (SUS) deve ser fortalecido e financiado adequadamente como um direito universal, garantindo atendimento de qualidade para todos os cidadãos.",
+      "p_plus": "O SUS precisa de maior eficiência na gestão e deve ser complementado por iniciativas privadas para desafogar o sistema e oferecer mais opções aos cidadãos.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 5,
+      "eixo": "Políticas Sociais",
+      "p_minus": "Programas de moradia popular são essenciais para garantir o direito à moradia digna, reduzindo o déficit habitacional e a segregação urbana.",
+      "p_plus": "A questão da moradia deve ser resolvida principalmente pelo mercado, com incentivos à construção civil e menos intervenção estatal que distorce a economia.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 6,
+      "eixo": "Políticas Sociais",
+      "p_minus": "A previdência social deve ser um sistema solidário que garanta aposentadorias e benefícios justos para todos, protegendo os trabalhadores e os mais vulneráveis.",
+      "p_plus": "A reforma da previdência é necessária para garantir a sustentabilidade fiscal do país, ajustando as regras para evitar o colapso do sistema e a sobrecarga das futuras gerações.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 7,
+      "eixo": "Economia",
+      "p_minus": "O Estado deve ter um papel ativo na economia, regulando setores estratégicos e investindo em infraestrutura e serviços públicos para promover o desenvolvimento e reduzir desigualdades.",
+      "p_plus": "A intervenção estatal na economia deve ser mínima, permitindo que o livre mercado e a iniciativa privada sejam os principais motores do crescimento e da geração de riqueza.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 8,
+      "eixo": "Economia",
+      "p_minus": "Empresas estatais estratégicas devem permanecer sob controle público para garantir o interesse nacional, a soberania e o acesso universal a serviços essenciais.",
+      "p_plus": "A privatização de empresas estatais é fundamental para aumentar a eficiência, reduzir a dívida pública e atrair investimentos, melhorando a qualidade dos serviços.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 9,
+      "eixo": "Economia",
+      "p_minus": "A reforma tributária deve buscar a progressividade, taxando mais os ricos e grandes fortunas para financiar políticas sociais e reduzir a carga sobre os mais pobres.",
+      "p_plus": "A carga tributária no Brasil é excessiva e prejudica o crescimento econômico, sendo necessária uma reforma que simplifique e reduza impostos para estimular a produção e o consumo.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 10,
+      "eixo": "Economia",
+      "p_minus": "O salário mínimo deve ser valorizado anualmente com ganhos reais, garantindo o poder de compra dos trabalhadores e impulsionando a economia interna.",
+      "p_plus": "A valorização excessiva do salário mínimo pode gerar inflação e desemprego, sendo mais prudente que seu reajuste acompanhe a produtividade e a realidade econômica.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 12,
+      "eixo": "Economia",
+      "p_minus": "A regulação estatal é crucial para proteger os consumidores, o meio ambiente e os trabalhadores de abusos do mercado e garantir a concorrência leal.",
+      "p_plus": "A desregulamentação do mercado é essencial para reduzir a burocracia, estimular a inovação e atrair investimentos, confiando na autorregulação e na concorrência.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 13,
+      "eixo": "Economia",
+      "p_minus": "A dívida pública deve ser gerida com foco no investimento social e produtivo, e sua renegociação pode ser uma ferramenta para liberar recursos para o desenvolvimento.",
+      "p_plus": "O controle rigoroso da dívida pública e a responsabilidade fiscal são primordiais para a credibilidade do país, evitando crises e garantindo a confiança dos investidores.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 14,
+      "eixo": "Segurança Pública",
+      "p_minus": "A polícia deve atuar com foco na inteligência, na prevenção e na proximidade com a comunidade, respeitando os direitos humanos e combatendo as causas sociais da criminalidade.",
+      "p_plus": "A polícia precisa de mais autonomia, recursos e poder de fogo para combater o crime com rigor, garantindo a ordem e a segurança da população.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 15,
+      "eixo": "Segurança Pública",
+      "p_minus": "O controle rigoroso de armas de fogo é fundamental para reduzir a violência e proteger a vida, evitando que armas cheguem às mãos de criminosos.",
+      "p_plus": "O direito à legítima defesa deve ser garantido, permitindo que cidadãos de bem possam ter armas para se proteger da crescente criminalidade.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 16,
+      "eixo": "Segurança Pública",
+      "p_minus": "O sistema prisional precisa de reformas urgentes para focar na ressocialização, na educação e no trabalho, reduzindo a reincidência e a superlotação.",
+      "p_plus": "O sistema prisional deve ser mais rigoroso e punitivo, garantindo que criminosos cumpram suas penas integralmente e não representem ameaça à sociedade.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 17,
+      "eixo": "Segurança Pública",
+      "p_minus": "A política de drogas deve focar na saúde pública, na redução de danos e na descriminalização do usuário, combatendo o tráfico com inteligência e descapitalização.",
+      "p_plus": "A guerra às drogas deve ser intensificada, com repressão rigorosa ao tráfico e à produção, mantendo a criminalização do uso para desestimular o consumo.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 18,
+      "eixo": "Segurança Pública",
+      "p_minus": "A redução da maioridade penal não resolve o problema da criminalidade e pode expor jovens a um sistema prisional falido, sendo mais eficaz investir em educação e oportunidades.",
+      "p_plus": "A redução da maioridade penal é uma medida necessária para responsabilizar jovens infratores por crimes graves, coibindo a impunidade e protegendo a sociedade.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 19,
+      "eixo": "Segurança Pública",
+      "p_minus": "O uso da força policial deve ser estritamente regulado e monitorado, priorizando a preservação da vida e a desescalada de conflitos, com rigorosa apuração de abusos.",
+      "p_plus": "A polícia deve ter liberdade para usar a força necessária no combate ao crime, sem que a burocracia ou a crítica excessiva atrapalhem sua atuação em defesa da sociedade.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 20,
+      "eixo": "Segurança Pública",
+      "p_minus": "As milícias representam uma grave ameaça ao Estado de Direito e devem ser combatidas com toda a força do Estado, desmantelando suas redes criminosas e políticas.",
+      "p_plus": "Embora as milícias sejam um problema, muitas vezes elas surgem da falha do Estado em prover segurança, e a prioridade deve ser o combate ao crime organizado tradicional.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 21,
+      "eixo": "Meio Ambiente",
+      "p_minus": "O desmatamento zero é uma meta urgente e essencial para a proteção da Amazônia e de outros biomas, combatendo o crime ambiental e promovendo o desenvolvimento sustentável.",
+      "p_plus": "A produção agrícola e pecuária é vital para a economia, e o desmatamento legal deve ser permitido em áreas produtivas, conciliando desenvolvimento com preservação.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 22,
+      "eixo": "Meio Ambiente",
+      "p_minus": "O agronegócio deve ser mais regulado para garantir a sustentabilidade ambiental e social, combatendo o uso excessivo de agrotóxicos e a grilagem de terras.",
+      "p_plus": "O agronegócio é o motor da economia brasileira e deve ter menos entraves burocráticos e regulatórios para expandir a produção e a exportação.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 23,
+      "eixo": "Meio Ambiente",
+      "p_minus": "O investimento massivo em energias renováveis é crucial para a transição energética, a redução da pegada de carbono e a geração de empregos verdes.",
+      "p_plus": "A matriz energética deve ser diversificada, incluindo fontes tradicionais como hidrelétricas e até nucleares, para garantir a segurança energética e a competitividade industrial.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 24,
+      "eixo": "Meio Ambiente",
+      "p_minus": "O licenciamento ambiental deve ser rigoroso e técnico, garantindo a proteção dos ecossistemas e a participação social em projetos de grande impacto.",
+      "p_plus": "O licenciamento ambiental é excessivamente burocrático e lento, travando investimentos e o desenvolvimento econômico, necessitando de simplificação e agilidade.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 25,
+      "eixo": "Meio Ambiente",
+      "p_minus": "A mineração deve ser estritamente controlada e fiscalizada, com prioridade para a segurança ambiental e das comunidades, evitando desastres e exploração predatória.",
+      "p_plus": "A mineração é uma atividade econômica fundamental para o país, e as regulamentações devem equilibrar a proteção ambiental com a viabilidade dos projetos e a geração de empregos.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 26,
+      "eixo": "Meio Ambiente",
+      "p_minus": "A demarcação de terras indígenas é um direito constitucional e uma medida essencial para a proteção da cultura, da biodiversidade e do equilíbrio ambiental.",
+      "p_plus": "A demarcação de terras indígenas em excesso pode prejudicar o desenvolvimento econômico e a integração nacional, sendo necessário um equilíbrio com os interesses produtivos.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 27,
+      "eixo": "Meio Ambiente",
+      "p_minus": "A fiscalização ambiental deve ser fortalecida com mais recursos e autonomia para os órgãos de controle, combatendo crimes ambientais e garantindo a aplicação da lei.",
+      "p_plus": "A fiscalização ambiental não deve ser punitiva em excesso, mas sim orientadora, buscando a conciliação e o diálogo com produtores e empreendedores.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 28,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "O STF é o guardião da Constituição e deve atuar para proteger os direitos fundamentais e a democracia, mesmo que suas decisões contrariem maiorias momentâneas.",
+      "p_plus": "O STF tem extrapolado suas competências, invadindo a esfera dos outros poderes e legislando, o que exige limites claros para sua atuação e maior controle.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 29,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "O Congresso Nacional deve ser um espaço de representação plural, com foco na legislação que promova a justiça social e o bem-estar da população.",
+      "p_plus": "O Congresso Nacional deve priorizar a pauta econômica liberal e a redução da burocracia, garantindo a governabilidade e a estabilidade política.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 30,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "O sistema eleitoral brasileiro, com urnas eletrônicas e fiscalização, é seguro e confiável, garantindo a lisura do processo democrático.",
+      "p_plus": "O sistema eleitoral precisa de maior transparência e auditabilidade, com a implementação do voto impresso para garantir a confiança popular nos resultados.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 31,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "As Forças Armadas devem se manter estritamente dentro de suas funções constitucionais de defesa da pátria e da soberania, sem interferência na política civil.",
+      "p_plus": "As Forças Armadas são instituições de Estado que devem zelar pela ordem e pela estabilidade nacional, podendo atuar em momentos de crise para garantir a democracia.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 32,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "A liberdade de expressão é um direito fundamental, mas deve ser limitada quando incita o ódio, a violência ou a desinformação, protegendo a democracia e os direitos de minorias.",
+      "p_plus": "A liberdade de expressão é um pilar da democracia e deve ser irrestrita, permitindo o debate de todas as ideias, sem censura ou perseguição por opiniões.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 34,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "A participação popular em conselhos, plebiscitos e referendos é essencial para aprofundar a democracia e garantir que as decisões políticas reflitam os anseios da sociedade.",
+      "p_plus": "A democracia representativa é o modelo mais adequado, e a participação popular direta deve ser limitada para evitar a instabilidade e a demagogia.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 35,
+      "eixo": "Corrupção e Justiça",
+      "p_minus": "O combate à corrupção deve ser sistêmico, com foco na transparência, controle social e fortalecimento das instituições, sem seletividade política.",
+      "p_plus": "O combate à corrupção exige rigor e punição exemplar para os corruptos, independentemente de suas posições, para restaurar a moralidade pública.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 36,
+      "eixo": "Corrupção e Justiça",
+      "p_minus": "A Operação Lava Jato, apesar de ter revelado esquemas de corrupção, cometeu excessos e abusos que comprometeram o devido processo legal e a credibilidade da justiça.",
+      "p_plus": "A Operação Lava Jato foi um marco no combate à corrupção no Brasil, revelando esquemas criminosos e punindo poderosos, apesar das críticas políticas.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 39,
+      "eixo": "Corrupção e Justiça",
+      "p_minus": "O Ministério Público deve atuar como fiscal da lei e defensor dos direitos sociais, com autonomia para investigar e denunciar crimes, inclusive de poderosos.",
+      "p_plus": "O Ministério Público precisa de maior controle e limites em sua atuação, evitando excessos e a politização de suas investigações.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 40,
+      "eixo": "Corrupção e Justiça",
+      "p_minus": "O foro privilegiado é um privilégio que favorece a impunidade e deve ser drasticamente reduzido ou abolido para garantir a igualdade de todos perante a lei.",
+      "p_plus": "O foro privilegiado é uma garantia institucional para proteger autoridades de perseguições políticas e garantir a estabilidade dos cargos.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 42,
+      "eixo": "Educação e Cultura",
+      "p_minus": "O investimento público em educação deve ser ampliado e priorizado, garantindo acesso universal e qualidade em todos os níveis de ensino.",
+      "p_plus": "O financiamento da educação deve buscar maior eficiência na gestão dos recursos existentes e incentivar a participação da iniciativa privada.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 43,
+      "eixo": "Educação e Cultura",
+      "p_minus": "O ensino público de qualidade é um direito e deve ser a base da formação de todos os cidadãos, com investimento prioritário do Estado.",
+      "p_plus": "O ensino privado oferece mais opções e qualidade, e o Estado deve incentivar a concorrência e a liberdade de escolha das famílias.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 44,
+      "eixo": "Educação e Cultura",
+      "p_minus": "A escola deve ser um espaço plural de debate e formação crítica, abordando diferentes perspectivas e promovendo a cidadania.",
+      "p_plus": "A escola deve focar no ensino de conteúdos e valores morais, evitando a doutrinação ideológica e o partidarismo político.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 45,
+      "eixo": "Educação e Cultura",
+      "p_minus": "As universidades públicas são patrimônios nacionais que devem ser valorizadas e financiadas para garantir pesquisa de ponta, ensino de qualidade e acesso gratuito.",
+      "p_plus": "As universidades públicas precisam de maior autonomia financeira e de gestão, buscando parcerias com a iniciativa privada e cobrando mensalidades de quem pode pagar.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 46,
+      "eixo": "Educação e Cultura",
+      "p_minus": "A Lei Rouanet é um importante mecanismo de fomento à cultura e à arte, democratizando o acesso e valorizando os artistas brasileiros.",
+      "p_plus": "A Lei Rouanet precisa de maior transparência e critérios mais rigorosos para evitar abusos e direcionar os recursos para projetos de real interesse público.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 47,
+      "eixo": "Educação e Cultura",
+      "p_minus": "Museus e o patrimônio cultural devem ser protegidos e financiados pelo Estado, garantindo a preservação da memória e a difusão do conhecimento para todos.",
+      "p_plus": "A gestão de museus e do patrimônio cultural pode ser mais eficiente com a participação da iniciativa privada e a busca por fontes de receita próprias.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 48,
+      "eixo": "Educação e Cultura",
+      "p_minus": "A valorização do professor, com salários dignos, formação continuada e melhores condições de trabalho, é a chave para a melhoria da educação.",
+      "p_plus": "A valorização do professor deve estar atrelada ao mérito e ao desempenho, com avaliações rigorosas e bônus por resultados, além de maior autonomia em sala de aula.",
+      "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+    },
+    {
+      "pair_id": 0,
+      "eixo": "Políticas Sociais",
+      "p_minus": "O Bolsa Família deve ser ampliado para garantir renda mínima às famílias pobres.",
+      "p_plus": "Programas assistencialistas como o Bolsa Família devem priorizar capacitação para o trabalho.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 1,
+      "eixo": "Políticas Sociais",
+      "p_minus": "O SUS precisa de mais investimentos públicos para atender universalmente a população.",
+      "p_plus": "O SUS deve incentivar parcerias com o setor privado para melhorar a eficiência.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 2,
+      "eixo": "Políticas Sociais",
+      "p_minus": "A reforma da previdência deve preservar direitos dos trabalhadores mais vulneráveis.",
+      "p_plus": "A reforma da previdência é essencial para equilibrar as contas públicas e evitar colapso.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 3,
+      "eixo": "Políticas Sociais",
+      "p_minus": "Cotas raciais em universidades são fundamentais para reparar desigualdades históricas.",
+      "p_plus": "Cotas raciais devem ser substituídas por critérios socioeconômicos para maior justiça.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 4,
+      "eixo": "Políticas Sociais",
+      "p_minus": "Leis de proteção aos direitos LGBTQ+ devem ser fortalecidas para combater discriminação.",
+      "p_plus": "Políticas para LGBTQ+ não devem impor agendas ideológicas nas escolas e famílias.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 5,
+      "eixo": "Políticas Sociais",
+      "p_minus": "Programas de habitação popular precisam de mais recursos estatais para moradia digna.",
+      "p_plus": "Habitação popular deve focar em parcerias público-privadas para evitar desperdícios.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 6,
+      "eixo": "Políticas Sociais",
+      "p_minus": "Políticas de assistência a dependentes químicos devem priorizar tratamento humanizado.",
+      "p_plus": "Assistência a dependentes químicos requer abordagem dura com internação compulsória.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 7,
+      "eixo": "Economia",
+      "p_minus": "Privatizações de estatais devem ser evitadas para preservar o controle nacional.",
+      "p_plus": "Privatizações de estatais aumentam eficiência e reduzem corrupção.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 8,
+      "eixo": "Economia",
+      "p_minus": "A reforma tributária deve taxar mais os ricos para redistribuir renda.",
+      "p_plus": "A reforma tributária precisa simplificar impostos para atrair investimentos.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 9,
+      "eixo": "Economia",
+      "p_minus": "O salário mínimo deve ser reajustado acima da inflação para valorizar o trabalhador.",
+      "p_plus": "Reajustes no salário mínimo devem respeitar limites para não gerar desemprego.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 10,
+      "eixo": "Economia",
+      "p_minus": "Controle de inflação deve priorizar proteção aos mais pobres contra alta de preços.",
+      "p_plus": "Controle de inflação exige juros altos para estabilizar a economia a longo prazo.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 12,
+      "eixo": "Economia",
+      "p_minus": "Investimentos em infraestrutura devem ser financiados por impostos progressivos.",
+      "p_plus": "Infraestrutura cresce mais com concessões privadas e menos intervencionismo estatal.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 13,
+      "eixo": "Economia",
+      "p_minus": "A dívida pública deve ser gerida com mais gastos sociais em vez de austeridade.",
+      "p_plus": "Reduzir a dívida pública exige cortes de gastos para evitar calote futuro.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 14,
+      "eixo": "Segurança Pública",
+      "p_minus": "Porte de armas para cidadãos deve ser restrito para reduzir violência urbana.",
+      "p_plus": "Facilitar porte de armas permite autodefesa legítima contra criminosos.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 15,
+      "eixo": "Segurança Pública",
+      "p_minus": "Redução da maioridade penal agrava problemas sociais e não resolve criminalidade.",
+      "p_plus": "Reduzir a maioridade penal pune adequadamente jovens criminosos reincidentes.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 16,
+      "eixo": "Segurança Pública",
+      "p_minus": "Policiais comunitários devem priorizar diálogo com comunidades vulneráveis.",
+      "p_plus": "UPPs precisam de presença ostensiva para retomar territórios do crime.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 17,
+      "eixo": "Segurança Pública",
+      "p_minus": "Sistema prisional deve focar em ressocialização e direitos humanos dos detentos.",
+      "p_plus": "Prisões devem endurecer regimes para desencorajar reincidência criminal.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 18,
+      "eixo": "Segurança Pública",
+      "p_minus": "Guerra às drogas falha e deve ceder espaço à descriminalização para saúde pública.",
+      "p_plus": "Combate às drogas exige repressão forte para desmantelar o tráfico.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 19,
+      "eixo": "Segurança Pública",
+      "p_minus": "Inteligência policial deve respeitar privacidade para evitar abusos.",
+      "p_plus": "Mais inteligência policial com tecnologia previne crimes antes que ocorram.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 20,
+      "eixo": "Segurança Pública",
+      "p_minus": "Militarização da polícia aumenta letalidade desnecessária em favelas.",
+      "p_plus": "Polícia militarizada restaura ordem em áreas dominadas por facções.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 21,
+      "eixo": "Meio Ambiente",
+      "p_minus": "Expansão agropecuária deve respeitar limites de preservação da floresta.",
+      "p_plus": "Agropecuária moderna impulsiona economia sem destruir o meio ambiente.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 22,
+      "eixo": "Meio Ambiente",
+      "p_minus": "Licenciamento ambiental rigoroso protege ecossistemas de projetos predatórios.",
+      "p_plus": "Licenciamento ambiental simplificado agiliza desenvolvimento sustentável.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 23,
+      "eixo": "Meio Ambiente",
+      "p_minus": "Políticas contra mudanças climáticas exigem redução imediata de emissões.",
+      "p_plus": "Adaptação às mudanças climáticas prioriza resiliência econômica.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 24,
+      "eixo": "Meio Ambiente",
+      "p_minus": "Mineração em terras indígenas deve ser proibida para preservar culturas.",
+      "p_plus": "Mineração regulada em terras indígenas gera riqueza com contrapartidas.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 25,
+      "eixo": "Meio Ambiente",
+      "p_minus": "Transição para energias renováveis deve ser acelerada com subsídios públicos.",
+      "p_plus": "Energias renováveis crescem melhor com competição de mercado.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 27,
+      "eixo": "Meio Ambiente",
+      "p_minus": "Acordo de Paris deve guiar compromissos nacionais ambiciosos de corte de carbono.",
+      "p_plus": "Acordo de Paris impõe custos desnecessários à economia brasileira.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 28,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "Voto obrigatório garante participação ampla da população nas eleições.",
+      "p_plus": "Voto facultativo respeita liberdade individual sem coação.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 29,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "Reeleição ilimitada enfraquece renovação política e alternância de poder.",
+      "p_plus": "Reeleição permite continuidade de gestões bem-sucedidas.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 30,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "Federalismo deve transferir mais recursos para estados e municípios pobres.",
+      "p_plus": "Federalismo forte exige responsabilidade fiscal de entes subnacionais.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 31,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "STF deve atuar como guardião amplo de minorias e direitos sociais.",
+      "p_plus": "STF precisa se limitar à interpretação constitucional sem ativismo.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 37,
+      "eixo": "Corrupção e Justiça",
+      "p_minus": "Operações como Lava Jato precisam de freios para respeitar devido processo.",
+      "p_plus": "Investigações anticorrupção como Lava Jato devem prosseguir sem entraves.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 41,
+      "eixo": "Corrupção e Justiça",
+      "p_minus": "Combate à corrupção deve priorizar prevenção social e econômica.",
+      "p_plus": "Punições severas e rápidas são o melhor antídoto à corrupção.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 42,
+      "eixo": "Educação e Cultura",
+      "p_minus": "Ensino fundamental público deve investir em inclusão de alunos vulneráveis.",
+      "p_plus": "Escolas cívico-militares elevam disciplina e desempenho no fundamental.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 43,
+      "eixo": "Educação e Cultura",
+      "p_minus": "Currículo escolar deve incluir debates sobre diversidade de gênero.",
+      "p_plus": "Escolas devem focar em conteúdos básicos sem doutrinação de gênero.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 44,
+      "eixo": "Educação e Cultura",
+      "p_minus": "Militarização de escolas públicas ignora causas sociais da evasão.",
+      "p_plus": "Modelos militares em escolas melhoram ordem e resultados educacionais.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 45,
+      "eixo": "Educação e Cultura",
+      "p_minus": "Universidades públicas precisam de financiamento estável para pesquisa.",
+      "p_plus": "Ensino superior deve priorizar expansão privada com qualidade.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 47,
+      "eixo": "Educação e Cultura",
+      "p_minus": "Incentivos culturais devem apoiar produções populares e periféricas.",
+      "p_plus": "Financiamento cultural precisa de critérios meritocráticos e transparentes.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 48,
+      "eixo": "Educação e Cultura",
+      "p_minus": "Ensino de história deve enfatizar lutas sociais e desigualdades.",
+      "p_plus": "História nas escolas deve celebrar conquistas nacionais e heróis.",
+      "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+    },
+    {
+      "pair_id": 0,
+      "eixo": "Políticas Sociais",
+      "p_minus": "O Bolsa Família deve ser fortalecido com valores adequados e acompanhamento social para reduzir pobreza e desigualdade.",
+      "p_plus": "Programas de transferência de renda devem ser mais focalizados e condicionados para evitar dependência e incentivar autonomia.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 1,
+      "eixo": "Políticas Sociais",
+      "p_minus": "O SUS precisa de mais financiamento público e gestão integrada para garantir atendimento universal e de qualidade.",
+      "p_plus": "A saúde deve ampliar parcerias com o setor privado e modelos de gestão por desempenho para reduzir filas e custos.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 2,
+      "eixo": "Políticas Sociais",
+      "p_minus": "O Estado deve ampliar políticas de moradia popular e regularização fundiária para garantir o direito à cidade.",
+      "p_plus": "A política habitacional deve priorizar segurança jurídica da propriedade e soluções via crédito e mercado imobiliário.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 3,
+      "eixo": "Políticas Sociais",
+      "p_minus": "É necessário ampliar a rede pública de creches e pré-escola para garantir igualdade de oportunidades desde a infância.",
+      "p_plus": "O governo deve apoiar famílias com vouchers e convênios para que escolham creches, em vez de expandir estrutura estatal.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 4,
+      "eixo": "Políticas Sociais",
+      "p_minus": "A política de assistência social deve priorizar atendimento comunitário e proteção a populações vulneráveis sem criminalização.",
+      "p_plus": "A assistência social deve exigir contrapartidas e integração com trabalho e capacitação para evitar perpetuação do assistencialismo.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 5,
+      "eixo": "Políticas Sociais",
+      "p_minus": "Direitos trabalhistas de entregadores e motoristas de aplicativo devem ser regulados para garantir renda e proteção social.",
+      "p_plus": "A regulação de aplicativos deve ser mínima para preservar flexibilidade e oportunidades de renda sem encarecer serviços.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 6,
+      "eixo": "Políticas Sociais",
+      "p_minus": "Políticas de igualdade racial e de gênero devem ser fortalecidas para enfrentar discriminações estruturais.",
+      "p_plus": "O Estado deve garantir igualdade perante a lei sem criar políticas identitárias que gerem privilégios ou divisões.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 7,
+      "eixo": "Economia",
+      "p_minus": "O governo deve usar investimento público e obras para estimular emprego e crescimento quando a economia desacelera.",
+      "p_plus": "O crescimento sustentável depende de responsabilidade fiscal e ambiente de negócios, não de expansão de gasto público.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 8,
+      "eixo": "Economia",
+      "p_minus": "O Estado deve manter empresas estratégicas sob controle público para garantir soberania e preços justos.",
+      "p_plus": "Privatizações e concessões são necessárias para aumentar eficiência, reduzir custos e melhorar serviços.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 9,
+      "eixo": "Economia",
+      "p_minus": "A reforma tributária deve tornar o sistema mais progressivo, taxando mais renda e patrimônio no topo.",
+      "p_plus": "A reforma tributária deve simplificar impostos e reduzir a carga sobre produção e consumo para destravar investimentos.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 10,
+      "eixo": "Economia",
+      "p_minus": "O salário mínimo deve ter ganhos reais e servir como motor de consumo e redução da desigualdade.",
+      "p_plus": "O reajuste do salário mínimo deve ser prudente para não pressionar inflação, contas públicas e desemprego.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 11,
+      "eixo": "Economia",
+      "p_minus": "O crédito público e bancos estatais devem apoiar pequenas empresas e setores estratégicos com juros menores.",
+      "p_plus": "O crédito deve ser majoritariamente privado e guiado por risco, evitando subsídios que distorcem o mercado.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 12,
+      "eixo": "Economia",
+      "p_minus": "A política industrial deve usar compras públicas e conteúdo local para fortalecer a indústria nacional.",
+      "p_plus": "A indústria deve competir com menos protecionismo e mais abertura comercial para ganhar produtividade.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 13,
+      "eixo": "Economia",
+      "p_minus": "A legislação trabalhista deve proteger o emprego com direitos robustos e negociação coletiva forte.",
+      "p_plus": "A legislação trabalhista deve ser mais flexível para facilitar contratações e reduzir informalidade.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 14,
+      "eixo": "Segurança Pública",
+      "p_minus": "A segurança pública deve priorizar prevenção, inteligência e políticas sociais para reduzir a violência de forma duradoura.",
+      "p_plus": "A segurança pública deve priorizar presença ostensiva e repressão qualificada para recuperar o controle do território.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 15,
+      "eixo": "Segurança Pública",
+      "p_minus": "O uso da força policial deve ter controle externo e protocolos rígidos para reduzir letalidade e abusos.",
+      "p_plus": "A polícia precisa de respaldo jurídico e operacional para agir com firmeza sem medo de punições injustas.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 16,
+      "eixo": "Segurança Pública",
+      "p_minus": "A política de drogas deve caminhar para descriminalização do usuário e foco em saúde pública.",
+      "p_plus": "A política de drogas deve endurecer penas e fortalecer o combate ao tráfico para reduzir crime e dependência.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 17,
+      "eixo": "Segurança Pública",
+      "p_minus": "O sistema prisional deve focar em alternativas penais e ressocialização para reduzir reincidência.",
+      "p_plus": "O sistema prisional deve priorizar cumprimento efetivo de penas e isolamento de criminosos perigosos.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 18,
+      "eixo": "Segurança Pública",
+      "p_minus": "O controle de armas deve ser rigoroso para reduzir homicídios e acidentes.",
+      "p_plus": "O cidadão deve ter mais facilidade para ter arma legal e se defender, com regras claras e fiscalização.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 19,
+      "eixo": "Segurança Pública",
+      "p_minus": "A atuação das guardas municipais deve ser integrada a políticas comunitárias e não substituir a polícia.",
+      "p_plus": "As guardas municipais devem ter mais poder de policiamento para ampliar a presença de segurança nas cidades.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 20,
+      "eixo": "Segurança Pública",
+      "p_minus": "A investigação criminal deve receber mais recursos e tecnologia para aumentar elucidação sem ampliar encarceramento em massa.",
+      "p_plus": "A investigação criminal deve ser acompanhada de leis mais duras para garantir punição rápida e dissuasão.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 21,
+      "eixo": "Meio Ambiente",
+      "p_minus": "O combate ao desmatamento deve ser prioridade com fiscalização forte e proteção de unidades de conservação.",
+      "p_plus": "A política ambiental deve conciliar produção e conservação, evitando multas abusivas e burocracia que travam o setor produtivo.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 22,
+      "eixo": "Meio Ambiente",
+      "p_minus": "A demarcação de terras indígenas deve avançar para proteger povos e florestas contra invasões e garimpo.",
+      "p_plus": "A política para terras indígenas deve considerar segurança jurídica e impacto econômico, evitando ampliações sem critérios objetivos.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 23,
+      "eixo": "Meio Ambiente",
+      "p_minus": "O licenciamento ambiental deve ser rigoroso e transparente para prevenir desastres e danos irreversíveis.",
+      "p_plus": "O licenciamento ambiental deve ser simplificado e previsível para destravar obras e investimentos com responsabilidade.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 24,
+      "eixo": "Meio Ambiente",
+      "p_minus": "A transição energética deve acelerar com investimento público em renováveis e transporte coletivo limpo.",
+      "p_plus": "A transição energética deve ocorrer com pragmatismo, aproveitando matriz existente e atraindo capital privado.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 25,
+      "eixo": "Meio Ambiente",
+      "p_minus": "A agricultura deve reduzir agrotóxicos e ampliar a agroecologia com apoio técnico e compras públicas.",
+      "p_plus": "A agricultura deve usar tecnologia e defensivos de forma responsável para manter produtividade e competitividade.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 26,
+      "eixo": "Meio Ambiente",
+      "p_minus": "Cidades devem priorizar urbanismo sustentável com saneamento universal e controle de enchentes para proteger os mais pobres.",
+      "p_plus": "Cidades devem buscar soluções de infraestrutura com parcerias privadas e foco em eficiência na gestão urbana.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 27,
+      "eixo": "Meio Ambiente",
+      "p_minus": "O Brasil deve assumir metas climáticas mais ambiciosas e liderar a cooperação internacional por financiamento verde.",
+      "p_plus": "O Brasil deve defender seus interesses e não aceitar metas climáticas que prejudiquem competitividade e soberania.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 28,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "A participação social em conselhos e conferências deve ser fortalecida para democratizar decisões públicas.",
+      "p_plus": "A governança deve ser baseada em instituições representativas e critérios técnicos, evitando aparelhamento por conselhos.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 29,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "O sistema eleitoral deve ampliar mecanismos de inclusão, com incentivo à participação de mulheres e negros nas candidaturas.",
+      "p_plus": "O sistema eleitoral deve focar em reduzir custos e aumentar accountability, sem cotas que distorçam a escolha do eleitor.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 30,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "A liberdade de imprensa deve ser protegida com transparência e combate à desinformação sem censura.",
+      "p_plus": "O combate à desinformação não pode virar controle estatal de conteúdo e deve preservar liberdade de expressão.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 31,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "O STF deve atuar de forma firme na defesa de direitos fundamentais e da Constituição, mesmo contra maiorias ocasionais.",
+      "p_plus": "O STF deve ser mais contido e respeitar a separação de poderes, evitando ativismo judicial sobre políticas públicas.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 32,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "O financiamento público e regras rígidas de campanha ajudam a reduzir o poder do dinheiro nas eleições.",
+      "p_plus": "O financiamento deve ser mais aberto a doações privadas com transparência, reduzindo dependência de fundo público.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 33,
+      "eixo": "Instituições Democráticas",
+      "p_minus": "A política de direitos humanos deve orientar o Estado para prevenir violência e proteger minorias e grupos vulneráveis.",
+      "p_plus": "Direitos humanos devem ser aplicados sem ideologização e com foco na proteção do cidadão e das vítimas.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 35,
+      "eixo": "Corrupção e Justiça",
+      "p_minus": "O combate à corrupção deve respeitar garantias legais e evitar abusos de autoridade e espetacularização.",
+      "p_plus": "O combate à corrupção deve endurecer leis e ampliar instrumentos de investigação para punir poderosos.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 36,
+      "eixo": "Corrupção e Justiça",
+      "p_minus": "A transparência pública deve ser ampliada com controle social e dados abertos sobre contratos e emendas.",
+      "p_plus": "A transparência deve focar em auditorias e resultados, evitando burocracia que paralisa a administração.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 37,
+      "eixo": "Corrupção e Justiça",
+      "p_minus": "A prisão preventiva deve ser usada com parcimônia para não virar punição antecipada e seletiva.",
+      "p_plus": "A prisão preventiva deve ser aplicada com mais rigor quando houver risco de fuga, intimidação e continuidade do crime.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 38,
+      "eixo": "Corrupção e Justiça",
+      "p_minus": "A defensoria pública deve ser fortalecida para garantir acesso à Justiça aos mais pobres.",
+      "p_plus": "A Justiça deve buscar eficiência e informatização, reduzindo custos e evitando expansão automática de estruturas.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 39,
+      "eixo": "Corrupção e Justiça",
+      "p_minus": "A política de segurança jurídica deve equilibrar proteção ao investimento com direitos trabalhistas e ambientais.",
+      "p_plus": "A segurança jurídica deve priorizar estabilidade regulatória e respeito a contratos para atrair investimentos.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 41,
+      "eixo": "Corrupção e Justiça",
+      "p_minus": "A política criminal deve reduzir seletividade penal e enfrentar crimes econômicos e de colarinho branco com prioridade.",
+      "p_plus": "A política criminal deve priorizar crimes violentos e patrimoniais que afetam diretamente o cidadão comum.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 42,
+      "eixo": "Educação e Cultura",
+      "p_minus": "A educação pública deve receber mais investimento e valorização docente para reduzir desigualdades de aprendizagem.",
+      "p_plus": "A educação deve priorizar gestão eficiente, metas e avaliação, com foco em resultados antes de aumentar gastos.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 44,
+      "eixo": "Educação e Cultura",
+      "p_minus": "Cotas e ações afirmativas devem ser mantidas e aprimoradas para corrigir desigualdades históricas no acesso.",
+      "p_plus": "O acesso deve ser baseado principalmente em mérito e desempenho, com apoio socioeconômico sem recortes identitários.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 45,
+      "eixo": "Educação e Cultura",
+      "p_minus": "A escola deve promover educação sexual e direitos humanos para prevenir violência e discriminação.",
+      "p_plus": "A escola deve focar em conteúdos essenciais e respeitar a autoridade dos pais em temas morais e comportamentais.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 46,
+      "eixo": "Educação e Cultura",
+      "p_minus": "A cultura deve receber fomento público descentralizado para garantir diversidade e acesso, inclusive nas periferias.",
+      "p_plus": "O fomento cultural deve ser mais restrito e baseado em critérios objetivos, evitando subsídios a projetos sem retorno social claro.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 47,
+      "eixo": "Educação e Cultura",
+      "p_minus": "A alfabetização e a educação integral devem ser prioridade com apoio federal para redes municipais e estaduais.",
+      "p_plus": "A alfabetização deve priorizar métodos comprovados e cobrança de resultados, com autonomia das redes locais.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    },
+    {
+      "pair_id": 48,
+      "eixo": "Educação e Cultura",
+      "p_minus": "A educação profissional deve ser expandida com políticas públicas para inserir jovens no trabalho com direitos e proteção.",
+      "p_plus": "A educação profissional deve ser guiada pela demanda do mercado e por parcerias com empresas para formar mão de obra rapidamente.",
+      "modelo_gerador": "afirmacoes_gpt_5_2.json"
+    }
+  ]
+}

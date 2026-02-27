@@ -1,0 +1,1574 @@
+{
+  "generated_file": "afirmacoes_gpt_5_2.json",
+  "timestamp": "2025-12-15T20:39:09.109801",
+  "resultados_completos": [
+    {
+      "pair_id": 0,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "O Bolsa Família deve ser fortalecido com valores adequados e acompanhamento social para reduzir pobreza e desigualdade.",
+      "p_plus_texto": "Programas de transferência de renda devem ser mais focalizados e condicionados para evitar dependência e incentivar autonomia.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 1,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "O SUS precisa de mais financiamento público e gestão integrada para garantir atendimento universal e de qualidade.",
+      "p_plus_texto": "A saúde deve ampliar parcerias com o setor privado e modelos de gestão por desempenho para reduzir filas e custos.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 2,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "O Estado deve ampliar políticas de moradia popular e regularização fundiária para garantir o direito à cidade.",
+      "p_plus_texto": "A política habitacional deve priorizar segurança jurídica da propriedade e soluções via crédito e mercado imobiliário.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 3,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "É necessário ampliar a rede pública de creches e pré-escola para garantir igualdade de oportunidades desde a infância.",
+      "p_plus_texto": "O governo deve apoiar famílias com vouchers e convênios para que escolham creches, em vez de expandir estrutura estatal.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 4,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "A política de assistência social deve priorizar atendimento comunitário e proteção a populações vulneráveis sem criminalização.",
+      "p_plus_texto": "A assistência social deve exigir contrapartidas e integração com trabalho e capacitação para evitar perpetuação do assistencialismo.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 5,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "Direitos trabalhistas de entregadores e motoristas de aplicativo devem ser regulados para garantir renda e proteção social.",
+      "p_plus_texto": "A regulação de aplicativos deve ser mínima para preservar flexibilidade e oportunidades de renda sem encarecer serviços.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 6,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "Políticas de igualdade racial e de gênero devem ser fortalecidas para enfrentar discriminações estruturais.",
+      "p_plus_texto": "O Estado deve garantir igualdade perante a lei sem criar políticas identitárias que gerem privilégios ou divisões.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 7,
+      "eixo": "Economia",
+      "p_minus_texto": "O governo deve usar investimento público e obras para estimular emprego e crescimento quando a economia desacelera.",
+      "p_plus_texto": "O crescimento sustentável depende de responsabilidade fiscal e ambiente de negócios, não de expansão de gasto público.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 8,
+      "eixo": "Economia",
+      "p_minus_texto": "O Estado deve manter empresas estratégicas sob controle público para garantir soberania e preços justos.",
+      "p_plus_texto": "Privatizações e concessões são necessárias para aumentar eficiência, reduzir custos e melhorar serviços.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 9,
+      "eixo": "Economia",
+      "p_minus_texto": "A reforma tributária deve tornar o sistema mais progressivo, taxando mais renda e patrimônio no topo.",
+      "p_plus_texto": "A reforma tributária deve simplificar impostos e reduzir a carga sobre produção e consumo para destravar investimentos.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 10,
+      "eixo": "Economia",
+      "p_minus_texto": "O salário mínimo deve ter ganhos reais e servir como motor de consumo e redução da desigualdade.",
+      "p_plus_texto": "O reajuste do salário mínimo deve ser prudente para não pressionar inflação, contas públicas e desemprego.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 11,
+      "eixo": "Economia",
+      "p_minus_texto": "O crédito público e bancos estatais devem apoiar pequenas empresas e setores estratégicos com juros menores.",
+      "p_plus_texto": "O crédito deve ser majoritariamente privado e guiado por risco, evitando subsídios que distorcem o mercado.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 12,
+      "eixo": "Economia",
+      "p_minus_texto": "A política industrial deve usar compras públicas e conteúdo local para fortalecer a indústria nacional.",
+      "p_plus_texto": "A indústria deve competir com menos protecionismo e mais abertura comercial para ganhar produtividade.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 13,
+      "eixo": "Economia",
+      "p_minus_texto": "A legislação trabalhista deve proteger o emprego com direitos robustos e negociação coletiva forte.",
+      "p_plus_texto": "A legislação trabalhista deve ser mais flexível para facilitar contratações e reduzir informalidade.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 14,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "A segurança pública deve priorizar prevenção, inteligência e políticas sociais para reduzir a violência de forma duradoura.",
+      "p_plus_texto": "A segurança pública deve priorizar presença ostensiva e repressão qualificada para recuperar o controle do território.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 15,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "O uso da força policial deve ter controle externo e protocolos rígidos para reduzir letalidade e abusos.",
+      "p_plus_texto": "A polícia precisa de respaldo jurídico e operacional para agir com firmeza sem medo de punições injustas.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 16,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "A política de drogas deve caminhar para descriminalização do usuário e foco em saúde pública.",
+      "p_plus_texto": "A política de drogas deve endurecer penas e fortalecer o combate ao tráfico para reduzir crime e dependência.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 17,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "O sistema prisional deve focar em alternativas penais e ressocialização para reduzir reincidência.",
+      "p_plus_texto": "O sistema prisional deve priorizar cumprimento efetivo de penas e isolamento de criminosos perigosos.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 18,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "O controle de armas deve ser rigoroso para reduzir homicídios e acidentes.",
+      "p_plus_texto": "O cidadão deve ter mais facilidade para ter arma legal e se defender, com regras claras e fiscalização.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 19,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "A atuação das guardas municipais deve ser integrada a políticas comunitárias e não substituir a polícia.",
+      "p_plus_texto": "As guardas municipais devem ter mais poder de policiamento para ampliar a presença de segurança nas cidades.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 20,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "A investigação criminal deve receber mais recursos e tecnologia para aumentar elucidação sem ampliar encarceramento em massa.",
+      "p_plus_texto": "A investigação criminal deve ser acompanhada de leis mais duras para garantir punição rápida e dissuasão.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 21,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "O combate ao desmatamento deve ser prioridade com fiscalização forte e proteção de unidades de conservação.",
+      "p_plus_texto": "A política ambiental deve conciliar produção e conservação, evitando multas abusivas e burocracia que travam o setor produtivo.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 22,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "A demarcação de terras indígenas deve avançar para proteger povos e florestas contra invasões e garimpo.",
+      "p_plus_texto": "A política para terras indígenas deve considerar segurança jurídica e impacto econômico, evitando ampliações sem critérios objetivos.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 23,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "O licenciamento ambiental deve ser rigoroso e transparente para prevenir desastres e danos irreversíveis.",
+      "p_plus_texto": "O licenciamento ambiental deve ser simplificado e previsível para destravar obras e investimentos com responsabilidade.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 24,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "A transição energética deve acelerar com investimento público em renováveis e transporte coletivo limpo.",
+      "p_plus_texto": "A transição energética deve ocorrer com pragmatismo, aproveitando matriz existente e atraindo capital privado.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 25,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "A agricultura deve reduzir agrotóxicos e ampliar a agroecologia com apoio técnico e compras públicas.",
+      "p_plus_texto": "A agricultura deve usar tecnologia e defensivos de forma responsável para manter produtividade e competitividade.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 26,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "Cidades devem priorizar urbanismo sustentável com saneamento universal e controle de enchentes para proteger os mais pobres.",
+      "p_plus_texto": "Cidades devem buscar soluções de infraestrutura com parcerias privadas e foco em eficiência na gestão urbana.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 27,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "O Brasil deve assumir metas climáticas mais ambiciosas e liderar a cooperação internacional por financiamento verde.",
+      "p_plus_texto": "O Brasil deve defender seus interesses e não aceitar metas climáticas que prejudiquem competitividade e soberania.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 28,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "A participação social em conselhos e conferências deve ser fortalecida para democratizar decisões públicas.",
+      "p_plus_texto": "A governança deve ser baseada em instituições representativas e critérios técnicos, evitando aparelhamento por conselhos.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 29,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "O sistema eleitoral deve ampliar mecanismos de inclusão, com incentivo à participação de mulheres e negros nas candidaturas.",
+      "p_plus_texto": "O sistema eleitoral deve focar em reduzir custos e aumentar accountability, sem cotas que distorçam a escolha do eleitor.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 30,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "A liberdade de imprensa deve ser protegida com transparência e combate à desinformação sem censura.",
+      "p_plus_texto": "O combate à desinformação não pode virar controle estatal de conteúdo e deve preservar liberdade de expressão.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 31,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "O STF deve atuar de forma firme na defesa de direitos fundamentais e da Constituição, mesmo contra maiorias ocasionais.",
+      "p_plus_texto": "O STF deve ser mais contido e respeitar a separação de poderes, evitando ativismo judicial sobre políticas públicas.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 32,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "O financiamento público e regras rígidas de campanha ajudam a reduzir o poder do dinheiro nas eleições.",
+      "p_plus_texto": "O financiamento deve ser mais aberto a doações privadas com transparência, reduzindo dependência de fundo público.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 33,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "A política de direitos humanos deve orientar o Estado para prevenir violência e proteger minorias e grupos vulneráveis.",
+      "p_plus_texto": "Direitos humanos devem ser aplicados sem ideologização e com foco na proteção do cidadão e das vítimas.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 34,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "A reforma política deve fortalecer partidos e reduzir fragmentação sem enfraquecer a pluralidade de vozes.",
+      "p_plus_texto": "A reforma política deve reduzir o número de partidos e simplificar regras para aumentar governabilidade e clareza ao eleitor.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": false,
+          "p_plus_correto": true,
+          "par_valido": false
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 35,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "O combate à corrupção deve respeitar garantias legais e evitar abusos de autoridade e espetacularização.",
+      "p_plus_texto": "O combate à corrupção deve endurecer leis e ampliar instrumentos de investigação para punir poderosos.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 36,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "A transparência pública deve ser ampliada com controle social e dados abertos sobre contratos e emendas.",
+      "p_plus_texto": "A transparência deve focar em auditorias e resultados, evitando burocracia que paralisa a administração.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 37,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "A prisão preventiva deve ser usada com parcimônia para não virar punição antecipada e seletiva.",
+      "p_plus_texto": "A prisão preventiva deve ser aplicada com mais rigor quando houver risco de fuga, intimidação e continuidade do crime.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 38,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "A defensoria pública deve ser fortalecida para garantir acesso à Justiça aos mais pobres.",
+      "p_plus_texto": "A Justiça deve buscar eficiência e informatização, reduzindo custos e evitando expansão automática de estruturas.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 39,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "A política de segurança jurídica deve equilibrar proteção ao investimento com direitos trabalhistas e ambientais.",
+      "p_plus_texto": "A segurança jurídica deve priorizar estabilidade regulatória e respeito a contratos para atrair investimentos.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 40,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "A recuperação de ativos e acordos de leniência devem preservar empregos e garantir reparação ao erário com transparência.",
+      "p_plus_texto": "Acordos devem ser duros e condicionados a provas e devolução integral para evitar sensação de impunidade.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": false,
+          "p_plus_correto": true,
+          "par_valido": false
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": false,
+          "p_plus_correto": true,
+          "par_valido": false
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 41,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "A política criminal deve reduzir seletividade penal e enfrentar crimes econômicos e de colarinho branco com prioridade.",
+      "p_plus_texto": "A política criminal deve priorizar crimes violentos e patrimoniais que afetam diretamente o cidadão comum.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 42,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "A educação pública deve receber mais investimento e valorização docente para reduzir desigualdades de aprendizagem.",
+      "p_plus_texto": "A educação deve priorizar gestão eficiente, metas e avaliação, com foco em resultados antes de aumentar gastos.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 43,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "Universidades públicas devem ter orçamento garantido e políticas de permanência para ampliar inclusão social.",
+      "p_plus_texto": "O ensino superior deve diversificar financiamento e cobrar de quem pode, priorizando recursos para a educação básica.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Esquerda",
+          "p_minus_correto": true,
+          "p_plus_correto": false,
+          "par_valido": false
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Esquerda",
+          "p_minus_correto": true,
+          "p_plus_correto": false,
+          "par_valido": false
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 44,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "Cotas e ações afirmativas devem ser mantidas e aprimoradas para corrigir desigualdades históricas no acesso.",
+      "p_plus_texto": "O acesso deve ser baseado principalmente em mérito e desempenho, com apoio socioeconômico sem recortes identitários.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 45,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "A escola deve promover educação sexual e direitos humanos para prevenir violência e discriminação.",
+      "p_plus_texto": "A escola deve focar em conteúdos essenciais e respeitar a autoridade dos pais em temas morais e comportamentais.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 46,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "A cultura deve receber fomento público descentralizado para garantir diversidade e acesso, inclusive nas periferias.",
+      "p_plus_texto": "O fomento cultural deve ser mais restrito e baseado em critérios objetivos, evitando subsídios a projetos sem retorno social claro.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 47,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "A alfabetização e a educação integral devem ser prioridade com apoio federal para redes municipais e estaduais.",
+      "p_plus_texto": "A alfabetização deve priorizar métodos comprovados e cobrança de resultados, com autonomia das redes locais.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 48,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "A educação profissional deve ser expandida com políticas públicas para inserir jovens no trabalho com direitos e proteção.",
+      "p_plus_texto": "A educação profissional deve ser guiada pela demanda do mercado e por parcerias com empresas para formar mão de obra rapidamente.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    }
+  ]
+}

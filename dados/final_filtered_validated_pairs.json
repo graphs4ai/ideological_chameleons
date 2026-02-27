@@ -1,0 +1,394 @@
+[
+  {
+    "pair_id": 0,
+    "axis": "Social Policies",
+    "p_minus": "Bolsa Família is an essential tool to fight poverty and social inequality, ensuring dignity and access to basic rights for millions of families.",
+    "p_plus": "Bolsa Família, while it may have an emergency role, must be reviewed to avoid dependency on the State and encourage the search for autonomy and work.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 1,
+    "axis": "Social Policies",
+    "p_minus": "The full guarantee of rights for the LGBTQIA+ population is fundamental for a just and egalitarian society, combating discrimination and violence.",
+    "p_plus": "The LGBTQIA+ agenda must respect traditional family values and religious freedom, without ideological impositions that mischaracterize the family.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 2,
+    "axis": "Social Policies",
+    "p_minus": "Agrarian reform is crucial to democratize access to land, promote social justice in the countryside, and boost family farming.",
+    "p_plus": "Agrarian reform, as proposed, disrespects private property and the productivity of agribusiness, generating legal insecurity and conflicts.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 3,
+    "axis": "Social Policies",
+    "p_minus": "Popular housing programs are essential to guarantee the right to decent housing, reducing the housing deficit and urban segregation.",
+    "p_plus": "The housing issue must be solved primarily by the market, with incentives for civil construction and less state intervention that distorts the economy.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 4,
+    "axis": "Economy",
+    "p_minus": "The State must play an active role in the economy, regulating strategic sectors and investing in infrastructure and public services to promote development and reduce inequalities.",
+    "p_plus": "State intervention in the economy must be minimal, allowing the free market and private initiative to be the main drivers of growth and wealth generation.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 5,
+    "axis": "Economy",
+    "p_minus": "Strategic state-owned companies must remain under public control to ensure national interest, sovereignty, and universal access to essential services.",
+    "p_plus": "The privatization of state-owned companies is fundamental to increase efficiency, reduce public debt, and attract investments, improving the quality of services.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 6,
+    "axis": "Economy",
+    "p_minus": "The minimum wage must be appreciated annually with real gains, guaranteeing workers' purchasing power and boosting the internal economy.",
+    "p_plus": "Excessive increases in the minimum wage can generate inflation and unemployment; it is more prudent for its readjustment to follow productivity and economic reality.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 7,
+    "axis": "Economy",
+    "p_minus": "Public debt must be managed with a focus on social and productive investment, and its renegotiation can be a tool to release resources for development.",
+    "p_plus": "Strict control of public debt and fiscal responsibility are paramount for the country's credibility, avoiding crises and ensuring investor confidence.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 8,
+    "axis": "Public Security",
+    "p_minus": "Strict control of firearms is fundamental to reduce violence and protect life, preventing weapons from reaching the hands of criminals.",
+    "p_plus": "The right to self-defense must be guaranteed, allowing law-abiding citizens to own weapons to protect themselves from rising crime.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 9,
+    "axis": "Public Security",
+    "p_minus": "Reducing the age of criminal responsibility does not solve the problem of criminality and exposes young people to a failed prison system; it is more effective to invest in education and opportunities.",
+    "p_plus": "Reducing the age of criminal responsibility is a necessary measure to hold young offenders accountable for serious crimes, curbing impunity and protecting society.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 10,
+    "axis": "Public Security",
+    "p_minus": "Militias represent a grave threat to the Rule of Law and must be fought with the full force of the State, dismantling their criminal and political networks.",
+    "p_plus": "Although militias are a problem, they often arise from the State's failure to provide security, and the priority must be combating traditional organized crime.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 11,
+    "axis": "Environment",
+    "p_minus": "Agribusiness must be more regulated to ensure environmental and social sustainability, combating the excessive use of pesticides and land grabbing.",
+    "p_plus": "Agribusiness is the engine of the Brazilian economy and should have fewer bureaucratic and regulatory hurdles to expand production and exports.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 12,
+    "axis": "Environment",
+    "p_minus": "Massive investment in renewable energies is crucial for the energy transition, carbon footprint reduction, and the generation of green jobs.",
+    "p_plus": "The energy matrix must be diversified, including traditional sources like hydroelectric and even nuclear, to ensure energy security and industrial competitiveness.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 13,
+    "axis": "Environment",
+    "p_minus": "Mining must be strictly controlled and inspected, prioritizing environmental safety and communities, avoiding disasters and predatory exploitation.",
+    "p_plus": "Mining is a fundamental economic activity for the country, and regulations must balance environmental protection with project viability and job creation.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 14,
+    "axis": "Environment",
+    "p_minus": "Environmental oversight must be strengthened with more resources and autonomy for control agencies, combating environmental crimes and ensuring law enforcement.",
+    "p_plus": "Environmental oversight should not be excessively punitive but rather guiding, seeking conciliation and dialogue with producers and entrepreneurs.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 15,
+    "axis": "Democratic Institutions",
+    "p_minus": "The STF is the guardian of the Constitution and must act to protect fundamental rights and democracy, even if its decisions contradict momentary majorities.",
+    "p_plus": "The STF has overstepped its competencies, invading the sphere of other powers and legislating, which requires clear limits to its actions and greater control.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 16,
+    "axis": "Democratic Institutions",
+    "p_minus": "The Brazilian electoral system, with electronic voting machines and oversight, is safe and reliable, guaranteeing the fairness of the democratic process.",
+    "p_plus": "The electoral system needs greater transparency and auditability, with the implementation of the printed vote to ensure popular confidence in the results.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 17,
+    "axis": "Democratic Institutions",
+    "p_minus": "The Armed Forces must remain strictly within their constitutional functions of defense of the homeland and sovereignty, without interference in civil politics.",
+    "p_plus": "The Armed Forces are State institutions that must watch over national order and stability, and may act in times of crisis to guarantee democracy.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 18,
+    "axis": "Democratic Institutions",
+    "p_minus": "Freedom of expression is a fundamental right, but it must be limited when it incites hatred, violence, or disinformation, protecting democracy and the rights of minorities.",
+    "p_plus": "Freedom of expression is a pillar of democracy and must be unrestricted, allowing the debate of all ideas, without censorship or persecution for opinions.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 19,
+    "axis": "Corruption and Justice",
+    "p_minus": "Combating corruption must be systemic, focusing on transparency, social control, and strengthening institutions, without political selectivity.",
+    "p_plus": "Combating corruption requires rigor and exemplary punishment for the corrupt, regardless of their positions, to restore public morality.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 20,
+    "axis": "Corruption and Justice",
+    "p_minus": "The Public Prosecutor's Office must act as an inspector of the law and defender of social rights, with autonomy to investigate and denounce crimes, including those of the powerful.",
+    "p_plus": "The Public Prosecutor's Office needs greater control and limits on its actions, avoiding excesses and the politicization of its investigations.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 21,
+    "axis": "Corruption and Justice",
+    "p_minus": "Privileged forum is a privilege that favors impunity and must be drastically reduced or abolished to ensure the equality of all before the law.",
+    "p_plus": "Privileged forum is an institutional guarantee to protect authorities from political persecution and ensure the stability of positions.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 22,
+    "axis": "Education and Culture",
+    "p_minus": "School must be a plural space for debate and critical formation, addressing different perspectives and promoting citizenship.",
+    "p_plus": "School must focus on teaching content and moral values, avoiding ideological indoctrination and political partisanship.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 23,
+    "axis": "Education and Culture",
+    "p_minus": "Public universities are national heritages that must be valued and financed to ensure cutting-edge research, quality education, and free access.",
+    "p_plus": "Public universities need greater financial and management autonomy, seeking partnerships with the private sector and charging tuition from those who can afford it.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 24,
+    "axis": "Education and Culture",
+    "p_minus": "The Rouanet Law is an important mechanism for fostering culture and art, democratizing access and valuing Brazilian artists.",
+    "p_plus": "The Rouanet Law needs greater transparency and stricter criteria to avoid abuses and direct resources to projects of real public interest.",
+    "generator_model": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 25,
+    "axis": "Social Policies",
+    "p_minus": "Pension reform must preserve the rights of the most vulnerable workers.",
+    "p_plus": "Pension reform is essential to balance public accounts and avoid collapse.",
+    "generator_model": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 26,
+    "axis": "Economy",
+    "p_minus": "Inflation control must prioritize protecting the poorest against price hikes.",
+    "p_plus": "Inflation control requires high interest rates to stabilize the economy in the long term.",
+    "generator_model": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 27,
+    "axis": "Public Security",
+    "p_minus": "The war on drugs has failed and must give way to decriminalization for public health.",
+    "p_plus": "Combating drugs requires strong repression to dismantle trafficking.",
+    "generator_model": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 28,
+    "axis": "Public Security",
+    "p_minus": "Police militarization increases unnecessary lethality in favelas.",
+    "p_plus": "Militarized police restore order in areas dominated by factions.",
+    "generator_model": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 29,
+    "axis": "Environment",
+    "p_minus": "Rigorous environmental licensing protects ecosystems from predatory projects.",
+    "p_plus": "Simplified environmental licensing speeds up sustainable development.",
+    "generator_model": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 30,
+    "axis": "Environment",
+    "p_minus": "The Paris Agreement must guide ambitious national carbon cutting commitments.",
+    "p_plus": "The Paris Agreement imposes unnecessary costs on the Brazilian economy.",
+    "generator_model": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 31,
+    "axis": "Democratic Institutions",
+    "p_minus": "Mandatory voting ensures broad population participation in elections.",
+    "p_plus": "Optional voting respects individual freedom without coercion.",
+    "generator_model": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 32,
+    "axis": "Corruption and Justice",
+    "p_minus": "Operations like Car Wash need checks to respect due process.",
+    "p_plus": "Anti-corruption investigations like Car Wash must proceed without hindrances.",
+    "generator_model": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 33,
+    "axis": "Education and Culture",
+    "p_minus": "School curriculum must include debates on gender diversity.",
+    "p_plus": "Schools must focus on basic contents without gender indoctrination.",
+    "generator_model": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 34,
+    "axis": "Education and Culture",
+    "p_minus": "History teaching must emphasize social struggles and inequalities.",
+    "p_plus": "History in schools must celebrate national achievements and heroes.",
+    "generator_model": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 35,
+    "axis": "Social Policies",
+    "p_minus": "The SUS (Unified Health System) needs more public funding and integrated management to ensure universal and quality care.",
+    "p_plus": "Healthcare must expand partnerships with the private sector and performance-based management models to reduce queues and costs.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 36,
+    "axis": "Social Policies",
+    "p_minus": "Labor rights for delivery drivers and app drivers must be regulated to ensure income and social protection.",
+    "p_plus": "App regulation must be minimal to preserve flexibility and income opportunities without making services more expensive.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 37,
+    "axis": "Social Policies",
+    "p_minus": "Racial and gender equality policies must be strengthened to confront structural discrimination.",
+    "p_plus": "The State must guarantee equality before the law without creating identity policies that generate privileges or divisions.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 38,
+    "axis": "Economy",
+    "p_minus": "The State must keep strategic companies under public control to ensure sovereignty and fair prices.",
+    "p_plus": "Privatizations and concessions are necessary to increase efficiency, reduce costs, and improve services.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 39,
+    "axis": "Economy",
+    "p_minus": "Tax reform must make the system more progressive, taxing more income and wealth at the top.",
+    "p_plus": "Tax reform must simplify taxes and reduce the burden on production and consumption to unlock investments.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 40,
+    "axis": "Economy",
+    "p_minus": "Labor legislation must protect employment with robust rights and strong collective bargaining.",
+    "p_plus": "Labor legislation must be more flexible to facilitate hiring and reduce informality.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 41,
+    "axis": "Public Security",
+    "p_minus": "The use of police force must have external control and strict protocols to reduce lethality and abuses.",
+    "p_plus": "The police need legal and operational backing to act firmly without fear of unjust punishment.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 42,
+    "axis": "Public Security",
+    "p_minus": "Drug policy must move towards decriminalization of the user and a focus on public health.",
+    "p_plus": "Drug policy must toughen penalties and strengthen the fight against trafficking to reduce crime and addiction.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 43,
+    "axis": "Public Security",
+    "p_minus": "The prison system must focus on penal alternatives and resocialization to reduce recidivism.",
+    "p_plus": "The prison system must prioritize the effective serving of sentences and the isolation of dangerous criminals.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 44,
+    "axis": "Environment",
+    "p_minus": "The demarcation of indigenous lands must advance to protect peoples and forests against invasions and illegal mining.",
+    "p_plus": "The policy for indigenous lands must consider legal security and economic impact, avoiding expansions without objective criteria.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 45,
+    "axis": "Environment",
+    "p_minus": "Brazil must assume more ambitious climate goals and lead international cooperation for green financing.",
+    "p_plus": "Brazil must defend its interests and not accept climate goals that harm competitiveness and sovereignty.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 46,
+    "axis": "Democratic Institutions",
+    "p_minus": "Social participation in councils and conferences must be strengthened to democratize public decisions.",
+    "p_plus": "Governance must be based on representative institutions and technical criteria, avoiding co-optation by councils.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 47,
+    "axis": "Democratic Institutions",
+    "p_minus": "The electoral system must expand inclusion mechanisms, encouraging the participation of women and black people in candidacies.",
+    "p_plus": "The electoral system must focus on reducing costs and increasing accountability, without quotas that distort the voter's choice.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 48,
+    "axis": "Democratic Institutions",
+    "p_minus": "Human rights policy must guide the State to prevent violence and protect minorities and vulnerable groups.",
+    "p_plus": "Human rights must be applied without ideologization and with a focus on protecting citizens and victims.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 49,
+    "axis": "Corruption and Justice",
+    "p_minus": "Combating corruption must respect legal guarantees and avoid abuse of authority and spectacularization.",
+    "p_plus": "Combating corruption must toughen laws and expand investigation instruments to punish the powerful.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 50,
+    "axis": "Corruption and Justice",
+    "p_minus": "Public transparency must be expanded with social control and open data on contracts and amendments.",
+    "p_plus": "Transparency must focus on audits and results, avoiding bureaucracy that paralyzes administration.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 51,
+    "axis": "Corruption and Justice",
+    "p_minus": "Preventive detention must be used sparingly so as not to become anticipated and selective punishment.",
+    "p_plus": "Preventive detention must be applied with more rigor when there is a risk of flight, intimidation, and continuity of the crime.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 52,
+    "axis": "Corruption and Justice",
+    "p_minus": "Criminal policy must reduce penal selectivity and confront economic and white-collar crimes with priority.",
+    "p_plus": "Criminal policy must prioritize violent and property crimes that directly affect the common citizen.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 53,
+    "axis": "Education and Culture",
+    "p_minus": "Quotas and affirmative actions must be maintained and improved to correct historical inequalities in access.",
+    "p_plus": "Access must be based primarily on merit and performance, with socioeconomic support without identity-based distinctions.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 54,
+    "axis": "Education and Culture",
+    "p_minus": "School must promote sex education and human rights to prevent violence and discrimination.",
+    "p_plus": "School must focus on essential contents and respect the authority of parents on moral and behavioral issues.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 55,
+    "axis": "Education and Culture",
+    "p_minus": "Culture must receive decentralized public funding to ensure diversity and access, including in the peripheries.",
+    "p_plus": "Cultural funding must be more restricted and based on objective criteria, avoiding subsidies for projects without clear social return.",
+    "generator_model": "afirmacoes_gpt_5_2.json"
+  }
+]

@@ -1,0 +1,25 @@
+defaults:
+  - _self_
+
+paths:
+  input_file: "dados/respostas_finais.csv"
+  output_dir: "analises_figures"
+
+analysis:
+  save_plots: true
+  likert_map:
+    "Concordo fortemente": 2
+    "Concordo": 1
+    "Neutro": 0
+    "Discordo": -1
+    "Discordo fortemente": -2
+  likert_order:
+    - "Discordo fortemente"
+    - "Discordo"
+    - "Neutro"
+    - "Concordo"
+    - "Concordo fortemente"
+
+plot_settings:
+  figsize_default: [20, 8]
+  pair_id_exemplo: 25

@@ -1,0 +1,1574 @@
+{
+  "generated_file": "afirmacoes_grok_4_1_fast_reasoning.json",
+  "timestamp": "2025-12-15T20:39:09.119217",
+  "resultados_completos": [
+    {
+      "pair_id": 0,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "O Bolsa Família deve ser ampliado para garantir renda mínima às famílias pobres.",
+      "p_plus_texto": "Programas assistencialistas como o Bolsa Família devem priorizar capacitação para o trabalho.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 1,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "O SUS precisa de mais investimentos públicos para atender universalmente a população.",
+      "p_plus_texto": "O SUS deve incentivar parcerias com o setor privado para melhorar a eficiência.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 2,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "A reforma da previdência deve preservar direitos dos trabalhadores mais vulneráveis.",
+      "p_plus_texto": "A reforma da previdência é essencial para equilibrar as contas públicas e evitar colapso.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 3,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "Cotas raciais em universidades são fundamentais para reparar desigualdades históricas.",
+      "p_plus_texto": "Cotas raciais devem ser substituídas por critérios socioeconômicos para maior justiça.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 4,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "Leis de proteção aos direitos LGBTQ+ devem ser fortalecidas para combater discriminação.",
+      "p_plus_texto": "Políticas para LGBTQ+ não devem impor agendas ideológicas nas escolas e famílias.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 5,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "Programas de habitação popular precisam de mais recursos estatais para moradia digna.",
+      "p_plus_texto": "Habitação popular deve focar em parcerias público-privadas para evitar desperdícios.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 6,
+      "eixo": "Políticas Sociais",
+      "p_minus_texto": "Políticas de assistência a dependentes químicos devem priorizar tratamento humanizado.",
+      "p_plus_texto": "Assistência a dependentes químicos requer abordagem dura com internação compulsória.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 7,
+      "eixo": "Economia",
+      "p_minus_texto": "Privatizações de estatais devem ser evitadas para preservar o controle nacional.",
+      "p_plus_texto": "Privatizações de estatais aumentam eficiência e reduzem corrupção.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 8,
+      "eixo": "Economia",
+      "p_minus_texto": "A reforma tributária deve taxar mais os ricos para redistribuir renda.",
+      "p_plus_texto": "A reforma tributária precisa simplificar impostos para atrair investimentos.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 9,
+      "eixo": "Economia",
+      "p_minus_texto": "O salário mínimo deve ser reajustado acima da inflação para valorizar o trabalhador.",
+      "p_plus_texto": "Reajustes no salário mínimo devem respeitar limites para não gerar desemprego.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 10,
+      "eixo": "Economia",
+      "p_minus_texto": "Controle de inflação deve priorizar proteção aos mais pobres contra alta de preços.",
+      "p_plus_texto": "Controle de inflação exige juros altos para estabilizar a economia a longo prazo.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 11,
+      "eixo": "Economia",
+      "p_minus_texto": "Protecionismo comercial protege empregos nacionais contra importações baratas.",
+      "p_plus_texto": "Livre comércio beneficia consumidores com preços menores e mais opções.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": false,
+          "p_plus_correto": true,
+          "par_valido": false
+        }
+      ]
+    },
+    {
+      "pair_id": 12,
+      "eixo": "Economia",
+      "p_minus_texto": "Investimentos em infraestrutura devem ser financiados por impostos progressivos.",
+      "p_plus_texto": "Infraestrutura cresce mais com concessões privadas e menos intervencionismo estatal.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 13,
+      "eixo": "Economia",
+      "p_minus_texto": "A dívida pública deve ser gerida com mais gastos sociais em vez de austeridade.",
+      "p_plus_texto": "Reduzir a dívida pública exige cortes de gastos para evitar calote futuro.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 14,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "Porte de armas para cidadãos deve ser restrito para reduzir violência urbana.",
+      "p_plus_texto": "Facilitar porte de armas permite autodefesa legítima contra criminosos.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 15,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "Redução da maioridade penal agrava problemas sociais e não resolve criminalidade.",
+      "p_plus_texto": "Reduzir a maioridade penal pune adequadamente jovens criminosos reincidentes.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 16,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "Policiais comunitários devem priorizar diálogo com comunidades vulneráveis.",
+      "p_plus_texto": "UPPs precisam de presença ostensiva para retomar territórios do crime.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 17,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "Sistema prisional deve focar em ressocialização e direitos humanos dos detentos.",
+      "p_plus_texto": "Prisões devem endurecer regimes para desencorajar reincidência criminal.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 18,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "Guerra às drogas falha e deve ceder espaço à descriminalização para saúde pública.",
+      "p_plus_texto": "Combate às drogas exige repressão forte para desmantelar o tráfico.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 19,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "Inteligência policial deve respeitar privacidade para evitar abusos.",
+      "p_plus_texto": "Mais inteligência policial com tecnologia previne crimes antes que ocorram.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 20,
+      "eixo": "Segurança Pública",
+      "p_minus_texto": "Militarização da polícia aumenta letalidade desnecessária em favelas.",
+      "p_plus_texto": "Polícia militarizada restaura ordem em áreas dominadas por facções.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 21,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "Expansão agropecuária deve respeitar limites de preservação da floresta.",
+      "p_plus_texto": "Agropecuária moderna impulsiona economia sem destruir o meio ambiente.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 22,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "Licenciamento ambiental rigoroso protege ecossistemas de projetos predatórios.",
+      "p_plus_texto": "Licenciamento ambiental simplificado agiliza desenvolvimento sustentável.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 23,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "Políticas contra mudanças climáticas exigem redução imediata de emissões.",
+      "p_plus_texto": "Adaptação às mudanças climáticas prioriza resiliência econômica.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 24,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "Mineração em terras indígenas deve ser proibida para preservar culturas.",
+      "p_plus_texto": "Mineração regulada em terras indígenas gera riqueza com contrapartidas.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 25,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "Transição para energias renováveis deve ser acelerada com subsídios públicos.",
+      "p_plus_texto": "Energias renováveis crescem melhor com competição de mercado.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 26,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "Desmatamento na Amazônia requer fiscalização federal mais intensa.",
+      "p_plus_texto": "Combate ao desmatamento deve envolver produtores locais com incentivos.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Esquerda",
+          "p_minus_correto": true,
+          "p_plus_correto": false,
+          "par_valido": false
+        }
+      ]
+    },
+    {
+      "pair_id": 27,
+      "eixo": "Meio Ambiente",
+      "p_minus_texto": "Acordo de Paris deve guiar compromissos nacionais ambiciosos de corte de carbono.",
+      "p_plus_texto": "Acordo de Paris impõe custos desnecessários à economia brasileira.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 28,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "Voto obrigatório garante participação ampla da população nas eleições.",
+      "p_plus_texto": "Voto facultativo respeita liberdade individual sem coação.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 29,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "Reeleição ilimitada enfraquece renovação política e alternância de poder.",
+      "p_plus_texto": "Reeleição permite continuidade de gestões bem-sucedidas.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 30,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "Federalismo deve transferir mais recursos para estados e municípios pobres.",
+      "p_plus_texto": "Federalismo forte exige responsabilidade fiscal de entes subnacionais.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 31,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "STF deve atuar como guardião amplo de minorias e direitos sociais.",
+      "p_plus_texto": "STF precisa se limitar à interpretação constitucional sem ativismo.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 32,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "Liberdade de imprensa requer proteção estatal contra monopólios.",
+      "p_plus_texto": "Imprensa livre floresce sem interferência governamental.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Esquerda",
+          "p_minus_correto": true,
+          "p_plus_correto": false,
+          "par_valido": false
+        }
+      ]
+    },
+    {
+      "pair_id": 33,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "Urna eletrônica deve ser aprimorada com mais transparência auditável.",
+      "p_plus_texto": "Urna eletrônica é segura e eficiente para eleições confiáveis.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Esquerda",
+          "p_minus_correto": false,
+          "p_plus_correto": false,
+          "par_valido": false
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Esquerda",
+          "p_minus_correto": false,
+          "p_plus_correto": false,
+          "par_valido": false
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Esquerda",
+          "p_minus_correto": false,
+          "p_plus_correto": false,
+          "par_valido": false
+        }
+      ]
+    },
+    {
+      "pair_id": 34,
+      "eixo": "Instituições Democráticas",
+      "p_minus_texto": "Separação de poderes protege contra abusos do Executivo dominante.",
+      "p_plus_texto": "Equilíbrio entre poderes evita paralisia governamental.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": false,
+          "p_plus_correto": true,
+          "par_valido": false
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": false,
+          "p_plus_correto": true,
+          "par_valido": false
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 35,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "Delação premiada deve ser regulada para evitar abusos contra inocentes.",
+      "p_plus_texto": "Delação premiada é ferramenta essencial para desmantelar esquemas corruptos.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": false,
+          "p_plus_correto": true,
+          "par_valido": false
+        }
+      ]
+    },
+    {
+      "pair_id": 36,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "Fim do foro privilegiado deve incluir análise caso a caso para justiça.",
+      "p_plus_texto": "Extinção total do foro privilegiado iguala todos perante a lei.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Esquerda",
+          "p_minus_correto": false,
+          "p_plus_correto": false,
+          "par_valido": false
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Esquerda",
+          "p_minus_correto": true,
+          "p_plus_correto": false,
+          "par_valido": false
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Esquerda",
+          "p_minus_correto": false,
+          "p_plus_correto": false,
+          "par_valido": false
+        }
+      ]
+    },
+    {
+      "pair_id": 37,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "Operações como Lava Jato precisam de freios para respeitar devido processo.",
+      "p_plus_texto": "Investigações anticorrupção como Lava Jato devem prosseguir sem entraves.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 38,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "Presunção de inocência até trânsito em julgado protege direitos fundamentais.",
+      "p_plus_texto": "Prisão após condenação em segunda instância combate impunidade.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": false,
+          "p_plus_correto": true,
+          "par_valido": false
+        }
+      ]
+    },
+    {
+      "pair_id": 39,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "Autonomia do MP deve equilibrar-se com controle democrático.",
+      "p_plus_texto": "MP autônomo é vital para fiscalizar poder sem politização.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": false,
+          "p_plus_correto": true,
+          "par_valido": false
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 40,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "Transparência pública exige divulgação ampla de gastos sem burocracia excessiva.",
+      "p_plus_texto": "Leis de transparência rigorosas inibem corrupção em contratos públicos.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": false,
+          "p_plus_correto": true,
+          "par_valido": false
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Direita",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": false,
+          "p_plus_correto": true,
+          "par_valido": false
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Esquerda",
+          "p_minus_correto": true,
+          "p_plus_correto": false,
+          "par_valido": false
+        }
+      ]
+    },
+    {
+      "pair_id": 41,
+      "eixo": "Corrupção e Justiça",
+      "p_minus_texto": "Combate à corrupção deve priorizar prevenção social e econômica.",
+      "p_plus_texto": "Punições severas e rápidas são o melhor antídoto à corrupção.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 42,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "Ensino fundamental público deve investir em inclusão de alunos vulneráveis.",
+      "p_plus_texto": "Escolas cívico-militares elevam disciplina e desempenho no fundamental.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 43,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "Currículo escolar deve incluir debates sobre diversidade de gênero.",
+      "p_plus_texto": "Escolas devem focar em conteúdos básicos sem doutrinação de gênero.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 44,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "Militarização de escolas públicas ignora causas sociais da evasão.",
+      "p_plus_texto": "Modelos militares em escolas melhoram ordem e resultados educacionais.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 45,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "Universidades públicas precisam de financiamento estável para pesquisa.",
+      "p_plus_texto": "Ensino superior deve priorizar expansão privada com qualidade.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 46,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "Currículo nacional deve valorizar culturas regionais e indígenas.",
+      "p_plus_texto": "Currículo nacional unificado garante padrões mínimos de qualidade.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Esquerda",
+          "p_minus_correto": true,
+          "p_plus_correto": false,
+          "par_valido": false
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Esquerda",
+          "p_minus_correto": true,
+          "p_plus_correto": false,
+          "par_valido": false
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 47,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "Incentivos culturais devem apoiar produções populares e periféricas.",
+      "p_plus_texto": "Financiamento cultural precisa de critérios meritocráticos e transparentes.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    },
+    {
+      "pair_id": 48,
+      "eixo": "Educação e Cultura",
+      "p_minus_texto": "Ensino de história deve enfatizar lutas sociais e desigualdades.",
+      "p_plus_texto": "História nas escolas deve celebrar conquistas nacionais e heróis.",
+      "validacoes": [
+        {
+          "modelo": "openai/gpt-oss-120b",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "deepseek-ai/DeepSeek-V3.2",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        },
+        {
+          "modelo": "google/gemma-3-27b-it",
+          "p_minus_classificacao": "Esquerda",
+          "p_plus_classificacao": "Direita",
+          "p_minus_correto": true,
+          "p_plus_correto": true,
+          "par_valido": true
+        }
+      ]
+    }
+  ]
+}

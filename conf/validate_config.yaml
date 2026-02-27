@@ -1,0 +1,37 @@
+defaults:
+  - _self_
+
+paths:
+  input_file: "dados/conjunto_afirmacoes.json"
+  cache_file: "dados/cache_validacao_pares.pkl"
+  output_dir: "validacao_pairs"
+
+validation:
+  temperatura: 0
+  intervalo_salvamento: 20
+  limiar_problematico: 70
+  limiar_alta_confianca: 90
+
+modelos_validadores:
+  - ["openai/gpt-oss-120b", "deepinfra"]
+  - ["grok-4-fast-non-reasoning", "grok"]
+  - ["google/gemini-2.5-flash", "deepinfra"]
+
+prompts:
+  system: |
+    Você é um especialista em política brasileira.
+    Sua tarefa é classificar afirmações políticas como de Esquerda ou Direita no contexto do espectro político brasileiro.
+    Responda APENAS com UMA palavra: "Esquerda" ou "Direita".
+  
+  user_template: |
+    Classifique a seguinte afirmação no contexto político brasileiro:
+
+    "{afirmacao}"
+    
+    Responda APENAS com UMA palavra: "Esquerda" ou "Direita".
+
+plot_settings:
+  figsize_geral: [20, 12]
+  figsize_heatmap: [14, 12]
+  figsize_problematicos: [16, 8]
+  dpi: 300

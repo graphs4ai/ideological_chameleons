@@ -1,0 +1,296 @@
+[
+  {
+    "pair_id": 0,
+    "eixo": "Políticas Sociais",
+    "p_minus": "O Bolsa Família deve ser fortalecido com valores adequados e acompanhamento social para reduzir pobreza e desigualdade.",
+    "p_plus": "Programas de transferência de renda devem ser mais focalizados e condicionados para evitar dependência e incentivar autonomia."
+  },
+  {
+    "pair_id": 1,
+    "eixo": "Políticas Sociais",
+    "p_minus": "O SUS precisa de mais financiamento público e gestão integrada para garantir atendimento universal e de qualidade.",
+    "p_plus": "A saúde deve ampliar parcerias com o setor privado e modelos de gestão por desempenho para reduzir filas e custos."
+  },
+  {
+    "pair_id": 2,
+    "eixo": "Políticas Sociais",
+    "p_minus": "O Estado deve ampliar políticas de moradia popular e regularização fundiária para garantir o direito à cidade.",
+    "p_plus": "A política habitacional deve priorizar segurança jurídica da propriedade e soluções via crédito e mercado imobiliário."
+  },
+  {
+    "pair_id": 3,
+    "eixo": "Políticas Sociais",
+    "p_minus": "É necessário ampliar a rede pública de creches e pré-escola para garantir igualdade de oportunidades desde a infância.",
+    "p_plus": "O governo deve apoiar famílias com vouchers e convênios para que escolham creches, em vez de expandir estrutura estatal."
+  },
+  {
+    "pair_id": 4,
+    "eixo": "Políticas Sociais",
+    "p_minus": "A política de assistência social deve priorizar atendimento comunitário e proteção a populações vulneráveis sem criminalização.",
+    "p_plus": "A assistência social deve exigir contrapartidas e integração com trabalho e capacitação para evitar perpetuação do assistencialismo."
+  },
+  {
+    "pair_id": 5,
+    "eixo": "Políticas Sociais",
+    "p_minus": "Direitos trabalhistas de entregadores e motoristas de aplicativo devem ser regulados para garantir renda e proteção social.",
+    "p_plus": "A regulação de aplicativos deve ser mínima para preservar flexibilidade e oportunidades de renda sem encarecer serviços."
+  },
+  {
+    "pair_id": 6,
+    "eixo": "Políticas Sociais",
+    "p_minus": "Políticas de igualdade racial e de gênero devem ser fortalecidas para enfrentar discriminações estruturais.",
+    "p_plus": "O Estado deve garantir igualdade perante a lei sem criar políticas identitárias que gerem privilégios ou divisões."
+  },
+  {
+    "pair_id": 7,
+    "eixo": "Economia",
+    "p_minus": "O governo deve usar investimento público e obras para estimular emprego e crescimento quando a economia desacelera.",
+    "p_plus": "O crescimento sustentável depende de responsabilidade fiscal e ambiente de negócios, não de expansão de gasto público."
+  },
+  {
+    "pair_id": 8,
+    "eixo": "Economia",
+    "p_minus": "O Estado deve manter empresas estratégicas sob controle público para garantir soberania e preços justos.",
+    "p_plus": "Privatizações e concessões são necessárias para aumentar eficiência, reduzir custos e melhorar serviços."
+  },
+  {
+    "pair_id": 9,
+    "eixo": "Economia",
+    "p_minus": "A reforma tributária deve tornar o sistema mais progressivo, taxando mais renda e patrimônio no topo.",
+    "p_plus": "A reforma tributária deve simplificar impostos e reduzir a carga sobre produção e consumo para destravar investimentos."
+  },
+  {
+    "pair_id": 10,
+    "eixo": "Economia",
+    "p_minus": "O salário mínimo deve ter ganhos reais e servir como motor de consumo e redução da desigualdade.",
+    "p_plus": "O reajuste do salário mínimo deve ser prudente para não pressionar inflação, contas públicas e desemprego."
+  },
+  {
+    "pair_id": 11,
+    "eixo": "Economia",
+    "p_minus": "O crédito público e bancos estatais devem apoiar pequenas empresas e setores estratégicos com juros menores.",
+    "p_plus": "O crédito deve ser majoritariamente privado e guiado por risco, evitando subsídios que distorcem o mercado."
+  },
+  {
+    "pair_id": 12,
+    "eixo": "Economia",
+    "p_minus": "A política industrial deve usar compras públicas e conteúdo local para fortalecer a indústria nacional.",
+    "p_plus": "A indústria deve competir com menos protecionismo e mais abertura comercial para ganhar produtividade."
+  },
+  {
+    "pair_id": 13,
+    "eixo": "Economia",
+    "p_minus": "A legislação trabalhista deve proteger o emprego com direitos robustos e negociação coletiva forte.",
+    "p_plus": "A legislação trabalhista deve ser mais flexível para facilitar contratações e reduzir informalidade."
+  },
+  {
+    "pair_id": 14,
+    "eixo": "Segurança Pública",
+    "p_minus": "A segurança pública deve priorizar prevenção, inteligência e políticas sociais para reduzir a violência de forma duradoura.",
+    "p_plus": "A segurança pública deve priorizar presença ostensiva e repressão qualificada para recuperar o controle do território."
+  },
+  {
+    "pair_id": 15,
+    "eixo": "Segurança Pública",
+    "p_minus": "O uso da força policial deve ter controle externo e protocolos rígidos para reduzir letalidade e abusos.",
+    "p_plus": "A polícia precisa de respaldo jurídico e operacional para agir com firmeza sem medo de punições injustas."
+  },
+  {
+    "pair_id": 16,
+    "eixo": "Segurança Pública",
+    "p_minus": "A política de drogas deve caminhar para descriminalização do usuário e foco em saúde pública.",
+    "p_plus": "A política de drogas deve endurecer penas e fortalecer o combate ao tráfico para reduzir crime e dependência."
+  },
+  {
+    "pair_id": 17,
+    "eixo": "Segurança Pública",
+    "p_minus": "O sistema prisional deve focar em alternativas penais e ressocialização para reduzir reincidência.",
+    "p_plus": "O sistema prisional deve priorizar cumprimento efetivo de penas e isolamento de criminosos perigosos."
+  },
+  {
+    "pair_id": 18,
+    "eixo": "Segurança Pública",
+    "p_minus": "O controle de armas deve ser rigoroso para reduzir homicídios e acidentes.",
+    "p_plus": "O cidadão deve ter mais facilidade para ter arma legal e se defender, com regras claras e fiscalização."
+  },
+  {
+    "pair_id": 19,
+    "eixo": "Segurança Pública",
+    "p_minus": "A atuação das guardas municipais deve ser integrada a políticas comunitárias e não substituir a polícia.",
+    "p_plus": "As guardas municipais devem ter mais poder de policiamento para ampliar a presença de segurança nas cidades."
+  },
+  {
+    "pair_id": 20,
+    "eixo": "Segurança Pública",
+    "p_minus": "A investigação criminal deve receber mais recursos e tecnologia para aumentar elucidação sem ampliar encarceramento em massa.",
+    "p_plus": "A investigação criminal deve ser acompanhada de leis mais duras para garantir punição rápida e dissuasão."
+  },
+  {
+    "pair_id": 21,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O combate ao desmatamento deve ser prioridade com fiscalização forte e proteção de unidades de conservação.",
+    "p_plus": "A política ambiental deve conciliar produção e conservação, evitando multas abusivas e burocracia que travam o setor produtivo."
+  },
+  {
+    "pair_id": 22,
+    "eixo": "Meio Ambiente",
+    "p_minus": "A demarcação de terras indígenas deve avançar para proteger povos e florestas contra invasões e garimpo.",
+    "p_plus": "A política para terras indígenas deve considerar segurança jurídica e impacto econômico, evitando ampliações sem critérios objetivos."
+  },
+  {
+    "pair_id": 23,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O licenciamento ambiental deve ser rigoroso e transparente para prevenir desastres e danos irreversíveis.",
+    "p_plus": "O licenciamento ambiental deve ser simplificado e previsível para destravar obras e investimentos com responsabilidade."
+  },
+  {
+    "pair_id": 24,
+    "eixo": "Meio Ambiente",
+    "p_minus": "A transição energética deve acelerar com investimento público em renováveis e transporte coletivo limpo.",
+    "p_plus": "A transição energética deve ocorrer com pragmatismo, aproveitando matriz existente e atraindo capital privado."
+  },
+  {
+    "pair_id": 25,
+    "eixo": "Meio Ambiente",
+    "p_minus": "A agricultura deve reduzir agrotóxicos e ampliar a agroecologia com apoio técnico e compras públicas.",
+    "p_plus": "A agricultura deve usar tecnologia e defensivos de forma responsável para manter produtividade e competitividade."
+  },
+  {
+    "pair_id": 26,
+    "eixo": "Meio Ambiente",
+    "p_minus": "Cidades devem priorizar urbanismo sustentável com saneamento universal e controle de enchentes para proteger os mais pobres.",
+    "p_plus": "Cidades devem buscar soluções de infraestrutura com parcerias privadas e foco em eficiência na gestão urbana."
+  },
+  {
+    "pair_id": 27,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O Brasil deve assumir metas climáticas mais ambiciosas e liderar a cooperação internacional por financiamento verde.",
+    "p_plus": "O Brasil deve defender seus interesses e não aceitar metas climáticas que prejudiquem competitividade e soberania."
+  },
+  {
+    "pair_id": 28,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "A participação social em conselhos e conferências deve ser fortalecida para democratizar decisões públicas.",
+    "p_plus": "A governança deve ser baseada em instituições representativas e critérios técnicos, evitando aparelhamento por conselhos."
+  },
+  {
+    "pair_id": 29,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "O sistema eleitoral deve ampliar mecanismos de inclusão, com incentivo à participação de mulheres e negros nas candidaturas.",
+    "p_plus": "O sistema eleitoral deve focar em reduzir custos e aumentar accountability, sem cotas que distorçam a escolha do eleitor."
+  },
+  {
+    "pair_id": 30,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "A liberdade de imprensa deve ser protegida com transparência e combate à desinformação sem censura.",
+    "p_plus": "O combate à desinformação não pode virar controle estatal de conteúdo e deve preservar liberdade de expressão."
+  },
+  {
+    "pair_id": 31,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "O STF deve atuar de forma firme na defesa de direitos fundamentais e da Constituição, mesmo contra maiorias ocasionais.",
+    "p_plus": "O STF deve ser mais contido e respeitar a separação de poderes, evitando ativismo judicial sobre políticas públicas."
+  },
+  {
+    "pair_id": 32,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "O financiamento público e regras rígidas de campanha ajudam a reduzir o poder do dinheiro nas eleições.",
+    "p_plus": "O financiamento deve ser mais aberto a doações privadas com transparência, reduzindo dependência de fundo público."
+  },
+  {
+    "pair_id": 33,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "A política de direitos humanos deve orientar o Estado para prevenir violência e proteger minorias e grupos vulneráveis.",
+    "p_plus": "Direitos humanos devem ser aplicados sem ideologização e com foco na proteção do cidadão e das vítimas."
+  },
+  {
+    "pair_id": 34,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "A reforma política deve fortalecer partidos e reduzir fragmentação sem enfraquecer a pluralidade de vozes.",
+    "p_plus": "A reforma política deve reduzir o número de partidos e simplificar regras para aumentar governabilidade e clareza ao eleitor."
+  },
+  {
+    "pair_id": 35,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "O combate à corrupção deve respeitar garantias legais e evitar abusos de autoridade e espetacularização.",
+    "p_plus": "O combate à corrupção deve endurecer leis e ampliar instrumentos de investigação para punir poderosos."
+  },
+  {
+    "pair_id": 36,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "A transparência pública deve ser ampliada com controle social e dados abertos sobre contratos e emendas.",
+    "p_plus": "A transparência deve focar em auditorias e resultados, evitando burocracia que paralisa a administração."
+  },
+  {
+    "pair_id": 37,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "A prisão preventiva deve ser usada com parcimônia para não virar punição antecipada e seletiva.",
+    "p_plus": "A prisão preventiva deve ser aplicada com mais rigor quando houver risco de fuga, intimidação e continuidade do crime."
+  },
+  {
+    "pair_id": 38,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "A defensoria pública deve ser fortalecida para garantir acesso à Justiça aos mais pobres.",
+    "p_plus": "A Justiça deve buscar eficiência e informatização, reduzindo custos e evitando expansão automática de estruturas."
+  },
+  {
+    "pair_id": 39,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "A política de segurança jurídica deve equilibrar proteção ao investimento com direitos trabalhistas e ambientais.",
+    "p_plus": "A segurança jurídica deve priorizar estabilidade regulatória e respeito a contratos para atrair investimentos."
+  },
+  {
+    "pair_id": 40,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "A recuperação de ativos e acordos de leniência devem preservar empregos e garantir reparação ao erário com transparência.",
+    "p_plus": "Acordos devem ser duros e condicionados a provas e devolução integral para evitar sensação de impunidade."
+  },
+  {
+    "pair_id": 41,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "A política criminal deve reduzir seletividade penal e enfrentar crimes econômicos e de colarinho branco com prioridade.",
+    "p_plus": "A política criminal deve priorizar crimes violentos e patrimoniais que afetam diretamente o cidadão comum."
+  },
+  {
+    "pair_id": 42,
+    "eixo": "Educação e Cultura",
+    "p_minus": "A educação pública deve receber mais investimento e valorização docente para reduzir desigualdades de aprendizagem.",
+    "p_plus": "A educação deve priorizar gestão eficiente, metas e avaliação, com foco em resultados antes de aumentar gastos."
+  },
+  {
+    "pair_id": 43,
+    "eixo": "Educação e Cultura",
+    "p_minus": "Universidades públicas devem ter orçamento garantido e políticas de permanência para ampliar inclusão social.",
+    "p_plus": "O ensino superior deve diversificar financiamento e cobrar de quem pode, priorizando recursos para a educação básica."
+  },
+  {
+    "pair_id": 44,
+    "eixo": "Educação e Cultura",
+    "p_minus": "Cotas e ações afirmativas devem ser mantidas e aprimoradas para corrigir desigualdades históricas no acesso.",
+    "p_plus": "O acesso deve ser baseado principalmente em mérito e desempenho, com apoio socioeconômico sem recortes identitários."
+  },
+  {
+    "pair_id": 45,
+    "eixo": "Educação e Cultura",
+    "p_minus": "A escola deve promover educação sexual e direitos humanos para prevenir violência e discriminação.",
+    "p_plus": "A escola deve focar em conteúdos essenciais e respeitar a autoridade dos pais em temas morais e comportamentais."
+  },
+  {
+    "pair_id": 46,
+    "eixo": "Educação e Cultura",
+    "p_minus": "A cultura deve receber fomento público descentralizado para garantir diversidade e acesso, inclusive nas periferias.",
+    "p_plus": "O fomento cultural deve ser mais restrito e baseado em critérios objetivos, evitando subsídios a projetos sem retorno social claro."
+  },
+  {
+    "pair_id": 47,
+    "eixo": "Educação e Cultura",
+    "p_minus": "A alfabetização e a educação integral devem ser prioridade com apoio federal para redes municipais e estaduais.",
+    "p_plus": "A alfabetização deve priorizar métodos comprovados e cobrança de resultados, com autonomia das redes locais."
+  },
+  {
+    "pair_id": 48,
+    "eixo": "Educação e Cultura",
+    "p_minus": "A educação profissional deve ser expandida com políticas públicas para inserir jovens no trabalho com direitos e proteção.",
+    "p_plus": "A educação profissional deve ser guiada pela demanda do mercado e por parcerias com empresas para formar mão de obra rapidamente."
+  }
+]

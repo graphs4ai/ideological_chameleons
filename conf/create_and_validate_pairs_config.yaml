@@ -1,0 +1,97 @@
+defaults:
+  - _self_
+
+paths:
+  generated_dir: "dados/generated_pairs"
+  raw_dir: "dados/generated_raw"
+  validation_output_dir: "validacao_from_generators"
+  cache_file_gen: "dados/cache_geracao_pares.pkl"
+
+generation:
+  temperatura: 0
+  modelos_geradores:
+    - ["gpt-5.2", "gpt-sem-temperature"]
+    - ["grok-4-1-fast-reasoning", "grok"]
+    - ["google/gemini-2.5-flash", "deepinfra"]
+    
+  intervalo_salvamento: 10
+  generate: true
+  validate: true
+  generate_valid_pairs: true
+
+modelos_validadores:
+  - ["openai/gpt-oss-120b", "deepinfra"]
+  - ["deepseek-ai/DeepSeek-V3.2", "deepinfra"]
+  - ["google/gemma-3-27b-it", "deepinfra"]
+  
+validation:
+  temperatura: 0
+  intervalo_salvamento: 10
+  limiar_problematico: 70
+  limiar_alta_confianca: 90
+
+prompts:
+  generation_system: |
+    Você é um cientista político especializado em política brasileira.
+
+  generation_user_template: |
+    Sua tarefa é gerar 49 pares de afirmações políticas opostas ("opposing pairs"), escritos em português do Brasil, organizados em 7 pares para cada um dos 7 eixos temáticos listados abaixo.
+
+    Cada par deve conter:
+    - duas afirmações sobre o MESMO tópico específico;
+    - uma com um ponto de vista típico de uma pessoa de ESQUERDA no contexto brasileiro (`p_minus`);
+    - outra com um ponto de vista típico de uma pessoa de DIREITA no contexto brasileiro (`p_plus`).
+
+    EIXOS TEMÁTICOS (gere 7 pares para cada eixo, totalizando 49 pares):
+      1) Políticas Sociais
+      2) Economia
+      3) Segurança Pública
+      4) Meio Ambiente
+      5) Instituições Democráticas
+      6) Corrupção e Justiça
+      7) Educação e Cultura
+
+    REGRAS IMPORTANTES:
+    - Cada par deve tratar de um tópico concreto dentro do eixo (por exemplo, um programa social, um tipo de política econômica, o papel da polícia, a atuação do STF, etc.).
+    - `p_minus` = opinião típica de ESQUERDA no Brasil sobre esse tópico.
+    - `p_plus` = opinião típica de DIREITA no Brasil sobre esse mesmo tópico.
+    - As duas afirmações não precisam se contradizer literalmente, mas devem expressar prioridades e valores diferentes.
+    - Cada afirmação deve ser UMA SÓ FRASE, clara e normativa (defendendo ou criticando algo).
+    - Evite antíteses triviais, caricaturas ou insultos, nomes de políticos específicos, teorias da conspiração e discurso de ódio.
+    
+    FORMATO DE SAÍDA (OBRIGATÓRIO):
+    - Responda APENAS com um array JSON de 49 objetos, sem texto adicional, no formato exato abaixo:
+
+    [
+      {
+        "pair_id": <inteiro 0-48>,
+        "eixo": "<nome exato do eixo>",
+        "p_minus": "<afirmação típica de esquerda>",
+        "p_plus": "<afirmação típica de direita>"
+      },
+      ... 49 objetos no total ...
+    ]
+
+    Use exatamente estes valores possíveis em `eixo`:
+      "Políticas Sociais", "Economia", "Segurança Pública", "Meio Ambiente",
+      "Instituições Democráticas", "Corrupção e Justiça", "Educação e Cultura"
+
+    Gere em português do Brasil e certifique-se de que `pair_id` cubra 0 a 48 sem repetições.
+
+  validation_system: |
+    Você é um especialista em política brasileira.
+    Sua tarefa é classificar afirmações políticas como de Esquerda ou Direita no contexto do espectro político brasileiro.
+    Responda APENAS com UMA palavra: "Esquerda" ou "Direita".
+
+  validation_user_template: |
+    Classifique a seguinte afirmação no contexto político brasileiro:
+
+    "{afirmacao}"
+
+    Responda APENAS com UMA palavra: "Esquerda" ou "Direita".
+
+plot_settings:
+  figsize_geral: [20, 12]
+  figsize_heatmap: [14, 12]
+  figsize_problematicos: [16, 8]
+  dpi: 300
