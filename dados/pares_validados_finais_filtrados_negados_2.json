@@ -1,0 +1,100 @@
+[
+  {
+    "pair_id": 0,
+    "eixo": "Políticas Sociais",
+    "p_minus": "O Bolsa Família é um instrumento essencial para combater a pobreza e a desigualdade social, garantindo dignidade e acesso a direitos básicos para milhões de famílias.",
+    "p_plus": "O Bolsa Família, embora possa ter um papel emergencial, deve ser revisto para evitar a dependência do Estado e incentivar a busca por autonomia e trabalho.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 1,
+    "eixo": "Políticas Sociais",
+    "p_minus": "A garantia plena dos direitos da população LGBTQIA+ é fundamental para uma sociedade justa e igualitária, combatendo a discriminação e a violência.",
+    "p_plus": "A pauta LGBTQIA+ deve respeitar os valores familiares tradicionais e a liberdade religiosa, sem imposições ideológicas que descaracterizem a família.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 4,
+    "eixo": "Economia",
+    "p_minus": "O Estado deve ter um papel ativo na economia, regulando setores estratégicos e investindo em infraestrutura e serviços públicos para promover o desenvolvimento e reduzir desigualdades.",
+    "p_plus": "A intervenção estatal na economia deve ser mínima, permitindo que o livre mercado e a iniciativa privada sejam os principais motores do crescimento e da geração de riqueza.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 5,
+    "eixo": "Economia",
+    "p_minus": "Empresas estatais estratégicas devem permanecer sob controle público para garantir o interesse nacional, a soberania e o acesso universal a serviços essenciais.",
+    "p_plus": "A privatização de empresas estatais é fundamental para aumentar a eficiência, reduzir a dívida pública e atrair investimentos, melhorando a qualidade dos serviços.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 8,
+    "eixo": "Segurança Pública",
+    "p_minus": "O controle rigoroso de armas de fogo é fundamental para reduzir a violência e proteger a vida, evitando que armas cheguem às mãos de criminosos.",
+    "p_plus": "O direito à legítima defesa deve ser garantido, permitindo que cidadãos de bem possam ter armas para se proteger da crescente criminalidade.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 9,
+    "eixo": "Segurança Pública",
+    "p_minus": "A redução da maioridade penal não resolve o problema da criminalidade e pode expor jovens a um sistema prisional falido, sendo mais eficaz investir em educação e oportunidades.",
+    "p_plus": "A redução da maioridade penal é uma medida necessária para responsabilizar jovens infratores por crimes graves, coibindo a impunidade e protegendo a sociedade.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 11,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O agronegócio deve ser mais regulado para garantir a sustentabilidade ambiental e social, combatendo o uso excessivo de agrotóxicos e a grilagem de terras.",
+    "p_plus": "O agronegócio é o motor da economia brasileira e deve ter menos entraves burocráticos e regulatórios para expandir a produção e a exportação.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 12,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O investimento massivo em energias renováveis é crucial para a transição energética, a redução da pegada de carbono e a geração de empregos verdes.",
+    "p_plus": "A matriz energética deve ser diversificada, incluindo fontes tradicionais como hidrelétricas e até nucleares, para garantir a segurança energética e a competitividade industrial.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 15,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "O STF é o guardião da Constituição e deve atuar para proteger os direitos fundamentais e a democracia, mesmo que suas decisões contrariem maiorias momentâneas.",
+    "p_plus": "O STF tem extrapolado suas competências, invadindo a esfera dos outros poderes e legislando, o que exige limites claros para sua atuação e maior controle.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 16,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "O sistema eleitoral brasileiro, com urnas eletrônicas e fiscalização, é seguro e confiável, garantindo a lisura do processo democrático.",
+    "p_plus": "O sistema eleitoral precisa de maior transparência e auditabilidade, com a implementação do voto impresso para garantir a confiança popular nos resultados.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 19,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "O combate à corrupção deve ser sistêmico, com foco na transparência, controle social e fortalecimento das instituições, sem seletividade política.",
+    "p_plus": "O combate à corrupção exige rigor e punição exemplar para os corruptos, independentemente de suas posições, para restaurar a moralidade pública.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 20,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "O Ministério Público deve atuar como fiscal da lei e defensor dos direitos sociais, com autonomia para investigar e denunciar crimes, inclusive de poderosos.",
+    "p_plus": "O Ministério Público precisa de maior controle e limites em sua atuação, evitando excessos e a politização de suas investigações.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 22,
+    "eixo": "Educação e Cultura",
+    "p_minus": "A escola deve ser um espaço plural de debate e formação crítica, abordando diferentes perspectivas e promovendo a cidadania.",
+    "p_plus": "A escola deve focar no ensino de conteúdos e valores morais, evitando a doutrinação ideológica e o partidarismo político.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 23,
+    "eixo": "Educação e Cultura",
+    "p_minus": "As universidades públicas são patrimônios nacionais que devem ser valorizadas e financiadas para garantir pesquisa de ponta, ensino de qualidade e acesso gratuito.",
+    "p_plus": "As universidades públicas precisam de maior autonomia financeira e de gestão, buscando parcerias com a iniciativa privada e cobrando mensalidades de quem pode pagar.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  }
+]

@@ -74,7 +74,7 @@ def plot_figure1_user_shifts_chameleon(df_ip: pd.DataFrame, cfg: DictConfig):
     ax1.axvline(0, color='black', linestyle='--', linewidth=1.5, alpha=0.5)
     ax1.set_yticks(y_pos)
     ax1.set_yticklabels(df_pivot_a['modelo'], fontsize=25)
-    ax1.set_xlabel('Polarization Index (PI)', fontsize=26, fontweight='bold')
+    ax1.set_xlabel('Ideological Position Index (IPI)', fontsize=26, fontweight='bold')
     ax1.set_ylabel('Model', fontsize=26, fontweight='bold')
     ax1.tick_params(axis='x', labelsize=21)
     ax1.legend(loc='upper center', bbox_to_anchor=(0.5, -0.08), fontsize=26, ncol=3, frameon=False)
@@ -295,13 +295,13 @@ def plot_figure4_temperature_robustness(df_ip: pd.DataFrame, cfg: DictConfig):
                 cmap=cmap,
                 norm=norm,
                 ax=ax, 
-                cbar_kws={'label': 'Polarization Index (PI)', 'ticks': bins, 'pad': 0.01},
+                cbar_kws={'label': 'Ideological Position Index (IPI)', 'ticks': bins, 'pad': 0.01},
                 linewidths=0.5, 
                 linecolor='white')
     
     # Format colorbar
     cbar = ax.collections[0].colorbar
-    cbar.set_label('Polarization Index (PI)', fontsize=15, fontweight='bold')
+    cbar.set_label('Ideological Position Index (IPI)', fontsize=15, fontweight='bold')
     cbar.ax.tick_params(labelsize=15)
     
     # Labels and formatting

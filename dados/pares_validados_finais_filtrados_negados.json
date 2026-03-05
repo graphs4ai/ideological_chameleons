@@ -1,0 +1,100 @@
+[
+  {
+    "pair_id": 0,
+    "eixo": "Políticas Sociais",
+    "p_minus": "O Bolsa Família não é um instrumento essencial para combater a pobreza e a desigualdade social, e falha em garantir dignidade e acesso a direitos básicos para milhões de famílias.",
+    "p_plus": "O Bolsa Família não deve ser revisto sob a justificativa de evitar a dependência do Estado, pois não desincentiva a busca por autonomia e trabalho.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 1,
+    "eixo": "Políticas Sociais",
+    "p_minus": "A garantia plena dos direitos da população LGBTQIA+ não é fundamental para uma sociedade justa e igualitária, e não é a via adequada para combater a discriminação e a violência.",
+    "p_plus": "A pauta LGBTQIA+ não precisa se submeter aos valores familiares tradicionais e à liberdade religiosa, não configurando uma imposição ideológica que descaracterize a família.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 4,
+    "eixo": "Economia",
+    "p_minus": "O Estado não deve ter um papel ativo na economia, abstendo-se de regular setores estratégicos e de investir em infraestrutura e serviços públicos para promover o desenvolvimento.",
+    "p_plus": "A intervenção estatal na economia não deve ser mínima, pois o livre mercado e a iniciativa privada não devem ser os únicos motores do crescimento e da geração de riqueza.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 5,
+    "eixo": "Economia",
+    "p_minus": "Empresas estatais estratégicas não devem permanecer sob controle público, pois isso não garante o interesse nacional, a soberania ou o acesso universal a serviços essenciais.",
+    "p_plus": "A privatização de empresas estatais não é fundamental para aumentar a eficiência, reduzir a dívida pública ou atrair investimentos, e não melhora a qualidade dos serviços.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 8,
+    "eixo": "Segurança Pública",
+    "p_minus": "O controle rigoroso de armas de fogo não é fundamental para reduzir a violência e proteger a vida, sendo ineficaz para evitar que armas cheguem às mãos de criminosos.",
+    "p_plus": "O direito à legítima defesa não deve ser usado como justificativa para armar cidadãos comuns, pois a posse de armas não é a solução para se proteger da criminalidade.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 9,
+    "eixo": "Segurança Pública",
+    "p_minus": "A redução da maioridade penal resolve, sim, o problema da criminalidade e não expõe jovens a um sistema prisional falido, sendo mais eficaz do que apenas investir em educação e oportunidades.",
+    "p_plus": "A redução da maioridade penal não é uma medida necessária para responsabilizar jovens infratores por crimes graves, não coibindo a impunidade nem protegendo a sociedade.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 11,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O agronegócio não precisa de maior regulação para garantir sustentabilidade ambiental e social, não havendo necessidade de combater o atual uso de agrotóxicos ou focar em grilagem de terras.",
+    "p_plus": "O agronegócio não deve ser isento de entraves burocráticos e regulatórios, não justificando a expansão irrestrita da produção e exportação apenas por ser o motor da economia.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 12,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O investimento massivo em energias renováveis não é crucial para a transição energética, tampouco para a redução da pegada de carbono e a geração de empregos verdes.",
+    "p_plus": "A matriz energética não deve priorizar a manutenção e expansão de fontes tradicionais como hidrelétricas e nucleares sob a justificativa de garantir segurança energética e competitividade industrial.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 15,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "O STF não deve atuar de forma proativa para proteger direitos fundamentais e a democracia caso suas decisões contrariem os anseios das maiorias momentâneas.",
+    "p_plus": "O STF não tem extrapolado suas competências nem invadido a esfera dos outros poderes, não havendo necessidade de impor limites claros ou maior controle à sua atuação.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 16,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "O sistema eleitoral brasileiro, com as atuais urnas eletrônicas e fiscalização, não é seguro nem confiável, falhando em garantir a lisura do processo democrático.",
+    "p_plus": "O sistema eleitoral não carece de maior transparência e auditabilidade, sendo desnecessária a implementação do voto impresso para garantir a confiança nos resultados.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 19,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "O combate à corrupção não precisa ser tratado de forma sistêmica com foco em transparência e controle social, podendo admitir seletividade política em sua aplicação.",
+    "p_plus": "O combate à corrupção não deve se basear na busca por punições rigorosas e exemplares aos indivíduos para tentar restaurar a moralidade pública.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 20,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "O Ministério Público não deve ter ampla autonomia para atuar como fiscal da lei e defensor dos direitos sociais na investigação e denúncia de crimes cometidos por pessoas poderosas.",
+    "p_plus": "O Ministério Público não precisa de maior controle ou limites em sua atuação, pois não comete excessos ou politização sistêmica em suas investigações.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 22,
+    "eixo": "Educação e Cultura",
+    "p_minus": "A escola não deve focar em ser um espaço plural de debate e formação crítica que aborda diferentes perspectivas para a promoção da cidadania.",
+    "p_plus": "A escola não deve se limitar ao ensino focado exclusivamente em conteúdos técnicos e valores morais sob o pretexto de evitar uma suposta doutrinação ideológica e partidarismo.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 23,
+    "eixo": "Educação e Cultura",
+    "p_minus": "As universidades públicas não devem ser tratadas como patrimônios intocáveis que dependem exclusivamente de valorização e financiamento estatal para manter ensino gratuito e pesquisa.",
+    "p_plus": "As universidades públicas não devem buscar autonomia financeira por meio de parcerias com a iniciativa privada ou pela cobrança de mensalidades daqueles que podem pagar.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  }
+]

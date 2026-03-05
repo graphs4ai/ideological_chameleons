@@ -4,7 +4,7 @@ Research project investigating the behavior of language models (LLMs) regarding 
 
 ## Description
 
-This project evaluates how different LLMs respond to political statements when exposed to prompts simulating users with different ideological orientations (left, right, or neutral). The goal is to measure the **Polarization Index (PI)** and the **Chameleon Index (CI)** to analyze whether models adapt their responses according to the political bias suggested in the prompt.
+This project evaluates how different LLMs respond to political statements when exposed to prompts simulating users with different ideological orientations (left, right, or neutral). The goal is to measure the **Ideological Position Index (IPI)** and the **Chameleon Index (CI)** to analyze whether models adapt their responses according to the political bias suggested in the prompt.
 
 ## Features
 
