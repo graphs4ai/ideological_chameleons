@@ -26,8 +26,8 @@ def main(cfg: DictConfig) -> None:
         return
 
     plotting.plot_figure1_user_shifts_chameleon(df_ip, cfg)
-    # plotting.plot_figure2_topic_variation(df_pares, cfg)
-    # plotting.plot_figure3_likert_distribution(df_validos, cfg)
+    plotting.plot_figure2_topic_variation(df_pares, cfg)
+    plotting.plot_figure3_likert_distribution(df_validos, cfg)
     plotting.plot_figure4_temperature_robustness(df_ip, cfg)
     statistics.std_v(cfg)
 

@@ -3,9 +3,9 @@ MODELOS_A_AVALIAR:
   # - ["google/gemma-3-4b-it", "deepinfra"]
   # - ["google/gemma-3-12b-it", "deepinfra"]
   # - ["google/gemma-3-27b-it", "deepinfra"]
-  # - ["google/gemini-2.5-flash", "deepinfra"]
+  - ["google/gemini-2.5-flash", "deepinfra"]
 
-  - ["mistralai/Mixtral-8x7B-Instruct-v0.1", "deepinfra"]
+  # - ["mistralai/Mixtral-8x7B-Instruct-v0.1", "deepinfra"]
   # - ["mistralai/Mistral-Small-3.2-24B-Instruct-2506", "deepinfra"]
 
   # - ["openai/gpt-oss-120b", "deepinfra"]
@@ -17,13 +17,13 @@ MODELOS_A_AVALIAR:
 
   # - ["meta-llama/Meta-Llama-3.1-8B-Instruct", "deepinfra"]
   # - ["meta-llama/Meta-Llama-3.1-70B-Instruct", "deepinfra"]
-  - ["meta-llama/Llama-4-Scout-17B-16E-Instruct", "deepinfra"]
+  # - ["meta-llama/Llama-4-Scout-17B-16E-Instruct", "deepinfra"]
 
   # - ["deepseek-ai/DeepSeek-V3.2", "deepinfra"]
   # - ["microsoft/phi-4", "deepinfra"]
   # - ["nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL", "deepinfra"]
   
-  # - ["gpt-5-nano", "gpt-sem-temperature"]
+  - ["gpt-5-nano", "gpt-sem-temperature"]
   # - ["gpt-4.1-nano", "gpt"]
   - ["grok-4-1-fast-reasoning", "grok"]
 
