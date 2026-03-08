@@ -1,8 +1,62 @@
 modelo	temperatura	std_ip_repeticao
-grok-4-1-fast-reasoning	1.0	0.3933978962347215
-grok-4-1-fast-reasoning	0.5	0.3711537444790451
-google/gemini-2.5-flash	0.5	0.2575393768188564
-google/gemini-2.5-flash	1.0	0.21821789023599236
+microsoft/phi-4	0.5	0.15395853757592332
+Qwen/Qwen3-32B	1.0	0.13638618139749523
+Qwen/Qwen3-32B	0.5	0.11340808859081933
+mistralai/Mistral-Small-3.2-24B-Instruct-2506	1.0	0.10910894511799621
+openai/gpt-oss-20b	0.5	0.10763774595253056
+nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL	0.5	0.10309826235529027
+sabia-3.1	1.0	0.09278843611976127
+meta-llama/Meta-Llama-3.1-8B-Instruct	0.5	0.08928571428571427
+Qwen/Qwen3-235B-A22B-Instruct-2507	0.5	0.0880871939699331
+mistralai/Mistral-Small-3.2-24B-Instruct-2506	0.5	0.08438956475451088
+openai/gpt-oss-20b	1.0	0.08438956475451086
+google/gemini-2.5-flash	0.5	0.08183170883849715
+meta-llama/Meta-Llama-3.1-70B-Instruct	1.0	0.07216878364870327
+grok-4-1-fast-reasoning	0.5	0.06760605173571757
+Qwen/Qwen3-14B	1.0	0.06438484420471409
+openai/gpt-oss-120b	1.0	0.061858957413174126
+gpt-4.1-nano	1.0	0.05740268310114853
+google/gemma-3-4b-it	1.0	0.05455447255899813
+Qwen/Qwen3-14B	0.5	0.051549131177645154
+openai/gpt-oss-120b	0.5	0.04724555912615343
+sabia-3.1	0.5	0.047245559126153414
+google/gemma-3-27b-it	1.0	0.04493949068613544
+mistralai/Mixtral-8x7B-Instruct-v0.1	1.0	0.04493949068613544
+gpt-4.1-nano	0.5	0.044939490686135404
+deepseek-ai/DeepSeek-V3.2	1.0	0.04493949068613536
+google/gemma-3-4b-it	0.5	0.03717260713332386
+meta-llama/Llama-4-Scout-17B-16E-Instruct	0.5	0.03717260713332382
+Qwen/Qwen3-235B-A22B-Instruct-2507	1.0	0.03717260713332381
+microsoft/phi-4	1.0	0.03717260713332377
+grok-4-1-fast-reasoning	1.0	0.0357142857142857
+meta-llama/Meta-Llama-3.1-70B-Instruct	0.5	0.0357142857142857
+nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL	1.0	0.030929478706587122
+mistralai/Mixtral-8x7B-Instruct-v0.1	0.5	0.030929478706587122
+meta-llama/Llama-4-Scout-17B-16E-Instruct	1.0	0.027277236279499146
+meta-llama/Meta-Llama-3.1-8B-Instruct	1.0	0.027277236279499042
+google/gemma-3-12b-it	0.5	0.0206196524710581
+google/gemma-3-27b-it	0.5	0.017857142857142905
+deepseek-ai/DeepSeek-V3.2	0.5	0.017857142857142877
+google/gemini-2.5-flash	1.0	0.017857142857142853
+google/gemma-3-12b-it	1.0	0.010309826235528995
+Qwen/Qwen3-14B	0.0	
+Qwen/Qwen3-235B-A22B-Instruct-2507	0.0	
+Qwen/Qwen3-32B	0.0	
+deepseek-ai/DeepSeek-V3.2	0.0	
 google/gemini-2.5-flash	0.0	
+google/gemma-3-12b-it	0.0	
+google/gemma-3-27b-it	0.0	
+google/gemma-3-4b-it	0.0	
+gpt-4.1-nano	0.0	
 gpt-5-nano	0.0	
 grok-4-1-fast-reasoning	0.0	
+meta-llama/Llama-4-Scout-17B-16E-Instruct	0.0	
+meta-llama/Meta-Llama-3.1-70B-Instruct	0.0	
+meta-llama/Meta-Llama-3.1-8B-Instruct	0.0	
+microsoft/phi-4	0.0	
+mistralai/Mistral-Small-3.2-24B-Instruct-2506	0.0	
+mistralai/Mixtral-8x7B-Instruct-v0.1	0.0	
+nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL	0.0	
+openai/gpt-oss-120b	0.0	
+openai/gpt-oss-20b	0.0	
+sabia-3.1	0.0	
