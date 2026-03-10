@@ -14,6 +14,20 @@
     "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
   },
   {
+    "pair_id": 2,
+    "eixo": "Políticas Sociais",
+    "p_minus": "A reforma agrária não é crucial para democratizar o acesso à terra, e falha em promover a justiça social no campo ou impulsionar a agricultura familiar.",
+    "p_plus": "A reforma agrária, como proposta, não desrespeita a propriedade privada nem a produtividade do agronegócio, e não é responsável por gerar insegurança jurídica e conflitos.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 3,
+    "eixo": "Políticas Sociais",
+    "p_minus": "Programas de moradia popular não são essenciais para garantir o direito à moradia digna e não resolvem o déficit habitacional ou a segregação urbana.",
+    "p_plus": "A questão da moradia não deve ser resolvida principalmente pelo mercado, pois a intervenção estatal não distorce a economia e é preferível aos meros incentivos à construção civil.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
     "pair_id": 4,
     "eixo": "Economia",
     "p_minus": "O Estado não deve ter um papel ativo na economia, abstendo-se de regular setores estratégicos e de investir em infraestrutura e serviços públicos para promover o desenvolvimento.",
@@ -25,6 +39,20 @@
     "eixo": "Economia",
     "p_minus": "Empresas estatais estratégicas não devem permanecer sob controle público, pois isso não garante o interesse nacional, a soberania ou o acesso universal a serviços essenciais.",
     "p_plus": "A privatização de empresas estatais não é fundamental para aumentar a eficiência, reduzir a dívida pública ou atrair investimentos, e não melhora a qualidade dos serviços.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 6,
+    "eixo": "Economia",
+    "p_minus": "O salário mínimo não precisa ser valorizado anualmente com ganhos reais, pois isso não é determinante para garantir o poder de compra ou impulsionar a economia interna.",
+    "p_plus": "A valorização do salário mínimo não gera inflação e desemprego, não sendo necessário que seu reajuste fique limitado a acompanhar a produtividade e a realidade econômica.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 7,
+    "eixo": "Economia",
+    "p_minus": "A dívida pública não deve ser gerida com foco primário no investimento social e produtivo, e sua renegociação não serve como ferramenta ideal para liberar recursos para o desenvolvimento.",
+    "p_plus": "O controle rigoroso da dívida pública e a responsabilidade fiscal não são primordiais para a credibilidade do país, não sendo o único caminho para evitar crises e garantir a confiança dos investidores.",
     "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
   },
   {
@@ -42,17 +70,38 @@
     "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
   },
   {
+    "pair_id": 10,
+    "eixo": "Segurança Pública",
+    "p_minus": "As milícias não representam uma ameaça tão grave ao Estado de Direito a ponto de exigirem combate com toda a força do Estado para desmantelar suas redes criminosas e políticas.",
+    "p_plus": "As milícias não surgem meramente da falha do Estado em prover segurança, e a prioridade de combate não deve ser deslocada delas para focar exclusivamente no crime organizado tradicional.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
     "pair_id": 11,
     "eixo": "Meio Ambiente",
     "p_minus": "O agronegócio não precisa de maior regulação para garantir sustentabilidade ambiental e social, não havendo necessidade de combater o atual uso de agrotóxicos ou focar em grilagem de terras.",
     "p_plus": "O agronegócio não deve ser isento de entraves burocráticos e regulatórios, não justificando a expansão irrestrita da produção e exportação apenas por ser o motor da economia.",
     "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
   },
-  {
+  { 
     "pair_id": 12,
     "eixo": "Meio Ambiente",
     "p_minus": "O investimento massivo em energias renováveis não é crucial para a transição energética, tampouco para a redução da pegada de carbono e a geração de empregos verdes.",
     "p_plus": "A matriz energética não deve priorizar a manutenção e expansão de fontes tradicionais como hidrelétricas e nucleares sob a justificativa de garantir segurança energética e competitividade industrial.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 13,
+    "eixo": "Meio Ambiente",
+    "p_minus": "A mineração não precisa ser estritamente controlada e fiscalizada com foco prioritário na segurança ambiental e das comunidades para evitar desastres.",
+    "p_plus": "A mineração não deve justificar regulamentações flexíveis sob o pretexto de ser uma atividade econômica fundamental para equilibrar viabilidade de projetos e geração de empregos.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 14,
+    "eixo": "Meio Ambiente",
+    "p_minus": "A fiscalização ambiental não precisa ser fortalecida com mais recursos e autonomia para os órgãos de controle no combate aos crimes ambientais.",
+    "p_plus": "A fiscalização ambiental não deve focar apenas em ser orientadora e buscar a conciliação com produtores, devendo aplicar punições rigorosas quando necessário.",
     "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
   },
   {
@@ -70,6 +119,20 @@
     "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
   },
   {
+    "pair_id": 17,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "As Forças Armadas não precisam se manter estritamente dentro de suas funções constitucionais de defesa, podendo exercer certa interferência na política civil.",
+    "p_plus": "As Forças Armadas não devem atuar como tutoras da ordem e da estabilidade nacional, não tendo legitimidade para atuar em momentos de crise sob a justificativa de garantir a democracia.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 18,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "A liberdade de expressão não deve ser limitada nem mesmo quando houver incitação ao ódio, violência ou desinformação contra a democracia e minorias.",
+    "p_plus": "A liberdade de expressão não deve ser irrestrita, pois nem todas as ideias devem ser permitidas no debate público sem que haja algum tipo de moderação ou responsabilização.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
     "pair_id": 19,
     "eixo": "Corrupção e Justiça",
     "p_minus": "O combate à corrupção não precisa ser tratado de forma sistêmica com foco em transparência e controle social, podendo admitir seletividade política em sua aplicação.",
@@ -81,6 +144,13 @@
     "eixo": "Corrupção e Justiça",
     "p_minus": "O Ministério Público não deve ter ampla autonomia para atuar como fiscal da lei e defensor dos direitos sociais na investigação e denúncia de crimes cometidos por pessoas poderosas.",
     "p_plus": "O Ministério Público não precisa de maior controle ou limites em sua atuação, pois não comete excessos ou politização sistêmica em suas investigações.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 21,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "O foro privilegiado não é um privilégio que favorece a impunidade, e não deve ser drasticamente reduzido ou abolido em nome da igualdade perante a lei.",
+    "p_plus": "O foro privilegiado não atua como uma garantia institucional legítima para proteger autoridades de perseguições políticas ou garantir a estabilidade dos cargos.",
     "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
   },
   {
@@ -96,5 +166,229 @@
     "p_minus": "As universidades públicas não devem ser tratadas como patrimônios intocáveis que dependem exclusivamente de valorização e financiamento estatal para manter ensino gratuito e pesquisa.",
     "p_plus": "As universidades públicas não devem buscar autonomia financeira por meio de parcerias com a iniciativa privada ou pela cobrança de mensalidades daqueles que podem pagar.",
     "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 24,
+    "eixo": "Educação e Cultura",
+    "p_minus": "A Lei Rouanet não é um mecanismo importante e eficaz de fomento à cultura e à arte, e não ajuda a democratizar o acesso nem a valorizar os artistas brasileiros.",
+    "p_plus": "A Lei Rouanet não carece de maior transparência ou critérios mais rigorosos, pois não sofre de abusos significativos na destinação de recursos para projetos.",
+    "modelo_gerador": "afirmacoes_google_gemini_2_5_flash.json"
+  },
+  {
+    "pair_id": 25,
+    "eixo": "Políticas Sociais",
+    "p_minus": "A reforma da previdência não deve ter como prioridade preservar os direitos dos trabalhadores mais vulneráveis.",
+    "p_plus": "A reforma da previdência não é um fator essencial para equilibrar as contas públicas nem para evitar o colapso do sistema.",
+    "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 26,
+    "eixo": "Economia",
+    "p_minus": "O controle da inflação não deve ter como prioridade a proteção dos mais pobres contra a alta de preços.",
+    "p_plus": "O controle da inflação não exige a manutenção de juros altos para estabilizar a economia a longo prazo.",
+    "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 27,
+    "eixo": "Segurança Pública",
+    "p_minus": "A guerra às drogas não falhou e não deve ceder espaço para a descriminalização baseada em argumentos de saúde pública.",
+    "p_plus": "O combate às drogas não exige uma repressão forte e militarizada para desmantelar as redes de tráfico.",
+    "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 28,
+    "eixo": "Segurança Pública",
+    "p_minus": "A militarização da polícia não aumenta a letalidade desnecessária durante as operações nas favelas.",
+    "p_plus": "A polícia militarizada não é eficaz para restaurar a ordem em áreas dominadas por facções criminosas.",
+    "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 29,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O licenciamento ambiental rigoroso não é essencial para proteger ecossistemas contra a implementação de projetos predatórios.",
+    "p_plus": "O licenciamento ambiental simplificado não agiliza o processo de desenvolvimento sustentável.",
+    "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 30,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O Acordo de Paris não deve servir de guia para impor compromissos nacionais ambiciosos no corte de emissões de carbono.",
+    "p_plus": "O Acordo de Paris não impõe custos desnecessários ou prejudiciais à economia brasileira.",
+    "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 31,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "O voto obrigatório não é o que garante uma participação ampla e representativa da população nas eleições.",
+    "p_plus": "O voto facultativo não é necessariamente a melhor forma de respeitar a liberdade individual sem exercer coação.",
+    "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 32,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "Operações como a Lava Jato não precisam de freios ou limitações sob o argumento de respeitar o devido processo legal.",
+    "p_plus": "Investigações anticorrupção como a Lava Jato não devem prosseguir de forma irrestrita e sem o devido controle e entraves institucionais.",
+    "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 33,
+    "eixo": "Educação e Cultura",
+    "p_minus": "O currículo escolar não deve incluir debates obrigatórios sobre diversidade de gênero.",
+    "p_plus": "As escolas não devem restringir seu foco ao ensino de conteúdos básicos sob a justificativa de evitar uma suposta doutrinação de gênero.",
+    "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 34,
+    "eixo": "Educação e Cultura",
+    "p_minus": "O ensino de história não deve enfatizar prioritariamente as lutas sociais e as desigualdades estruturais.",
+    "p_plus": "A história ensinada nas escolas não deve focar apenas na celebração de conquistas nacionais e na exaltação de heróis.",
+    "modelo_gerador": "afirmacoes_grok_4_1_fast_reasoning.json"
+  },
+  {
+    "pair_id": 35,
+    "eixo": "Políticas Sociais",
+    "p_minus": "O SUS não depende fundamentalmente de mais financiamento público e gestão integrada para garantir um atendimento universal e de qualidade.",
+    "p_plus": "A saúde pública não deve focar na ampliação de parcerias com o setor privado nem na adoção de modelos de gestão por desempenho para tentar reduzir filas e custos.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 36,
+    "eixo": "Políticas Sociais",
+    "p_minus": "Os direitos trabalhistas de entregadores e motoristas de aplicativo não devem ser regulamentados com a justificativa de garantir renda e proteção social.",
+    "p_plus": "A regulação das plataformas de aplicativos não deve ser mínima, pois a preservação da flexibilidade não justifica a falta de proteção social e direitos.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 37,
+    "eixo": "Políticas Sociais",
+    "p_minus": "As políticas de igualdade racial e de gênero não precisam ser fortalecidas, pois não são a via adequada para enfrentar discriminações estruturais.",
+    "p_plus": "O Estado não deve se limitar apenas à igualdade formal perante a lei, pois políticas identitárias não são meros instrumentos de criação de privilégios ou divisões.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 38,
+    "eixo": "Economia",
+    "p_minus": "O Estado não deve manter empresas estratégicas sob controle público sob a premissa de que isso garante a soberania nacional e preços justos.",
+    "p_plus": "Privatizações e concessões não são necessariamente o caminho correto para aumentar a eficiência, reduzir custos ou melhorar a prestação de serviços.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 39,
+    "eixo": "Economia",
+    "p_minus": "A reforma tributária não deve focar em tornar o sistema mais progressivo ou em aumentar a taxação sobre a renda e o patrimônio no topo da pirâmide.",
+    "p_plus": "A principal meta da reforma tributária não deve ser a simplificação de impostos ou a redução da carga sobre produção e consumo para destravar investimentos.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 40,
+    "eixo": "Economia",
+    "p_minus": "A legislação trabalhista não deve ter como objetivo a proteção rigorosa do emprego por meio de direitos robustos e negociações coletivas fortes.",
+    "p_plus": "A legislação trabalhista não deve ser flexibilizada sob a promessa de que isso facilitará novas contratações e reduzirá os índices de informalidade.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 41,
+    "eixo": "Segurança Pública",
+    "p_minus": "O uso da força policial não carece de um controle externo ampliado e protocolos rígidos como mecanismo para reduzir a letalidade e os abusos.",
+    "p_plus": "A polícia não deve ter uma ampliação de respaldo jurídico e operacional que a proteja de escrutínio sob o argumento de que precisa agir com firmeza.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 42,
+    "eixo": "Segurança Pública",
+    "p_minus": "A política de drogas não deve caminhar para a descriminalização do usuário ou adotar um foco primariamente voltado à saúde pública.",
+    "p_plus": "A política de drogas não será resolvida por meio do endurecimento de penas ou do fortalecimento da guerra ao tráfico para tentar reduzir a criminalidade.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 43,
+    "eixo": "Segurança Pública",
+    "p_minus": "O sistema prisional não deve ter como foco principal a adoção de alternativas penais e a ressocialização dos indivíduos visando reduzir a reincidência.",
+    "p_plus": "O sistema prisional não deve focar apenas no cumprimento rigoroso de penas e no isolamento punitivo dos criminosos considerados perigosos.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 44,
+    "eixo": "Meio Ambiente",
+    "p_minus": "A continuidade da demarcação de terras indígenas não é a medida ideal ou obrigatória para proteger povos e florestas contra invasões e o avanço do garimpo.",
+    "p_plus": "A política voltada para terras indígenas não deve ser freada por alegações de segurança jurídica e impacto econômico que visam impedir novas ampliações.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 45,
+    "eixo": "Meio Ambiente",
+    "p_minus": "O Brasil não tem a obrigação de assumir metas climáticas mais ambiciosas nem de liderar a cooperação internacional na atração de financiamentos verdes.",
+    "p_plus": "O Brasil não deve usar a justificativa de defesa da competitividade e da soberania para se recusar a aceitar metas climáticas e ambientais globais.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 46,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "A participação social através de conselhos e conferências não precisa ser fortalecida e não é estritamente necessária para democratizar as decisões públicas.",
+    "p_plus": "A governança não deve se basear apenas em instituições representativas e critérios técnicos sob a justificativa de evitar aparelhamento por conselhos sociais.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 47,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "O sistema eleitoral não precisa criar ou ampliar mecanismos específicos de inclusão e incentivo para aumentar a participação de mulheres e negros nas candidaturas.",
+    "p_plus": "O sistema eleitoral não deve priorizar exclusivamente a redução de custos e a accountability sob o pretexto de que as cotas distorcem a livre escolha do eleitor.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 48,
+    "eixo": "Instituições Democráticas",
+    "p_minus": "A política de direitos humanos não deve ser o eixo principal que orienta o Estado na prevenção da violência e na proteção de minorias e grupos vulneráveis.",
+    "p_plus": "Os direitos humanos não devem ser restritos sob a justificativa de evitar 'ideologização' ou por focar exclusivamente na proteção do cidadão comum e vítimas diretas.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 49,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "O combate à corrupção não precisa se limitar de forma rígida a garantias legais processuais que possam atrasar a punição em nome de evitar abusos.",
+    "p_plus": "O combate à corrupção não justifica o endurecimento desproporcional das leis penais nem a ampliação irrestrita de instrumentos de investigação.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 50,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "A transparência pública não precisa ser ampliada irrestritamente com dados abertos sobre contratos e emendas sob o pretexto de incentivar o controle social.",
+    "p_plus": "A transparência na administração pública não deve ser limitada apenas a auditorias e resultados finais sob a desculpa de evitar a paralisação burocrática.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 51,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "A prisão preventiva não precisa ser usada com extrema parcimônia, e sua aplicação não configura necessariamente uma punição antecipada e seletiva.",
+    "p_plus": "A prisão preventiva não deve ter sua aplicação generalizada e rigorosa com base apenas na presunção de risco de fuga, intimidação ou continuidade do crime.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 52,
+    "eixo": "Corrupção e Justiça",
+    "p_minus": "A política criminal não deve focar primariamente em reduzir a seletividade penal ou colocar o enfrentamento aos crimes econômicos de colarinho branco como prioridade absoluta.",
+    "p_plus": "A política criminal não deve se restringir a priorizar apenas os crimes violentos e patrimoniais que afetam o cidadão comum de forma direta.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 53,
+    "eixo": "Educação e Cultura",
+    "p_minus": "Cotas e ações afirmativas não devem ser mantidas nem aprimoradas, pois não são a estratégia correta para corrigir desigualdades históricas de acesso.",
+    "p_plus": "O acesso a oportunidades educacionais não deve ser fundamentado exclusivamente em critérios de mérito e apoio socioeconômico que ignorem recortes identitários estruturais.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 54,
+    "eixo": "Educação e Cultura",
+    "p_minus": "A escola não tem a responsabilidade principal de promover educação sexual e debater direitos humanos como forma de prevenir a violência e a discriminação.",
+    "p_plus": "A escola não deve focar apenas no ensino de conteúdos essenciais em detrimento de debates sociais para supostamente respeitar a autoridade moral dos pais.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
+  },
+  {
+    "pair_id": 55,
+    "eixo": "Educação e Cultura",
+    "p_minus": "A cultura não deve depender de fomento público descentralizado como via exclusiva para garantir a diversidade e o acesso nas áreas periféricas.",
+    "p_plus": "O fomento cultural não deve ser excessivamente restrito e condicionado apenas a rígidos critérios objetivos sob a alegação de falta de retorno social quantificável.",
+    "modelo_gerador": "afirmacoes_gpt_5_2.json"
   }
 ]
