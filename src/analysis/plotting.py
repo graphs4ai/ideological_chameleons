@@ -875,3 +875,170 @@ def plot_figure8_swing_asymmetry(df_ip: pd.DataFrame, cfg: DictConfig):
     plt.tight_layout()
     save_fig(fig, "figure8_swing_asymmetry", cfg)
     plt.close()
+
+
+def plot_figure3_1_likert_comparison_by_tendency(
+    df_orig: pd.DataFrame, df_neg: pd.DataFrame, cfg: DictConfig
+):
+    """
+    Figure 3.1: Side-by-side Likert distributions – Original vs Negated statements,
+    faceted by user tendency (Left / No-Context / Right).
+    """
+    likert_labels = ['Strongly\nDisagree', 'Disagree', 'Neutral', 'Agree', 'Strongly\nAgree']
+    likert_values = [-2, -1, 0, 1, 2]
+    tendencies = ['esquerda', 'neutro', 'direita']
+    tend_titles = {'esquerda': 'Left-Wing User', 'neutro': 'No-Context User', 'direita': 'Right-Wing User'}
+
+    fig, axes = plt.subplots(1, 3, figsize=(24, 8), sharey=True)
+
+    for ax, tend in zip(axes, tendencies):
+        # Original counts
+        counts_orig = (
+            df_orig[df_orig['tendencia'] == tend]
+            .groupby('pontuacao').size()
+            .reindex(likert_values, fill_value=0)
+        )
+        # Negated counts
+        counts_neg = (
+            df_neg[df_neg['tendencia'] == tend]
+            .groupby('pontuacao').size()
+            .reindex(likert_values, fill_value=0)
+        )
+
+        x = np.arange(len(likert_values))
+        w = 0.35
+
+        bars_o = ax.bar(x - w / 2, counts_orig.values, w,
+                        label='Original', color='#2ecc71', alpha=0.85,
+                        edgecolor='white', linewidth=0.5)
+        bars_n = ax.bar(x + w / 2, counts_neg.values, w,
+                        label='Negated', color='#9b59b6', alpha=0.85,
+                        edgecolor='white', linewidth=0.5)
+
+        ax.set_xticks(x)
+        ax.set_xticklabels(likert_labels, fontsize=14)
+        ax.set_title(tend_titles[tend], fontsize=20, fontweight='bold')
+        ax.grid(axis='y', alpha=0.3, linestyle=':')
+        ax.tick_params(axis='y', labelsize=13)
+
+    axes[0].set_ylabel('Response Count', fontsize=17, fontweight='bold')
+    axes[1].set_xlabel('Likert Scale Response', fontsize=17, fontweight='bold')
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc='upper center', bbox_to_anchor=(0.5, -0.01),
+               fontsize=17, ncol=2, frameon=False)
+
+    plt.tight_layout()
+    save_fig(fig, "figure3_1_likert_orig_vs_negated", cfg)
+    plt.close()
+
+
+def plot_figure3_2_likert_proportion_shift(
+    df_orig: pd.DataFrame, df_neg: pd.DataFrame, cfg: DictConfig
+):
+    """
+    Figure 3.2: Proportional shift heatmap – for each model × tendency,
+    shows the change in share of each Likert response when switching
+    from Original to Negated statements (Negated% − Original%).
+    """
+    likert_values = [-2, -1, 0, 1, 2]
+    likert_labels = ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree']
+    tendencies = ['esquerda', 'neutro', 'direita']
+    tend_titles = {'esquerda': 'Left-Wing User', 'neutro': 'No-Context User', 'direita': 'Right-Wing User'}
+
+    fig, axes = plt.subplots(1, 3, figsize=(28, 10), sharey=True)
+
+    for ax, tend in zip(axes, tendencies):
+        df_o_t = df_orig[df_orig['tendencia'] == tend]
+        df_n_t = df_neg[df_neg['tendencia'] == tend]
+
+        models = sorted(df_orig['modelo'].unique())
+
+        shift_matrix = []
+        for model in models:
+            o_counts = (
+                df_o_t[df_o_t['modelo'] == model]
+                .groupby('pontuacao').size()
+                .reindex(likert_values, fill_value=0)
+            )
+            n_counts = (
+                df_n_t[df_n_t['modelo'] == model]
+                .groupby('pontuacao').size()
+                .reindex(likert_values, fill_value=0)
+            )
+            o_pct = o_counts / o_counts.sum() * 100 if o_counts.sum() > 0 else o_counts * 0
+            n_pct = n_counts / n_counts.sum() * 100 if n_counts.sum() > 0 else n_counts * 0
+            shift_matrix.append((n_pct - o_pct).values)
+
+        shift_df = pd.DataFrame(shift_matrix, index=models, columns=likert_labels)
+
+        vmax = max(abs(shift_df.values.min()), abs(shift_df.values.max()), 1)
+        sns.heatmap(
+            shift_df, ax=ax, cmap='RdBu_r', center=0,
+            vmin=-vmax, vmax=vmax,
+            annot=True, fmt='.1f', annot_kws={'size': 11},
+            linewidths=0.5, linecolor='white',
+            cbar_kws={'label': 'Δ Proportion (pp)', 'shrink': 0.8}
+        )
+        ax.set_title(tend_titles[tend], fontsize=20, fontweight='bold')
+        ax.set_xlabel('', fontsize=1)
+        ax.tick_params(axis='x', labelsize=12, rotation=35)
+        ax.tick_params(axis='y', labelsize=13)
+
+    axes[0].set_ylabel('Model', fontsize=17, fontweight='bold')
+    fig.suptitle('Proportional Shift: Negated − Original (percentage points)',
+                 fontsize=22, fontweight='bold', y=1.02)
+
+    plt.tight_layout()
+    save_fig(fig, "figure3_2_likert_proportion_shift", cfg)
+    plt.close()
+
+
+def plot_figure3_3_likert_comparison_aggregated(
+    df_orig: pd.DataFrame, df_neg: pd.DataFrame, cfg: DictConfig
+):
+    """
+    Figure 3.3: Aggregated Likert distribution (all tendencies combined)
+    comparing Original vs Negated statements.
+    """
+    likert_labels = ['Strongly\nDisagree', 'Disagree', 'Neutral', 'Agree', 'Strongly\nAgree']
+    likert_values = [-2, -1, 0, 1, 2]
+
+    counts_orig = (
+        df_orig.groupby('pontuacao').size()
+        .reindex(likert_values, fill_value=0)
+    )
+    counts_neg = (
+        df_neg.groupby('pontuacao').size()
+        .reindex(likert_values, fill_value=0)
+    )
+
+    x = np.arange(len(likert_values))
+    w = 0.35
+
+    fig, ax = plt.subplots(figsize=(12, 7))
+
+    ax.bar(x - w / 2, counts_orig.values, w,
+           label='Original', color='#2ecc71', alpha=0.85,
+           edgecolor='white', linewidth=0.5)
+    ax.bar(x + w / 2, counts_neg.values, w,
+           label='Negated', color='#9b59b6', alpha=0.85,
+           edgecolor='white', linewidth=0.5)
+
+    # Add count labels on bars
+    for i, (vo, vn) in enumerate(zip(counts_orig.values, counts_neg.values)):
+        ax.text(i - w / 2, vo + max(counts_orig.max(), counts_neg.max()) * 0.01,
+                str(int(vo)), ha='center', va='bottom', fontsize=12, fontweight='bold')
+        ax.text(i + w / 2, vn + max(counts_orig.max(), counts_neg.max()) * 0.01,
+                str(int(vn)), ha='center', va='bottom', fontsize=12, fontweight='bold')
+
+    ax.set_xticks(x)
+    ax.set_xticklabels(likert_labels, fontsize=16)
+    ax.set_xlabel('Likert Scale Response', fontsize=17, fontweight='bold')
+    ax.set_ylabel('Response Count', fontsize=17, fontweight='bold')
+    ax.tick_params(axis='y', labelsize=13)
+    ax.legend(fontsize=17, loc='upper left')
+    ax.grid(axis='y', alpha=0.3, linestyle=':')
+
+    plt.tight_layout()
+    save_fig(fig, "figure3_3_likert_aggregated", cfg)
+    plt.close()

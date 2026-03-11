@@ -10,6 +10,22 @@ def carregar_e_processar_dados(cfg: DictConfig) -> pd.DataFrame:
     df_validos['pontuacao'] = df_validos['pontuacao'].astype(int)
     return df_validos
 
+def carregar_e_processar_ambos(cfg: DictConfig) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Load both original and negated CSVs for comparison figures."""
+    likert_map = dict(cfg.analysis.likert_map)
+
+    df_orig = pd.read_csv("dados/respostas_finais.csv")
+    df_orig['pontuacao'] = df_orig['resposta_raw'].map(likert_map)
+    df_orig = df_orig.dropna(subset=['pontuacao']).copy()
+    df_orig['pontuacao'] = df_orig['pontuacao'].astype(int)
+
+    df_neg = pd.read_csv("dados/respostas_finais_negados.csv")
+    df_neg['pontuacao'] = df_neg['resposta_raw'].map(likert_map)
+    df_neg = df_neg.dropna(subset=['pontuacao']).copy()
+    df_neg['pontuacao'] = df_neg['pontuacao'].astype(int)
+
+    return df_orig, df_neg
+
 def calcular_indice_polarizacao(df_validos: pd.DataFrame):
     # Agrupa médias
     cols_group = ['modelo', 'eixo', 'pair_id', 'tipo_pergunta', 'temperatura', 'tendencia']

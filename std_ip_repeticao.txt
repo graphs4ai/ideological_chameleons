@@ -1,6 +1,6 @@
 modelo	temperatura	std_ip_repeticao
 Qwen/Qwen3-32B	0.5	0.33359895879052515
-Qwen/Qwen3-14B	1.0	0.3073988412779847
+Qwen/Qwen3-14B	1.0	0.30739884127798467
 Qwen/Qwen3-32B	1.0	0.2946879474877754
 microsoft/phi-4	1.0	0.2806470293839591
 sabia-3.1	0.5	0.2772174052903576
@@ -13,7 +13,7 @@ meta-llama/Meta-Llama-3.1-70B-Instruct	1.0	0.15435861849076243
 openai/gpt-oss-20b	1.0	0.13481847205840633
 openai/gpt-oss-20b	0.5	0.11709711650539302
 nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL	0.5	0.1134080885908193
-Qwen/Qwen3-235B-A22B-Instruct-2507	0.5	0.1115178213999712
+Qwen/Qwen3-235B-A22B-Instruct-2507	0.5	0.11151782139997121
 meta-llama/Meta-Llama-3.1-8B-Instruct	0.5	0.10910894511799621
 mistralai/Mistral-Small-3.2-24B-Instruct-2506	1.0	0.108620759469611
 google/gemini-2.5-flash	0.5	0.10714285714285714
