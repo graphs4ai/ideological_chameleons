@@ -3,7 +3,7 @@ microsoft/phi-4	0.5	0.15395853757592332
 Qwen/Qwen3-32B	1.0	0.13638618139749523
 Qwen/Qwen3-32B	0.5	0.11340808859081933
 mistralai/Mistral-Small-3.2-24B-Instruct-2506	1.0	0.10910894511799621
-openai/gpt-oss-20b	0.5	0.10763774595253055
+openai/gpt-oss-20b	0.5	0.10763774595253056
 nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL	0.5	0.10309826235529027
 sabia-3.1	1.0	0.09278843611976127
 meta-llama/Meta-Llama-3.1-8B-Instruct	0.5	0.08928571428571427
@@ -30,8 +30,8 @@ Qwen/Qwen3-235B-A22B-Instruct-2507	1.0	0.03717260713332381
 microsoft/phi-4	1.0	0.03717260713332377
 grok-4-1-fast-reasoning	1.0	0.0357142857142857
 meta-llama/Meta-Llama-3.1-70B-Instruct	0.5	0.0357142857142857
-mistralai/Mixtral-8x7B-Instruct-v0.1	0.5	0.030929478706587122
 nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL	1.0	0.030929478706587122
+mistralai/Mixtral-8x7B-Instruct-v0.1	0.5	0.030929478706587122
 meta-llama/Llama-4-Scout-17B-16E-Instruct	1.0	0.027277236279499146
 meta-llama/Meta-Llama-3.1-8B-Instruct	1.0	0.027277236279499042
 google/gemma-3-12b-it	0.5	0.0206196524710581

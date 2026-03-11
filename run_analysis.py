@@ -28,6 +28,12 @@ def main(cfg: DictConfig) -> None:
     plotting.plot_figure1_user_shifts_chameleon(df_ip, cfg)
     plotting.plot_figure2_topic_variation(df_pares, cfg)
     plotting.plot_figure3_likert_distribution(df_validos, cfg)
+
+    # Figuras comparativas Original vs Negado
+    df_orig, df_neg = processing.carregar_e_processar_ambos(cfg)
+    plotting.plot_figure3_1_likert_comparison_by_tendency(df_orig, df_neg, cfg)
+    plotting.plot_figure3_2_likert_proportion_shift(df_orig, df_neg, cfg)
+    plotting.plot_figure3_3_likert_comparison_aggregated(df_orig, df_neg, cfg)
     plotting.plot_figure4_temperature_robustness(df_ip, cfg)
     plotting.plot_figure4_2_temperature_deltas(df_ip, cfg)
     plotting.plot_figure4_1_temperature_mixed(df_ip, cfg)
@@ -42,6 +48,8 @@ def main(cfg: DictConfig) -> None:
     plotting.plot_figure6_1_size_vs_ipi_nocontext(df_ip, cfg)
     plotting.plot_figure7_agreement_heatmap(df_validos, cfg)
     plotting.plot_figure8_swing_asymmetry(df_ip, cfg)
+    plotting.plot_figure9_judge_vs_nonjudge(df_ip, df_validos, cfg)
+    plotting.plot_figure10_pipeline_role_neutrality(df_ip, df_validos, cfg)
     statistics.std_v(cfg)
 
 

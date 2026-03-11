@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import os
 from math import pi
+from scipy import stats
 from omegaconf import DictConfig
 from .processing import get_model_size
 
@@ -1142,4 +1143,503 @@ def plot_figure8_swing_asymmetry(df_ip: pd.DataFrame, cfg: DictConfig):
     
     plt.tight_layout()
     save_fig(fig, "figure8_swing_asymmetry", cfg)
+    plt.close()
+
+
+def plot_figure3_1_likert_comparison_by_tendency(
+    df_orig: pd.DataFrame, df_neg: pd.DataFrame, cfg: DictConfig
+):
+    """
+    Figure 3.1: Side-by-side Likert distributions – Original vs Negated statements,
+    faceted by user tendency (Left / No-Context / Right).
+    """
+    likert_labels = ['Strongly\nDisagree', 'Disagree', 'Neutral', 'Agree', 'Strongly\nAgree']
+    likert_values = [-2, -1, 0, 1, 2]
+    tendencies = ['esquerda', 'neutro', 'direita']
+    tend_titles = {'esquerda': 'Left-Wing User', 'neutro': 'No-Context User', 'direita': 'Right-Wing User'}
+
+    fig, axes = plt.subplots(1, 3, figsize=(24, 8), sharey=True)
+
+    for ax, tend in zip(axes, tendencies):
+        # Original counts
+        counts_orig = (
+            df_orig[df_orig['tendencia'] == tend]
+            .groupby('pontuacao').size()
+            .reindex(likert_values, fill_value=0)
+        )
+        # Negated counts
+        counts_neg = (
+            df_neg[df_neg['tendencia'] == tend]
+            .groupby('pontuacao').size()
+            .reindex(likert_values, fill_value=0)
+        )
+
+        x = np.arange(len(likert_values))
+        w = 0.35
+
+        bars_o = ax.bar(x - w / 2, counts_orig.values, w,
+                        label='Original', color='#2ecc71', alpha=0.85,
+                        edgecolor='white', linewidth=0.5)
+        bars_n = ax.bar(x + w / 2, counts_neg.values, w,
+                        label='Negated', color='#9b59b6', alpha=0.85,
+                        edgecolor='white', linewidth=0.5)
+
+        ax.set_xticks(x)
+        ax.set_xticklabels(likert_labels, fontsize=14)
+        ax.set_title(tend_titles[tend], fontsize=20, fontweight='bold')
+        ax.grid(axis='y', alpha=0.3, linestyle=':')
+        ax.tick_params(axis='y', labelsize=13)
+
+    axes[0].set_ylabel('Response Count', fontsize=17, fontweight='bold')
+    axes[1].set_xlabel('Likert Scale Response', fontsize=17, fontweight='bold')
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc='upper center', bbox_to_anchor=(0.5, -0.01),
+               fontsize=17, ncol=2, frameon=False)
+
+    plt.tight_layout()
+    save_fig(fig, "figure3_1_likert_orig_vs_negated", cfg)
+    plt.close()
+
+
+def plot_figure3_2_likert_proportion_shift(
+    df_orig: pd.DataFrame, df_neg: pd.DataFrame, cfg: DictConfig
+):
+    """
+    Figure 3.2: Proportional shift heatmap – for each model × tendency,
+    shows the change in share of each Likert response when switching
+    from Original to Negated statements (Negated% − Original%).
+    """
+    likert_values = [-2, -1, 0, 1, 2]
+    likert_labels = ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree']
+    tendencies = ['esquerda', 'neutro', 'direita']
+    tend_titles = {'esquerda': 'Left-Wing User', 'neutro': 'No-Context User', 'direita': 'Right-Wing User'}
+
+    fig, axes = plt.subplots(1, 3, figsize=(28, 10), sharey=True)
+
+    for ax, tend in zip(axes, tendencies):
+        df_o_t = df_orig[df_orig['tendencia'] == tend]
+        df_n_t = df_neg[df_neg['tendencia'] == tend]
+
+        models = sorted(df_orig['modelo'].unique())
+
+        shift_matrix = []
+        for model in models:
+            o_counts = (
+                df_o_t[df_o_t['modelo'] == model]
+                .groupby('pontuacao').size()
+                .reindex(likert_values, fill_value=0)
+            )
+            n_counts = (
+                df_n_t[df_n_t['modelo'] == model]
+                .groupby('pontuacao').size()
+                .reindex(likert_values, fill_value=0)
+            )
+            o_pct = o_counts / o_counts.sum() * 100 if o_counts.sum() > 0 else o_counts * 0
+            n_pct = n_counts / n_counts.sum() * 100 if n_counts.sum() > 0 else n_counts * 0
+            shift_matrix.append((n_pct - o_pct).values)
+
+        shift_df = pd.DataFrame(shift_matrix, index=models, columns=likert_labels)
+
+        vmax = max(abs(shift_df.values.min()), abs(shift_df.values.max()), 1)
+        sns.heatmap(
+            shift_df, ax=ax, cmap='RdBu_r', center=0,
+            vmin=-vmax, vmax=vmax,
+            annot=True, fmt='.1f', annot_kws={'size': 11},
+            linewidths=0.5, linecolor='white',
+            cbar_kws={'label': 'Δ Proportion (pp)', 'shrink': 0.8}
+        )
+        ax.set_title(tend_titles[tend], fontsize=20, fontweight='bold')
+        ax.set_xlabel('', fontsize=1)
+        ax.tick_params(axis='x', labelsize=12, rotation=35)
+        ax.tick_params(axis='y', labelsize=13)
+
+    axes[0].set_ylabel('Model', fontsize=17, fontweight='bold')
+    fig.suptitle('Proportional Shift: Negated − Original (percentage points)',
+                 fontsize=22, fontweight='bold', y=1.02)
+
+    plt.tight_layout()
+    save_fig(fig, "figure3_2_likert_proportion_shift", cfg)
+    plt.close()
+
+
+def plot_figure3_3_likert_comparison_aggregated(
+    df_orig: pd.DataFrame, df_neg: pd.DataFrame, cfg: DictConfig
+):
+    """
+    Figure 3.3: Aggregated Likert distribution (all tendencies combined)
+    comparing Original vs Negated statements.
+    """
+    likert_labels = ['Strongly\nDisagree', 'Disagree', 'Neutral', 'Agree', 'Strongly\nAgree']
+    likert_values = [-2, -1, 0, 1, 2]
+
+    counts_orig = (
+        df_orig.groupby('pontuacao').size()
+        .reindex(likert_values, fill_value=0)
+    )
+    counts_neg = (
+        df_neg.groupby('pontuacao').size()
+        .reindex(likert_values, fill_value=0)
+    )
+
+    x = np.arange(len(likert_values))
+    w = 0.35
+
+    fig, ax = plt.subplots(figsize=(12, 7))
+
+    ax.bar(x - w / 2, counts_orig.values, w,
+           label='Original', color='#2ecc71', alpha=0.85,
+           edgecolor='white', linewidth=0.5)
+    ax.bar(x + w / 2, counts_neg.values, w,
+           label='Negated', color='#9b59b6', alpha=0.85,
+           edgecolor='white', linewidth=0.5)
+
+    # Add count labels on bars
+    for i, (vo, vn) in enumerate(zip(counts_orig.values, counts_neg.values)):
+        ax.text(i - w / 2, vo + max(counts_orig.max(), counts_neg.max()) * 0.01,
+                str(int(vo)), ha='center', va='bottom', fontsize=12, fontweight='bold')
+        ax.text(i + w / 2, vn + max(counts_orig.max(), counts_neg.max()) * 0.01,
+                str(int(vn)), ha='center', va='bottom', fontsize=12, fontweight='bold')
+
+    ax.set_xticks(x)
+    ax.set_xticklabels(likert_labels, fontsize=16)
+    ax.set_xlabel('Likert Scale Response', fontsize=17, fontweight='bold')
+    ax.set_ylabel('Response Count', fontsize=17, fontweight='bold')
+    ax.tick_params(axis='y', labelsize=13)
+    ax.legend(fontsize=17, loc='upper left')
+    ax.grid(axis='y', alpha=0.3, linestyle=':')
+
+    plt.tight_layout()
+    save_fig(fig, "figure3_3_likert_aggregated", cfg)
+    plt.close()
+
+
+def plot_figure9_judge_vs_nonjudge(df_ip: pd.DataFrame, df_validos: pd.DataFrame, cfg: DictConfig):
+    """
+    Figure 9: Judge-Model Neutrality Validation
+    Two-panel figure proving that the 3 judge models (gpt-oss-120b,
+    DeepSeek-V3.2, gemma-3-27b-it) do not behave anomalously compared
+    to the 18 non-judge models.
+    Panel A: Chameleon Index (CI)
+    Panel B: Agreement Rate (%)
+    Includes independent-samples t-test (or Mann-Whitney U) results.
+    """
+    JUDGE_MODELS = [
+        'openai/gpt-oss-120b',
+        'deepseek-ai/DeepSeek-V3.2',
+        'google/gemma-3-27b-it',
+    ]
+
+    # ── Panel A: Chameleon Index ──────────────────────────────────────
+    df_shifts = df_ip.groupby(['modelo', 'tendencia'])['indice_polarizacao'].mean().reset_index()
+    df_pivot = df_shifts.pivot(index='modelo', columns='tendencia', values='indice_polarizacao').reset_index()
+    df_pivot['shift_left'] = abs(df_pivot['esquerda'] - df_pivot['neutro'])
+    df_pivot['shift_right'] = abs(df_pivot['direita'] - df_pivot['neutro'])
+    df_pivot['chameleon_index'] = df_pivot['shift_left'] + df_pivot['shift_right']
+
+    df_pivot['group'] = df_pivot['modelo'].apply(
+        lambda m: 'Judge Models' if m in JUDGE_MODELS else 'Non-Judge Models'
+    )
+
+    ci_judge = df_pivot.loc[df_pivot['group'] == 'Judge Models', 'chameleon_index'].values
+    ci_nonjudge = df_pivot.loc[df_pivot['group'] == 'Non-Judge Models', 'chameleon_index'].values
+
+    # Statistical test for CI
+    if len(ci_judge) >= 2 and len(ci_nonjudge) >= 2:
+        _, p_shapiro_j = stats.shapiro(ci_judge) if len(ci_judge) >= 3 else (0, 1.0)
+        _, p_shapiro_nj = stats.shapiro(ci_nonjudge)
+        if p_shapiro_j > 0.05 and p_shapiro_nj > 0.05:
+            stat_ci, p_ci = stats.ttest_ind(ci_judge, ci_nonjudge, equal_var=False)
+            test_name_ci = "Welch's t-test"
+        else:
+            stat_ci, p_ci = stats.mannwhitneyu(ci_judge, ci_nonjudge, alternative='two-sided')
+            test_name_ci = 'Mann-Whitney U'
+    else:
+        stat_ci, p_ci, test_name_ci = np.nan, np.nan, 'N/A'
+
+    # ── Panel B: Agreement Rate ───────────────────────────────────────
+    df_v = df_validos.copy()
+    df_v['is_agree'] = df_v['pontuacao'].isin([1, 2]).astype(int)
+    df_agree = df_v.groupby('modelo').agg(
+        total=('is_agree', 'count'),
+        agree_count=('is_agree', 'sum'),
+    ).reset_index()
+    df_agree['agree_pct'] = (df_agree['agree_count'] / df_agree['total']) * 100
+    df_agree['group'] = df_agree['modelo'].apply(
+        lambda m: 'Judge Models' if m in JUDGE_MODELS else 'Non-Judge Models'
+    )
+
+    ar_judge = df_agree.loc[df_agree['group'] == 'Judge Models', 'agree_pct'].values
+    ar_nonjudge = df_agree.loc[df_agree['group'] == 'Non-Judge Models', 'agree_pct'].values
+
+    # Statistical test for Agreement Rate
+    if len(ar_judge) >= 2 and len(ar_nonjudge) >= 2:
+        _, p_shapiro_j_ar = stats.shapiro(ar_judge) if len(ar_judge) >= 3 else (0, 1.0)
+        _, p_shapiro_nj_ar = stats.shapiro(ar_nonjudge)
+        if p_shapiro_j_ar > 0.05 and p_shapiro_nj_ar > 0.05:
+            stat_ar, p_ar = stats.ttest_ind(ar_judge, ar_nonjudge, equal_var=False)
+            test_name_ar = "Welch's t-test"
+        else:
+            stat_ar, p_ar = stats.mannwhitneyu(ar_judge, ar_nonjudge, alternative='two-sided')
+            test_name_ar = 'Mann-Whitney U'
+    else:
+        stat_ar, p_ar, test_name_ar = np.nan, np.nan, 'N/A'
+
+    # ── Plot ──────────────────────────────────────────────────────────
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8))
+
+    palette = {'Judge Models': '#e74c3c', 'Non-Judge Models': '#3498db'}
+    group_order = ['Judge Models', 'Non-Judge Models']
+
+    # Panel A – Chameleon Index
+    sns.boxplot(
+        data=df_pivot, x='group', y='chameleon_index', order=group_order,
+        palette=palette, width=0.5, linewidth=1.5, ax=ax1,
+        boxprops=dict(alpha=0.7), fliersize=0,
+    )
+    sns.stripplot(
+        data=df_pivot, x='group', y='chameleon_index', order=group_order,
+        palette=palette, size=10, alpha=0.85, jitter=0.15, ax=ax1,
+        edgecolor='white', linewidth=0.8,
+    )
+    # Annotate judge model names
+    judge_rows = df_pivot[df_pivot['group'] == 'Judge Models']
+    for _, row in judge_rows.iterrows():
+        short_name = row['modelo'].split('/')[-1]
+        ax1.annotate(
+            short_name,
+            xy=(0, row['chameleon_index']),
+            xytext=(15, 0), textcoords='offset points',
+            fontsize=9, fontstyle='italic', color='#c0392b',
+            arrowprops=dict(arrowstyle='-', color='#c0392b', lw=0.8),
+        )
+
+    ax1.set_xlabel('')
+    ax1.set_ylabel('Chameleon Index (CI)', fontsize=17, fontweight='bold')
+    ax1.tick_params(axis='x', labelsize=16)
+    ax1.tick_params(axis='y', labelsize=14)
+    ax1.grid(axis='y', alpha=0.3, linestyle=':')
+
+    # Significance annotation for CI
+    p_label_ci = f'p = {p_ci:.3f}' if not np.isnan(p_ci) else 'N/A'
+    sig_ci = 'n.s.' if (not np.isnan(p_ci) and p_ci > 0.05) else ('*' if not np.isnan(p_ci) else '')
+    ax1.set_title(f'A   {test_name_ci}: {p_label_ci} ({sig_ci})', fontsize=15, fontweight='bold', loc='left')
+
+    # Panel B – Agreement Rate
+    sns.boxplot(
+        data=df_agree, x='group', y='agree_pct', order=group_order,
+        palette=palette, width=0.5, linewidth=1.5, ax=ax2,
+        boxprops=dict(alpha=0.7), fliersize=0,
+    )
+    sns.stripplot(
+        data=df_agree, x='group', y='agree_pct', order=group_order,
+        palette=palette, size=10, alpha=0.85, jitter=0.15, ax=ax2,
+        edgecolor='white', linewidth=0.8,
+    )
+    # Annotate judge model names
+    judge_agree = df_agree[df_agree['group'] == 'Judge Models']
+    for _, row in judge_agree.iterrows():
+        short_name = row['modelo'].split('/')[-1]
+        ax2.annotate(
+            short_name,
+            xy=(0, row['agree_pct']),
+            xytext=(15, 0), textcoords='offset points',
+            fontsize=9, fontstyle='italic', color='#c0392b',
+            arrowprops=dict(arrowstyle='-', color='#c0392b', lw=0.8),
+        )
+
+    ax2.set_xlabel('')
+    ax2.set_ylabel('Agreement Rate (%)', fontsize=17, fontweight='bold')
+    ax2.tick_params(axis='x', labelsize=16)
+    ax2.tick_params(axis='y', labelsize=14)
+    ax2.grid(axis='y', alpha=0.3, linestyle=':')
+
+    p_label_ar = f'p = {p_ar:.3f}' if not np.isnan(p_ar) else 'N/A'
+    sig_ar = 'n.s.' if (not np.isnan(p_ar) and p_ar > 0.05) else ('*' if not np.isnan(p_ar) else '')
+    ax2.set_title(f'B   {test_name_ar}: {p_label_ar} ({sig_ar})', fontsize=15, fontweight='bold', loc='left')
+
+    # Summary stats printed to console
+    print("\n══════════ Figure 9 – Judge-Model Neutrality Validation ══════════")
+    print(f"  Chameleon Index  → Judge mean={ci_judge.mean():.3f}  Non-Judge mean={ci_nonjudge.mean():.3f}")
+    print(f"                     {test_name_ci}: stat={stat_ci:.4f}, p={p_ci:.4f}")
+    print(f"  Agreement Rate   → Judge mean={ar_judge.mean():.1f}%  Non-Judge mean={ar_nonjudge.mean():.1f}%")
+    print(f"                     {test_name_ar}: stat={stat_ar:.4f}, p={p_ar:.4f}")
+    print("══════════════════════════════════════════════════════════════════\n")
+
+    plt.tight_layout()
+    save_fig(fig, "figure9_judge_neutrality_validation", cfg)
+    plt.close()
+
+
+def plot_figure10_pipeline_role_neutrality(df_ip: pd.DataFrame, df_validos: pd.DataFrame, cfg: DictConfig):
+    """
+    Figure 10: Pipeline-Role Neutrality Validation (3 groups)
+    Proves that models with special pipeline roles (Judges and Pair Generators)
+    do not behave anomalously compared to the 16 Pure Respondents.
+    Panel A: Chameleon Index (CI)
+    Panel B: Agreement Rate (%)
+    Uses Kruskal-Wallis H-test (non-parametric, 3 groups) with pairwise
+    Mann-Whitney U post-hoc.
+    """
+    JUDGE_MODELS = [
+        'openai/gpt-oss-120b',
+        'deepseek-ai/DeepSeek-V3.2',
+        'google/gemma-3-27b-it',
+    ]
+    PAIR_GEN_MODELS = [
+        'google/gemini-2.5-flash',
+        'grok-4-1-fast-reasoning',
+    ]
+
+    def _assign_role(model: str) -> str:
+        if model in JUDGE_MODELS:
+            return 'Judge Models'
+        if model in PAIR_GEN_MODELS:
+            return 'Pair Generators'
+        return 'Pure Respondents'
+
+    ROLE_ORDER = ['Judge Models', 'Pair Generators', 'Pure Respondents']
+    ROLE_PALETTE = {
+        'Judge Models': '#e74c3c',
+        'Pair Generators': '#f39c12',
+        'Pure Respondents': '#3498db',
+    }
+
+    # ── Chameleon Index per model ─────────────────────────────────────
+    df_shifts = df_ip.groupby(['modelo', 'tendencia'])['indice_polarizacao'].mean().reset_index()
+    df_pivot = df_shifts.pivot(index='modelo', columns='tendencia', values='indice_polarizacao').reset_index()
+    df_pivot['shift_left'] = abs(df_pivot['esquerda'] - df_pivot['neutro'])
+    df_pivot['shift_right'] = abs(df_pivot['direita'] - df_pivot['neutro'])
+    df_pivot['chameleon_index'] = df_pivot['shift_left'] + df_pivot['shift_right']
+    df_pivot['role'] = df_pivot['modelo'].apply(_assign_role)
+
+    # ── Agreement Rate per model ──────────────────────────────────────
+    df_v = df_validos.copy()
+    df_v['is_agree'] = df_v['pontuacao'].isin([1, 2]).astype(int)
+    df_agree = df_v.groupby('modelo').agg(
+        total=('is_agree', 'count'),
+        agree_count=('is_agree', 'sum'),
+    ).reset_index()
+    df_agree['agree_pct'] = (df_agree['agree_count'] / df_agree['total']) * 100
+    df_agree['role'] = df_agree['modelo'].apply(_assign_role)
+
+    # ── Kruskal-Wallis (omnibus, 3 groups) ────────────────────────────
+    groups_ci = [df_pivot.loc[df_pivot['role'] == r, 'chameleon_index'].values for r in ROLE_ORDER]
+    groups_ar = [df_agree.loc[df_agree['role'] == r, 'agree_pct'].values for r in ROLE_ORDER]
+
+    try:
+        kw_stat_ci, kw_p_ci = stats.kruskal(*groups_ci)
+    except ValueError:
+        kw_stat_ci, kw_p_ci = np.nan, np.nan
+    try:
+        kw_stat_ar, kw_p_ar = stats.kruskal(*groups_ar)
+    except ValueError:
+        kw_stat_ar, kw_p_ar = np.nan, np.nan
+
+    # ── Pairwise Mann-Whitney U ───────────────────────────────────────
+    pair_combos = [
+        ('Judge Models', 'Pure Respondents'),
+        ('Pair Generators', 'Pure Respondents'),
+        ('Judge Models', 'Pair Generators'),
+    ]
+    pw_results = {}
+    for metric_label, df_src, col in [
+        ('CI', df_pivot, 'chameleon_index'),
+        ('AR', df_agree, 'agree_pct'),
+    ]:
+        for r1, r2 in pair_combos:
+            g1 = df_src.loc[df_src['role'] == r1, col].values
+            g2 = df_src.loc[df_src['role'] == r2, col].values
+            if len(g1) >= 2 and len(g2) >= 2:
+                u_stat, u_p = stats.mannwhitneyu(g1, g2, alternative='two-sided')
+            else:
+                u_stat, u_p = np.nan, np.nan
+            pw_results[(metric_label, r1, r2)] = (u_stat, u_p)
+
+    # ── Console summary ───────────────────────────────────────────────
+    print("\n" + "═" * 72)
+    print("Figure 10 – Pipeline-Role Neutrality (Judge / PairGen / Pure)")
+    print("═" * 72)
+    for r in ROLE_ORDER:
+        ci_sub = df_pivot[df_pivot['role'] == r]
+        ar_sub = df_agree[df_agree['role'] == r]
+        print(f"\n  {r} (N={len(ci_sub)}):")
+        names = ', '.join(ci_sub['modelo'].tolist())
+        print(f"    Models : {names}")
+        print(f"    CI  mean={ci_sub['chameleon_index'].mean():.3f}  std={ci_sub['chameleon_index'].std():.3f}")
+        print(f"    AR  mean={ar_sub['agree_pct'].mean():.1f}%  std={ar_sub['agree_pct'].std():.1f}%")
+
+    _ns = lambda p: '✓ n.s.' if (not np.isnan(p) and p > 0.05) else '✗ sig.'
+    print(f"\n  Kruskal-Wallis (CI):  H={kw_stat_ci:.3f}, p={kw_p_ci:.4f}  {_ns(kw_p_ci)}")
+    print(f"  Kruskal-Wallis (AR):  H={kw_stat_ar:.3f}, p={kw_p_ar:.4f}  {_ns(kw_p_ar)}")
+    print("\n  Pairwise Mann-Whitney U:")
+    for (ml, r1, r2), (u, p) in pw_results.items():
+        sig = 'n.s.' if (np.isnan(p) or p > 0.05) else 'sig.'
+        print(f"    {ml}: {r1} vs {r2}  U={u:.1f}  p={p:.4f}  {sig}")
+    print("═" * 72 + "\n")
+
+    # ── Figure ────────────────────────────────────────────────────────
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, 8))
+
+    metrics = [
+        (ax1, df_pivot, 'chameleon_index', 'Chameleon Index (CI)', kw_stat_ci, kw_p_ci),
+        (ax2, df_agree, 'agree_pct', 'Agreement Rate (%)', kw_stat_ar, kw_p_ar),
+    ]
+
+    for ax, df_src, col, ylabel, kw_stat, kw_p in metrics:
+        # Boxplot
+        sns.boxplot(
+            data=df_src, x='role', y=col, order=ROLE_ORDER,
+            palette=ROLE_PALETTE, width=0.5, linewidth=1.5,
+            boxprops=dict(alpha=0.35), fliersize=0, ax=ax,
+        )
+        # Individual points
+        sns.stripplot(
+            data=df_src, x='role', y=col, order=ROLE_ORDER,
+            palette=ROLE_PALETTE, size=10, edgecolor='white',
+            linewidth=0.8, jitter=0.12, ax=ax,
+        )
+
+        # Annotate special-role models only (Judge + PairGen)
+        special = df_src[df_src['role'].isin(['Judge Models', 'Pair Generators'])]
+        for _, row in special.iterrows():
+            role_idx = ROLE_ORDER.index(row['role'])
+            short = row['modelo'].split('/')[-1]
+            ax.annotate(
+                short,
+                xy=(role_idx, row[col]),
+                xytext=(12, 2), textcoords='offset points',
+                fontsize=8.5, fontstyle='italic',
+                color=ROLE_PALETTE[row['role']],
+                arrowprops=dict(arrowstyle='-', color=ROLE_PALETTE[row['role']], lw=0.7),
+            )
+
+        # Group-mean dashes
+        for i, role in enumerate(ROLE_ORDER):
+            mean_val = df_src.loc[df_src['role'] == role, col].mean()
+            ax.hlines(mean_val, i - 0.18, i + 0.18,
+                      colors='black', linewidth=2, linestyle='--', zorder=5)
+
+        # Kruskal-Wallis annotation box
+        sig_label = 'n.s.' if (not np.isnan(kw_p) and kw_p > 0.05) else 'p < 0.05'
+        ax.text(
+            0.98, 0.97,
+            f'Kruskal-Wallis H = {kw_stat:.2f}\np = {kw_p:.4f} ({sig_label})',
+            transform=ax.transAxes, fontsize=10,
+            va='top', ha='right',
+            bbox=dict(boxstyle='round,pad=0.4', facecolor='lightyellow', alpha=0.9),
+        )
+
+        ax.set_xlabel('')
+        ax.set_ylabel(ylabel, fontsize=17, fontweight='bold')
+        ax.tick_params(axis='x', labelsize=14)
+        ax.tick_params(axis='y', labelsize=14)
+        ax.grid(axis='y', alpha=0.3, linestyle=':')
+
+    ax1.text(-0.12, 1.03, 'A', transform=ax1.transAxes,
+             fontsize=22, fontweight='bold', va='top', ha='right')
+    ax2.text(-0.08, 1.03, 'B', transform=ax2.transAxes,
+             fontsize=22, fontweight='bold', va='top', ha='right')
+
+    plt.tight_layout()
+    save_fig(fig, "figure10_pipeline_role_neutrality", cfg)
     plt.close()
