@@ -182,6 +182,140 @@ def plot_figure2_topic_variation(df_pares: pd.DataFrame, cfg: DictConfig):
     save_fig(fig, "figure2_topic_variation", cfg)
     plt.close()
 
+
+def plot_figure2_and_5_combined(df_pares: pd.DataFrame, cfg: DictConfig):
+    """
+    Figure 2 and 5 Combined: Topic-Level Analysis
+    A: Chameleon Index per Model and Topic (Heatmap)
+    B: Topic-Level IPI across User Types (Dot Plot)
+    """
+    topic_translation = {
+        'Políticas Sociais': 'Welfare',
+        'Segurança Pública': 'Security',
+        'Economia': 'Economy',
+        'Meio Ambiente': 'Environment',
+        'Educação e Cultura': 'Education and Culture',
+        'Corrupção e Justiça': 'Corruption and Justice',
+        'Instituições Democráticas': 'Democratic Institutions'
+    }
+    
+    # Create figure with two side-by-side panels
+    fig = plt.figure(figsize=(32, 14))
+    gs = fig.add_gridspec(1, 2, width_ratios=[1.1, 1], wspace=0.40)
+    ax1 = fig.add_subplot(gs[0])
+    ax2 = fig.add_subplot(gs[1])
+    
+    # ==================== PANEL A: Heatmap (Figure 2) ====================
+    df_topic = df_pares.groupby(['modelo', 'eixo', 'tendencia'])['diferenca_R'].mean().reset_index()
+    
+    # Pivot to get neutral, left, right for each model-topic combination
+    df_topic_pivot = df_topic.pivot_table(
+        index=['modelo', 'eixo'], 
+        columns='tendencia', 
+        values='diferenca_R'
+    ).reset_index()
+    
+    # Calculate Chameleon Index per topic
+    df_topic_pivot['shift_left'] = abs(df_topic_pivot['esquerda'] - df_topic_pivot['neutro'])
+    df_topic_pivot['shift_right'] = abs(df_topic_pivot['direita'] - df_topic_pivot['neutro'])
+    df_topic_pivot['chameleon_index'] = df_topic_pivot['shift_left'] + df_topic_pivot['shift_right']
+    
+    # Create heatmap matrix
+    heatmap_data = df_topic_pivot.pivot(
+        index='modelo', 
+        columns='eixo', 
+        values='chameleon_index'
+    )
+    
+    # Translate column names to English
+    heatmap_data.columns = [topic_translation.get(col, col) for col in heatmap_data.columns]
+    
+    # Sort rows by average chameleon index across all topics
+    heatmap_data['avg'] = heatmap_data.mean(axis=1)
+    heatmap_data = heatmap_data.sort_values('avg', ascending=True).drop('avg', axis=1)
+    
+    # Sort columns (topics) by average chameleon index across all models
+    topic_avg = heatmap_data.mean(axis=0).sort_values(ascending=True)
+    heatmap_data = heatmap_data[topic_avg.index]
+    
+    # Create heatmap
+    sns.heatmap(heatmap_data, annot=True, fmt='.2f', cmap='YlOrRd', 
+                ax=ax1, cbar_kws={'label': 'Chameleon Index (CI)'}, 
+                linewidths=0.5, linecolor='white', vmin=0, vmax=8)
+    cbar = ax1.collections[0].colorbar
+    cbar.set_label('Chameleon Index (CI)', fontsize=22, fontweight='bold')
+    cbar.ax.tick_params(labelsize=18)
+        
+    # Labels
+    ax1.set_xlabel('Topic', fontsize=24, fontweight='bold')
+    ax1.set_ylabel('Model', fontsize=24, fontweight='bold')
+    ax1.tick_params(axis='y', labelsize=22)
+    ax1.tick_params(axis='x', labelsize=22) 
+    for text in ax1.texts:
+        text.set_fontsize(18)
+    # Rotate x-axis labels
+    ax1.set_xticklabels(ax1.get_xticklabels(), rotation=45, ha='right')
+    ax1.set_yticklabels(ax1.get_yticklabels(), rotation=0)
+    
+    # Add panel label
+    ax1.text(-0.68, 1.02, 'A', transform=ax1.transAxes, fontsize=32,
+             fontweight='bold', va='top', ha='right')
+    
+    # ==================== PANEL B: Dot Plot (Figure 5) ====================
+    # Mean IPI per topic and tendency (averaged across models)
+    df_topic_mean = df_pares.groupby(['eixo', 'tendencia'])['diferenca_R'].mean().reset_index()
+    df_topic_std = df_pares.groupby(['eixo', 'tendencia'])['diferenca_R'].std().reset_index()
+    df_topic_std.columns = ['eixo', 'tendencia', 'std']
+    df_topic_combined = df_topic_mean.merge(df_topic_std, on=['eixo', 'tendencia'])
+    
+    # Translate topic names
+    df_topic_combined['topic'] = df_topic_combined['eixo'].map(topic_translation)
+    
+    # Sort topics by the spread (right - left mean) for visual clarity
+    topic_order_df = df_topic_combined.pivot(index='topic', columns='tendencia', values='diferenca_R').reset_index()
+    topic_order_df['spread'] = abs(topic_order_df['direita'] - topic_order_df['esquerda'])
+    topic_order = topic_order_df.sort_values('spread', ascending=True)['topic'].tolist()
+    
+    y_pos = np.arange(len(topic_order))
+    colors = {'neutro': '#95a5a6', 'esquerda': '#e74c3c', 'direita': '#3498db'}
+    labels = {'neutro': 'No-Context User', 'esquerda': 'Left-Wing User', 'direita': 'Right-Wing User'}
+    markers = {'neutro': 's', 'esquerda': 'o', 'direita': 'D'}
+    
+    for tend in ['esquerda', 'neutro', 'direita']:
+        subset = df_topic_combined[df_topic_combined['tendencia'] == tend].copy()
+        subset['y'] = subset['topic'].map({t: i for i, t in enumerate(topic_order)})
+        subset = subset.sort_values('y')
+        ax2.errorbar(subset['diferenca_R'], subset['y'], xerr=subset['std'],
+                    fmt=markers[tend], markersize=16, color=colors[tend],
+                    ecolor=colors[tend], alpha=0.8, label=labels[tend],
+                    capsize=5, capthick=2, zorder=3, linewidth=0)
+    
+    # Connect left-right with gray lines per topic
+    for i, topic in enumerate(topic_order):
+        vals = df_topic_combined[df_topic_combined['topic'] == topic]
+        left_val = vals[vals['tendencia'] == 'esquerda']['diferenca_R'].values
+        right_val = vals[vals['tendencia'] == 'direita']['diferenca_R'].values
+        if len(left_val) > 0 and len(right_val) > 0:
+            ax2.plot([left_val[0], right_val[0]], [i, i], color='gray', alpha=0.3, linewidth=2, zorder=1)
+    
+    ax2.axvline(0, color='black', linestyle='--', linewidth=2, alpha=0.5)
+    ax2.set_yticks(y_pos)
+    ax2.set_yticklabels(topic_order, fontsize=22)
+    ax2.set_xlabel('Ideological Position Index (IPI)', fontsize=24, fontweight='bold')
+    ax2.set_ylabel('Topic', fontsize=24, fontweight='bold')
+    ax2.tick_params(axis='x', labelsize=20)
+    ax2.legend(loc='upper center', bbox_to_anchor=(0.5, -0.08), fontsize=20, ncol=3, frameon=False)
+    ax2.grid(axis='x', alpha=0.3, linestyle=':')
+    
+    # Add panel label
+    ax2.text(-0.28, 1.02, 'B', transform=ax2.transAxes, fontsize=32,
+             fontweight='bold', va='top', ha='right')
+    
+    plt.tight_layout()
+    save_fig(fig, "figure2_and_5_combined", cfg)
+    plt.close()
+
+
 def plot_figure3_likert_distribution(df_validos: pd.DataFrame, cfg: DictConfig):
     """
     Figure 3: Response Distribution (Likert Scale)
@@ -419,6 +553,56 @@ def plot_figure4_1_temperature_mixed(df_ip: pd.DataFrame, cfg: DictConfig):
     plt.close()
 
 
+def plot_figure4_1_1_temperature_mixed_aligned(df_ip: pd.DataFrame, cfg: DictConfig):
+    """
+    Figure 4.1.1: Temperature Robustness (Mixed - Aligned)
+    A: Base IPI (neutral), B: |ΔIPI left|, C: |ΔIPI right|.
+    Model names shown only at the bottom.
+    """
+    from matplotlib.colors import BoundaryNorm
+    df_pivot = _prepare_temperature_data(df_ip)
+    if df_pivot is None:
+        print("Warning: No valid data for figure 4.1.1."); return
+
+    hm_base = _build_temp_heatmap(df_pivot, 'neutro')
+    hm_left = _build_temp_heatmap(df_pivot, 'delta_left')
+    hm_right = _build_temp_heatmap(df_pivot, 'delta_right')
+
+    # Ensure same column order across all
+    cols = hm_base.columns.tolist()
+    hm_left = hm_left[cols]
+    hm_right = hm_right[cols]
+
+    bins = [-4, -3, -2, -1, 0, 1, 2, 3, 4]
+    norm = BoundaryNorm(bins, plt.cm.RdBu_r.N)
+    vmax_lr = max(hm_left.max().max(), hm_right.max().max())
+
+    fig, axes = plt.subplots(3, 1, figsize=(16, 20),
+                             gridspec_kw={'hspace': 0.08})
+
+    # Panel A: Base IPI (neutral) - no x-axis labels
+    _draw_temp_heatmap(axes[0], hm_base, plt.cm.RdBu_r, 'Ideological Position Index (IPI)',
+                       norm=norm, cbar_ticks=bins, show_xticklabels=False)
+    axes[0].text(-0.05, 1.05, 'A', transform=axes[0].transAxes, fontsize=22,
+                 fontweight='bold', va='top', ha='right')
+
+    # Panel B: |ΔIPI left| - no x-axis labels
+    _draw_temp_heatmap(axes[1], hm_left, 'Reds', '|ΔIPI left|', vmin=0, vmax=vmax_lr,
+                       show_xticklabels=False)
+    axes[1].text(-0.05, 1.05, 'B', transform=axes[1].transAxes, fontsize=22,
+                 fontweight='bold', va='top', ha='right')
+
+    # Panel C: |ΔIPI right| - show x-axis labels
+    _draw_temp_heatmap(axes[2], hm_right, 'Blues', '|ΔIPI right|', vmin=0, vmax=vmax_lr,
+                       show_xlabel=True, show_xticklabels=True)
+    axes[2].text(-0.05, 1.05, 'C', transform=axes[2].transAxes, fontsize=22,
+                 fontweight='bold', va='top', ha='right')
+
+    fig.subplots_adjust(bottom=0.12)
+    save_fig(fig, "figure4_1_1_temperature_mixed_aligned", cfg)
+    plt.close()
+
+
 def plot_figure4_2_temperature_deltas(df_ip: pd.DataFrame, cfg: DictConfig):
     """
     Figure 4.2: Temperature Robustness — All Deltas
@@ -629,6 +813,91 @@ def plot_figure5_topic_dot_panel(df_pares: pd.DataFrame, cfg: DictConfig):
     plt.close()
 
 
+def plot_figure5_5_topic_dot_separate(df_pares: pd.DataFrame, cfg: DictConfig):
+    """
+    Figure 5.5: Topic-Level Dot Plot (Separate Panels)
+    Three side-by-side panels showing IPI per topic for each user tendency separately.
+    A: Left-Wing User, B: No-Context User, C: Right-Wing User.
+    """
+    topic_translation = {
+        'Políticas Sociais': 'Welfare',
+        'Segurança Pública': 'Security',
+        'Economia': 'Economy',
+        'Meio Ambiente': 'Environment',
+        'Educação e Cultura': 'Education and Culture',
+        'Corrupção e Justiça': 'Corruption and Justice',
+        'Instituições Democráticas': 'Democratic Institutions'
+    }
+    
+    # Mean IPI per topic and tendency (averaged across models)
+    df_topic = df_pares.groupby(['eixo', 'tendencia'])['diferenca_R'].mean().reset_index()
+    df_topic_std = df_pares.groupby(['eixo', 'tendencia'])['diferenca_R'].std().reset_index()
+    df_topic_std.columns = ['eixo', 'tendencia', 'std']
+    df_topic = df_topic.merge(df_topic_std, on=['eixo', 'tendencia'])
+    
+    # Translate topic names
+    df_topic['topic'] = df_topic['eixo'].map(topic_translation)
+    
+    # Sort topics by the spread (right - left mean) for visual clarity
+    topic_order_df = df_topic.pivot(index='topic', columns='tendencia', values='diferenca_R').reset_index()
+    topic_order_df['spread'] = abs(topic_order_df['direita'] - topic_order_df['esquerda'])
+    topic_order = topic_order_df.sort_values('spread', ascending=True)['topic'].tolist()
+    
+    # Create figure with 3 side-by-side panels
+    fig, axes = plt.subplots(1, 3, figsize=(24, 9), sharey=True)
+    
+    y_pos = np.arange(len(topic_order))
+    colors = {'neutro': '#95a5a6', 'esquerda': '#e74c3c', 'direita': '#3498db'}
+    labels = {'neutro': 'No-Context User', 'esquerda': 'Left-Wing User', 'direita': 'Right-Wing User'}
+    markers = {'neutro': 's', 'esquerda': 'o', 'direita': 'D'}
+    tendencies = ['esquerda', 'neutro', 'direita']
+    panel_labels = ['A', 'B', 'C']
+    
+    # Determine global x-axis limits
+    all_values = []
+    for tend in tendencies:
+        subset = df_topic[df_topic['tendencia'] == tend].copy()
+        all_values.extend(subset['diferenca_R'].values)
+        all_values.extend((subset['diferenca_R'] - subset['std']).values)
+        all_values.extend((subset['diferenca_R'] + subset['std']).values)
+    x_min, x_max = min(all_values), max(all_values)
+    x_range = x_max - x_min
+    x_lim = [x_min - 0.1 * x_range, x_max + 0.1 * x_range]
+    
+    # Plot each tendency in its own panel
+    for idx, tend in enumerate(tendencies):
+        ax = axes[idx]
+        subset = df_topic[df_topic['tendencia'] == tend].copy()
+        subset['y'] = subset['topic'].map({t: i for i, t in enumerate(topic_order)})
+        subset = subset.sort_values('y')
+        
+        ax.errorbar(subset['diferenca_R'], subset['y'], xerr=subset['std'],
+                    fmt=markers[tend], markersize=14, color=colors[tend],
+                    ecolor=colors[tend], alpha=0.8,
+                    capsize=4, capthick=1.5, zorder=3, linewidth=0)
+        
+        ax.axvline(0, color='black', linestyle='--', linewidth=1.5, alpha=0.5)
+        ax.set_yticks(y_pos)
+        if idx == 0:
+            ax.set_yticklabels(topic_order, fontsize=16)
+            ax.set_ylabel('Topic', fontsize=18, fontweight='bold')
+        ax.set_xlabel('Ideological Position Index (IPI)', fontsize=18, fontweight='bold')
+        ax.tick_params(axis='x', labelsize=14)
+        ax.grid(axis='x', alpha=0.3, linestyle=':')
+        ax.set_xlim(x_lim)
+        
+        # Add panel label
+        ax.text(-0.15, 1.05, panel_labels[idx], transform=ax.transAxes, fontsize=24,
+                fontweight='bold', va='top', ha='right')
+        
+        # Add title with tendency name
+        ax.set_title(labels[tend], fontsize=19, fontweight='bold', pad=15)
+    
+    plt.tight_layout()
+    save_fig(fig, "figure5_5_topic_dot_separate", cfg)
+    plt.close()
+
+
 def plot_figure6_size_vs_chameleon(df_ip: pd.DataFrame, cfg: DictConfig):
     """
     Figure 6 (Supplementary): Scatter plot of Model Size (B params) vs Chameleon Index.
@@ -784,7 +1053,7 @@ def plot_figure6_1_size_vs_ipi_nocontext(df_ip: pd.DataFrame, cfg: DictConfig):
 def plot_figure7_agreement_heatmap(df_validos: pd.DataFrame, cfg: DictConfig):
     """
     Figure 7: Disaggregated Agreement Heatmap
-    Rows: Models. Columns: User tendency.
+    Rows: User tendency. Columns: Models.
     Cell value: Percentage of 'Agree' + 'Strongly Agree' responses.
     """
     # Filter only Agree + Strongly Agree (scores 1 and 2)
@@ -798,39 +1067,38 @@ def plot_figure7_agreement_heatmap(df_validos: pd.DataFrame, cfg: DictConfig):
     ).reset_index()
     df_agree['agree_pct'] = (df_agree['agree_count'] / df_agree['total']) * 100
     
-    # Pivot for heatmap
-    heatmap_data = df_agree.pivot(index='modelo', columns='tendencia', values='agree_pct')
+    # Pivot for heatmap (transposed: tendencia as rows, modelo as columns)
+    heatmap_data = df_agree.pivot(index='tendencia', columns='modelo', values='agree_pct')
     
-    # Rename columns to English
-    col_rename = {'neutro': 'No-Context', 'esquerda': 'Left-Wing', 'direita': 'Right-Wing'}
-    heatmap_data.columns = [col_rename.get(c, c) for c in heatmap_data.columns]
+    # Rename rows to English
+    row_rename = {'neutro': 'No-Context', 'esquerda': 'Left-Wing', 'direita': 'Right-Wing'}
+    heatmap_data.index = [row_rename.get(r, r) for r in heatmap_data.index]
     
-    # Add average column and sort
-    heatmap_data['Average'] = heatmap_data.mean(axis=1)
-    heatmap_data = heatmap_data.sort_values('Average', ascending=True)
-    display_data = heatmap_data.drop('Average', axis=1)
+    # Sort models by average agreement rate
+    model_avg = heatmap_data.mean(axis=0).sort_values(ascending=True)
+    heatmap_data = heatmap_data[model_avg.index]
     
-    # Reorder columns
-    col_order = ['Left-Wing', 'No-Context', 'Right-Wing']
-    display_data = display_data[[c for c in col_order if c in display_data.columns]]
+    # Reorder rows
+    row_order = ['Left-Wing', 'No-Context', 'Right-Wing']
+    heatmap_data = heatmap_data.reindex([r for r in row_order if r in heatmap_data.index])
     
-    fig, ax = plt.subplots(figsize=(10, 14))
+    fig, ax = plt.subplots(figsize=(24, 9))
     
-    sns.heatmap(display_data, annot=True, fmt='.1f', cmap='YlOrRd',
+    sns.heatmap(heatmap_data, annot=True, fmt='.1f', cmap='YlOrRd',
                 ax=ax, cbar_kws={'label': 'Agreement Rate (%)'},
                 linewidths=0.5, linecolor='white', vmin=0, vmax=100)
     
     cbar = ax.collections[0].colorbar
-    cbar.set_label('Agreement Rate (%)', fontsize=16)
-    cbar.ax.tick_params(labelsize=13)
+    cbar.set_label('Agreement Rate (%)', fontsize=18, fontweight='bold')
+    cbar.ax.tick_params(labelsize=15)
     
-    ax.set_xlabel('User Profile', fontsize=17, fontweight='bold')
-    ax.set_ylabel('Model', fontsize=17, fontweight='bold')
-    ax.tick_params(axis='y', labelsize=16)
-    ax.tick_params(axis='x', labelsize=16)
+    ax.set_xlabel('Model', fontsize=19, fontweight='bold')
+    ax.set_ylabel('User Profile', fontsize=19, fontweight='bold')
+    ax.tick_params(axis='y', labelsize=18)
+    ax.tick_params(axis='x', labelsize=17)
     for text in ax.texts:
-        text.set_fontsize(14)
-    plt.xticks(rotation=0)
+        text.set_fontsize(15)
+    plt.xticks(rotation=45, ha='right')
     plt.yticks(rotation=0)
     
     plt.tight_layout()
