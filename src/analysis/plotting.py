@@ -1784,14 +1784,14 @@ def plot_figure11_likert_violins_by_role(df_validos: pd.DataFrame, cfg: DictConf
 
     # ── Axes formatting ───────────────────────────────────────────────
     ax.set_xlabel('Model', fontsize=17, fontweight='bold')
-    ax.set_ylabel('Likert Response (1 = Strongly Disagree … 5 = Strongly Agree)',
+    ax.set_ylabel('Likert Response',
                   fontsize=17, fontweight='bold')
     ax.set_xticks(range(len(models_ordered)))
-    ax.set_xticklabels(short_labels, rotation=45, ha='right', fontsize=12)
+    ax.set_xticklabels(short_labels, rotation=45, ha='right', fontsize=14)
     ax.set_yticks([1, 2, 3, 4, 5])
     ax.set_yticklabels(['1\nStrongly\nDisagree', '2\nDisagree',
                         '3\nNeutral', '4\nAgree',
-                        '5\nStrongly\nAgree'], fontsize=12)
+                        '5\nStrongly\nAgree'], fontsize=14)
     ax.set_ylim(0.3, 5.9)
     ax.grid(axis='y', alpha=0.3, linestyle=':')
     ax.axhline(y=3, color='grey', linewidth=1, linestyle=':', alpha=0.5)
