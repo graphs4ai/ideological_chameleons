@@ -1730,37 +1730,36 @@ def plot_figure11_likert_violins_by_role(df_validos: pd.DataFrame, cfg: DictConf
                 color=GROUP_PALETTE[grp])
         prev = boundary
 
-    # ── Wilcoxon rank-sum (Mann-Whitney U) between groups ─────────────
-    pair_combos = [
-        ('Pair Generators', 'Judge Models'),
-        ('Judge Models', 'Pure Respondents'),
-        ('Pair Generators', 'Pure Respondents'),
-    ]
-    test_lines = []
-    for r1, r2 in pair_combos:
-        g1 = df.loc[df['role'] == r1, 'likert_score'].values
-        g2 = df.loc[df['role'] == r2, 'likert_score'].values
-        if len(g1) >= 2 and len(g2) >= 2:
-            u_stat, u_p = stats.mannwhitneyu(g1, g2, alternative='two-sided')
-            # Effect size: rank-biserial r = 1 - 2U/(n1*n2)
-            n1, n2 = len(g1), len(g2)
-            r_effect = 1 - (2 * u_stat) / (n1 * n2)
-        else:
-            u_stat, u_p, r_effect = np.nan, np.nan, np.nan
-        test_lines.append(f"{r1} vs {r2}:\n  U={u_stat:.0f}, p={u_p:.2e}, r={r_effect:.3f}")
-
-    # Kruskal-Wallis omnibus
+    # ── Omnibus tests: Kruskal-Wallis + Friedman + Kendall's W ───────
     groups_kw = [df.loc[df['role'] == r, 'likert_score'].values for r in GROUP_ORDER]
     try:
         kw_stat, kw_p = stats.kruskal(*groups_kw)
     except ValueError:
         kw_stat, kw_p = np.nan, np.nan
 
-    sig_label = 'n.s.' if (not np.isnan(kw_p) and kw_p > 0.05) else 'p < 0.05'
+    df_friedman = (
+        df.groupby(['pair_id', 'role'])['likert_score']
+        .mean()
+        .reset_index()
+        .pivot(index='pair_id', columns='role', values='likert_score')
+        .dropna()
+    )
+    df_friedman = df_friedman[GROUP_ORDER]
+
+    try:
+        friedman_stat, friedman_p = stats.friedmanchisquare(
+            df_friedman[GROUP_ORDER[0]].values,
+            df_friedman[GROUP_ORDER[1]].values,
+            df_friedman[GROUP_ORDER[2]].values,
+        )
+        kendall_w = friedman_stat / (len(df_friedman) * (len(GROUP_ORDER) - 1))
+    except (ValueError, ZeroDivisionError):
+        friedman_stat, friedman_p, kendall_w = np.nan, np.nan, np.nan
+
     stat_text = (
-        f"Kruskal-Wallis H = {kw_stat:.2f}, p = {kw_p:.2e} ({sig_label})\n\n"
-        + "Pairwise Mann-Whitney U (Wilcoxon rank-sum):\n"
-        + "\n".join(test_lines)
+        f"Kruskal-Wallis H = {kw_stat:.2f}, p = {kw_p:.2e}\n"
+        f"Friedman χ² = {friedman_stat:.2f}, p = {friedman_p:.2e}\n"
+        f"Kendall's W = {kendall_w:.4f}"
     )
     ax.text(
         0.99, 0.98, stat_text,
@@ -1779,6 +1778,7 @@ def plot_figure11_likert_violins_by_role(df_validos: pd.DataFrame, cfg: DictConf
         print(f"    Mean = {sub['likert_score'].mean():.3f}, "
               f"Median = {sub['likert_score'].median():.1f}, "
               f"Std = {sub['likert_score'].std():.3f}")
+    print(f"\n  Friedman blocks (pair_id with all groups): {len(df_friedman)}")
     print(f"\n  {stat_text}")
     print("═" * 72 + "\n")
 
