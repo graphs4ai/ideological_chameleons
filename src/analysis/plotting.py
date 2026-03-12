@@ -1643,3 +1643,159 @@ def plot_figure10_pipeline_role_neutrality(df_ip: pd.DataFrame, df_validos: pd.D
     plt.tight_layout()
     save_fig(fig, "figure10_pipeline_role_neutrality", cfg)
     plt.close()
+
+
+def plot_figure11_likert_violins_by_role(df_validos: pd.DataFrame, cfg: DictConfig):
+    """
+    Figure 11: Likert Response Distribution per Model (Violin Plot)
+    Each response is mapped to 1–5 (Strongly Disagree=1 … Strongly Agree=5).
+    Models are grouped by pipeline role (Pair Generators, Judge Models,
+    Pure Respondents) with vertical separator lines.
+    Pairwise Wilcoxon rank-sum tests are shown between groups.
+    """
+    # ── Role assignment ───────────────────────────────────────────────
+    JUDGE_MODELS = [
+        'openai/gpt-oss-120b',
+        'deepseek-ai/DeepSeek-V3.2',
+        'google/gemma-3-27b-it',
+    ]
+    PAIR_GEN_MODELS = [
+        'google/gemini-2.5-flash',
+        'grok-4-1-fast-reasoning',
+    ]
+
+    def _assign_role(model: str) -> str:
+        if model in JUDGE_MODELS:
+            return 'Judge Models'
+        if model in PAIR_GEN_MODELS:
+            return 'Pair Generators'
+        return 'Pure Respondents'
+
+    GROUP_ORDER = ['Pair Generators', 'Judge Models', 'Pure Respondents']
+    GROUP_PALETTE = {
+        'Pair Generators': '#f39c12',
+        'Judge Models': '#e74c3c',
+        'Pure Respondents': '#3498db',
+    }
+
+    # ── Map pontuacao (-2..2) → Likert 1..5 ──────────────────────────
+    df = df_validos.copy()
+    df['likert_score'] = df['pontuacao'] + 3   # -2→1, -1→2, 0→3, 1→4, 2→5
+    df['role'] = df['modelo'].apply(_assign_role)
+
+    # ── Build ordered model list (grouped) ────────────────────────────
+    models_ordered = []
+    group_boundaries = []   # x-positions of separator lines
+    for grp in GROUP_ORDER:
+        grp_models = sorted(df.loc[df['role'] == grp, 'modelo'].unique())
+        models_ordered.extend(grp_models)
+        group_boundaries.append(len(models_ordered))
+
+    # Short labels for x-axis
+    short_labels = [m.split('/')[-1] for m in models_ordered]
+
+    # ── Create a categorical column to enforce ordering ───────────────
+    df['modelo_cat'] = pd.Categorical(df['modelo'], categories=models_ordered, ordered=True)
+
+    # ── Assign colour per model based on role ─────────────────────────
+    model_colors = [GROUP_PALETTE[_assign_role(m)] for m in models_ordered]
+
+    # ── Figure ────────────────────────────────────────────────────────
+    fig, ax = plt.subplots(figsize=(26, 10))
+
+    # Violin plot
+    sns.violinplot(
+        data=df, x='modelo_cat', y='likert_score',
+        order=models_ordered, hue='modelo_cat', palette=model_colors,
+        inner='box', cut=0, linewidth=1.2, ax=ax,
+        density_norm='width', saturation=0.75, legend=False,
+    )
+
+    # Group-mean markers
+    for i, m in enumerate(models_ordered):
+        mean_val = df.loc[df['modelo'] == m, 'likert_score'].mean()
+        ax.plot(i, mean_val, marker='D', color='black', markersize=6, zorder=5)
+
+    # ── Separator lines between groups ────────────────────────────────
+    for boundary in group_boundaries[:-1]:      # skip the last one (end)
+        ax.axvline(x=boundary - 0.5, color='grey', linewidth=2,
+                   linestyle='--', alpha=0.7, zorder=4)
+
+    # ── Group labels at top ───────────────────────────────────────────
+    prev = 0
+    for grp, boundary in zip(GROUP_ORDER, group_boundaries):
+        mid = (prev + boundary - 1) / 2.0
+        ax.text(mid, 5.45, grp, ha='center', va='bottom',
+                fontsize=14, fontweight='bold',
+                color=GROUP_PALETTE[grp])
+        prev = boundary
+
+    # ── Wilcoxon rank-sum (Mann-Whitney U) between groups ─────────────
+    pair_combos = [
+        ('Pair Generators', 'Judge Models'),
+        ('Judge Models', 'Pure Respondents'),
+        ('Pair Generators', 'Pure Respondents'),
+    ]
+    test_lines = []
+    for r1, r2 in pair_combos:
+        g1 = df.loc[df['role'] == r1, 'likert_score'].values
+        g2 = df.loc[df['role'] == r2, 'likert_score'].values
+        if len(g1) >= 2 and len(g2) >= 2:
+            u_stat, u_p = stats.mannwhitneyu(g1, g2, alternative='two-sided')
+            # Effect size: rank-biserial r = 1 - 2U/(n1*n2)
+            n1, n2 = len(g1), len(g2)
+            r_effect = 1 - (2 * u_stat) / (n1 * n2)
+        else:
+            u_stat, u_p, r_effect = np.nan, np.nan, np.nan
+        test_lines.append(f"{r1} vs {r2}:\n  U={u_stat:.0f}, p={u_p:.2e}, r={r_effect:.3f}")
+
+    # Kruskal-Wallis omnibus
+    groups_kw = [df.loc[df['role'] == r, 'likert_score'].values for r in GROUP_ORDER]
+    try:
+        kw_stat, kw_p = stats.kruskal(*groups_kw)
+    except ValueError:
+        kw_stat, kw_p = np.nan, np.nan
+
+    sig_label = 'n.s.' if (not np.isnan(kw_p) and kw_p > 0.05) else 'p < 0.05'
+    stat_text = (
+        f"Kruskal-Wallis H = {kw_stat:.2f}, p = {kw_p:.2e} ({sig_label})\n\n"
+        + "Pairwise Mann-Whitney U (Wilcoxon rank-sum):\n"
+        + "\n".join(test_lines)
+    )
+    ax.text(
+        0.99, 0.98, stat_text,
+        transform=ax.transAxes, fontsize=9,
+        va='top', ha='right', family='monospace',
+        bbox=dict(boxstyle='round,pad=0.5', facecolor='lightyellow', alpha=0.92),
+    )
+
+    # ── Console summary ───────────────────────────────────────────────
+    print("\n" + "═" * 72)
+    print("Figure 11 – Likert Violin Plots by Pipeline Role")
+    print("═" * 72)
+    for grp in GROUP_ORDER:
+        sub = df[df['role'] == grp]
+        print(f"\n  {grp}  (N responses = {len(sub)}):")
+        print(f"    Mean = {sub['likert_score'].mean():.3f}, "
+              f"Median = {sub['likert_score'].median():.1f}, "
+              f"Std = {sub['likert_score'].std():.3f}")
+    print(f"\n  {stat_text}")
+    print("═" * 72 + "\n")
+
+    # ── Axes formatting ───────────────────────────────────────────────
+    ax.set_xlabel('Model', fontsize=17, fontweight='bold')
+    ax.set_ylabel('Likert Response (1 = Strongly Disagree … 5 = Strongly Agree)',
+                  fontsize=17, fontweight='bold')
+    ax.set_xticks(range(len(models_ordered)))
+    ax.set_xticklabels(short_labels, rotation=45, ha='right', fontsize=12)
+    ax.set_yticks([1, 2, 3, 4, 5])
+    ax.set_yticklabels(['1\nStrongly\nDisagree', '2\nDisagree',
+                        '3\nNeutral', '4\nAgree',
+                        '5\nStrongly\nAgree'], fontsize=12)
+    ax.set_ylim(0.3, 5.9)
+    ax.grid(axis='y', alpha=0.3, linestyle=':')
+    ax.axhline(y=3, color='grey', linewidth=1, linestyle=':', alpha=0.5)
+
+    plt.tight_layout()
+    save_fig(fig, "figure11_likert_violins_by_role", cfg)
+    plt.close()
