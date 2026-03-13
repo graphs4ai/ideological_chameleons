@@ -1730,12 +1730,7 @@ def plot_figure11_likert_violins_by_role(df_validos: pd.DataFrame, cfg: DictConf
                 color=GROUP_PALETTE[grp])
         prev = boundary
 
-    # ── Omnibus tests: Kruskal-Wallis + Friedman + Kendall's W ───────
-    groups_kw = [df.loc[df['role'] == r, 'likert_score'].values for r in GROUP_ORDER]
-    try:
-        kw_stat, kw_p = stats.kruskal(*groups_kw)
-    except ValueError:
-        kw_stat, kw_p = np.nan, np.nan
+    # ── Omnibus tests: Friedman + Kendall's W ────────────────────────
 
     df_friedman = (
         df.groupby(['pair_id', 'role'])['likert_score']
@@ -1757,7 +1752,6 @@ def plot_figure11_likert_violins_by_role(df_validos: pd.DataFrame, cfg: DictConf
         friedman_stat, friedman_p, kendall_w = np.nan, np.nan, np.nan
 
     stat_text = (
-        f"Kruskal-Wallis H = {kw_stat:.2f}, p = {kw_p:.2e}\n"
         f"Friedman χ² = {friedman_stat:.2f}, p = {friedman_p:.2e}\n"
         f"Kendall's W = {kendall_w:.4f}"
     )
@@ -1798,4 +1792,331 @@ def plot_figure11_likert_violins_by_role(df_validos: pd.DataFrame, cfg: DictConf
 
     plt.tight_layout()
     save_fig(fig, "figure11_likert_violins_by_role", cfg)
+    plt.close()
+
+
+def plot_figure12_critical_difference_nemenyi(df_validos: pd.DataFrame, cfg: DictConfig):
+    """
+    Figure 12: Critical Difference Diagram (Friedman + Nemenyi)
+    Uses all individual models as treatments and pair_id as blocks.
+    """
+    try:
+        import scikit_posthocs as sp
+    except ImportError:
+        print("Aviso: pacote 'scikit-posthocs' não encontrado. Figure 12 não foi gerada.")
+        print("Instale com: pip install scikit-posthocs")
+        return
+
+    df = df_validos.copy()
+    df['likert_score'] = df['pontuacao'] + 3
+
+    df_friedman_models = (
+        df.groupby(['pair_id', 'modelo'])['likert_score']
+        .mean()
+        .reset_index()
+        .pivot(index='pair_id', columns='modelo', values='likert_score')
+        .dropna()
+    )
+
+    n_blocks = len(df_friedman_models)
+    n_models = df_friedman_models.shape[1]
+
+    if n_blocks < 2 or n_models < 3:
+        print("Aviso: dados insuficientes para Friedman/Nemenyi (Figure 12 não gerada).")
+        return
+
+    friedman_inputs = [df_friedman_models[col].values for col in df_friedman_models.columns]
+    friedman_stat, friedman_p = stats.friedmanchisquare(*friedman_inputs)
+    kendall_w = friedman_stat / (n_blocks * (n_models - 1))
+
+    print("\n" + "═" * 72)
+    print("Figure 12 – Critical Difference Diagram (Nemenyi, all models)")
+    print("═" * 72)
+    print(f"  Blocos completos (pair_id): {n_blocks}")
+    print(f"  Modelos: {n_models}")
+    print(f"  Friedman χ² = {friedman_stat:.4f}, p = {friedman_p:.2e}")
+    print(f"  Kendall's W = {kendall_w:.4f}")
+
+    if friedman_p >= 0.05:
+        print("  Resultado não significativo; Nemenyi e CD diagram não serão gerados.")
+        print("═" * 72 + "\n")
+        return
+
+    nemenyi_p = sp.posthoc_nemenyi_friedman(df_friedman_models)
+    nemenyi_p = nemenyi_p.loc[df_friedman_models.columns, df_friedman_models.columns]
+
+    avg_ranks = df_friedman_models.rank(axis=1, method='average', ascending=False).mean(axis=0)
+    avg_ranks = avg_ranks.sort_values()
+
+    fig, ax = plt.subplots(figsize=(18, 7))
+    sp.critical_difference_diagram(avg_ranks, nemenyi_p, ax=ax)
+
+    
+    ax.set_title('Critical Difference Diagram — Nemenyi (all models)',
+                 fontsize=40, fontweight='bold')
+
+    stats_text = (
+        f"Friedman χ² = {friedman_stat:.2f}, p = {friedman_p:.2e} - "
+        f"Kendall's W = {kendall_w:.4f}"
+    )
+    ax.text(
+        0.01, 0.02, stats_text,
+        transform=ax.transAxes,
+        ha='left', va='bottom',
+        fontsize=40, 
+        bbox=dict(boxstyle='round,pad=0.4', facecolor='white', alpha=0.9)
+    )
+
+    plt.tight_layout()
+    save_fig(fig, "figure12_critical_difference_nemenyi", cfg)
+    plt.close()
+
+    print("  Nemenyi executado e CD diagram gerado com sucesso.")
+    print("═" * 72 + "\n")
+
+def plot_figure13_likert_and_cd_combined(df_validos: pd.DataFrame, cfg: DictConfig):
+    """
+    Figure 13: Combined Figure 11 + Figure 12
+    Panel A: Likert violin plots by pipeline role.
+    Panel B: Critical Difference Diagram from Friedman + Nemenyi across all models.
+    """
+    try:
+        import scikit_posthocs as sp
+    except ImportError:
+        print("Aviso: pacote 'scikit-posthocs' não encontrado. Figure 13 não foi gerada.")
+        print("Instale com: pip install scikit-posthocs")
+        return
+
+    JUDGE_MODELS = [
+        'openai/gpt-oss-120b',
+        'deepseek-ai/DeepSeek-V3.2',
+        'google/gemma-3-27b-it',
+    ]
+    PAIR_GEN_MODELS = [
+        'google/gemini-2.5-flash',
+        'grok-4-1-fast-reasoning',
+    ]
+
+    def _assign_role(model: str) -> str:
+        if model in JUDGE_MODELS:
+            return 'Judge Models'
+        if model in PAIR_GEN_MODELS:
+            return 'Pair Generators'
+        return 'Pure Respondents'
+
+    GROUP_ORDER = ['Pair Generators', 'Judge Models', 'Pure Respondents']
+    GROUP_PALETTE = {
+        'Pair Generators': '#f39c12',
+        'Judge Models': '#e74c3c',
+        'Pure Respondents': '#3498db',
+    }
+
+    df = df_validos.copy()
+    df['likert_score'] = df['pontuacao'] + 3
+    df['role'] = df['modelo'].apply(_assign_role)
+
+    models_ordered = []
+    group_boundaries = []
+    for grp in GROUP_ORDER:
+        grp_models = sorted(df.loc[df['role'] == grp, 'modelo'].unique())
+        models_ordered.extend(grp_models)
+        group_boundaries.append(len(models_ordered))
+
+    short_labels = [m.split('/')[-1] for m in models_ordered]
+    df['modelo_cat'] = pd.Categorical(df['modelo'], categories=models_ordered, ordered=True)
+    model_colors = [GROUP_PALETTE[_assign_role(m)] for m in models_ordered]
+
+    ## ⬅️ AQUI: TAMANHO GERAL DA IMAGEM E PROPORÇÃO DOS PAINÉIS
+    # figsize=(largura, altura). Se os nomes no painel B estiverem esmagados, aumente o 85.
+    # height_ratios=[A, B] controla quem ocupa mais espaço vertical. 
+    fig, (ax1, ax2) = plt.subplots(
+        2, 1, figsize=(80, 65), 
+        gridspec_kw={'height_ratios': [1.5, 2.0]}, 
+    )
+
+    # Panel A — Figure 11 (Gráfico de Violino)
+    ## ⬅️ AQUI: ESPESSURA DA LINHA DO VIOLINO (linewidth)
+    sns.violinplot(
+        data=df, x='modelo_cat', y='likert_score',
+        order=models_ordered, hue='modelo_cat', palette=model_colors,
+        inner='box', cut=0, linewidth=4.0, ax=ax1, 
+        density_norm='width', saturation=0.75, legend=False,
+    )
+
+    for i, m in enumerate(models_ordered):
+        mean_val = df.loc[df['modelo'] == m, 'likert_score'].mean()
+        ## ⬅️ AQUI: TAMANHO DO PONTO PRETO (MÉDIA) NO MEIO DO VIOLINO (markersize)
+        ax1.plot(i, mean_val, marker='D', color='black', markersize=20, zorder=5)
+
+    for boundary in group_boundaries[:-1]:
+        ## ⬅️ AQUI: ESPESSURA DA LINHA TRACEJADA QUE SEPARA OS GRUPOS (linewidth)
+        ax1.axvline(x=boundary - 0.5, color='grey', linewidth=6,
+                    linestyle='--', alpha=0.7, zorder=4)
+
+    prev = 0
+    for grp, boundary in zip(GROUP_ORDER, group_boundaries):
+        mid = (prev + boundary - 1) / 2.0
+        grp_text = grp.replace(' ', '\n')
+        
+        ## ⬅️ AQUI: NOME DOS GRUPOS NO TOPO DA FIGURA A (fontsize e posição Y=5.50)
+        ax1.text(mid, 5.50, grp_text, ha='center', va='bottom',
+                 fontsize=95, fontweight='bold', color=GROUP_PALETTE[grp])
+        prev = boundary
+
+    df_friedman_role = (
+        df.groupby(['pair_id', 'role'])['likert_score']
+        .mean()
+        .reset_index()
+        .pivot(index='pair_id', columns='role', values='likert_score')
+        .dropna()
+    )
+    df_friedman_role = df_friedman_role[GROUP_ORDER]
+
+    try:
+        friedman_role_stat, friedman_role_p = stats.friedmanchisquare(
+            df_friedman_role[GROUP_ORDER[0]].values,
+            df_friedman_role[GROUP_ORDER[1]].values,
+            df_friedman_role[GROUP_ORDER[2]].values,
+        )
+        kendall_w_role = friedman_role_stat / (len(df_friedman_role) * (len(GROUP_ORDER) - 1))
+    except (ValueError, ZeroDivisionError):
+        friedman_role_stat, friedman_role_p, kendall_w_role = np.nan, np.nan, np.nan
+
+    stat_text_a = (
+        f"Friedman χ² = {friedman_role_stat:.2f}, p = {friedman_role_p:.2e}\n"
+        f"Kendall's W = {kendall_w_role:.4f}"
+    )
+    
+    ## ⬅️ AQUI: TAMANHO DA FONTE DA CAIXINHA DE ESTATÍSTICA DA FIGURA A (fontsize)
+    ax1.text(
+        0.99, 0.98, stat_text_a,
+        transform=ax1.transAxes, fontsize=70, 
+        va='top', ha='right', family='monospace',
+        bbox=dict(boxstyle='round,pad=0.5', facecolor='lightyellow', alpha=0.92),
+    )
+
+    ## ⬅️ AQUI: TÍTULOS DOS EIXOS DA FIGURA A (fontsize e distância do gráfico=labelpad)
+    ax1.set_xlabel('Model', fontsize=95, fontweight='bold', labelpad=30)
+    ax1.set_ylabel('Likert Response', fontsize=95, fontweight='bold', labelpad=25)
+    
+    ax1.set_xticks(range(len(models_ordered)))
+    ## ⬅️ AQUI: NOME DOS MODELOS NO EIXO X DA FIGURA A (fontsize e rotação)
+    ax1.set_xticklabels(short_labels, rotation=45, ha='right', fontsize=90)
+    
+    ax1.set_yticks([1, 2, 3, 4, 5])
+    ## ⬅️ AQUI: TEXTOS DO EIXO Y DA FIGURA A (1 Strongly Disagree, etc.) (fontsize)
+    ax1.set_yticklabels(['1\nStrongly\nDisagree', '2\nDisagree',
+                         '3\nNeutral', '4\nAgree',
+                         '5\nStrongly\nAgree'], fontsize=70)
+
+    ## ⬅️ AQUI: TAMANHO DOS TRACINHOS (TICKS) NOS EIXOS X E Y (length, width, pad)
+    ax1.tick_params(axis='x', pad=15, length=15, width=4)
+    ax1.tick_params(axis='y', pad=12, length=15, width=4)
+    
+    ## ⬅️ AQUI: ALTURA MÁXIMA DO GRÁFICO A. Aumente o 6.3 se o título dos grupos estiver cortando no teto.
+    ax1.set_ylim(0.3, 6.3)
+    ax1.grid(axis='y', alpha=0.3, linestyle=':', linewidth=3)
+    ax1.axhline(y=3, color='grey', linewidth=3, linestyle=':', alpha=0.5)
+
+    # Panel B — Figure 12 (Diagrama de Diferença Crítica)
+    df_friedman_models = (
+        df.groupby(['pair_id', 'modelo'])['likert_score']
+        .mean()
+        .reset_index()
+        .pivot(index='pair_id', columns='modelo', values='likert_score')
+        .dropna()
+    )
+
+    n_blocks = len(df_friedman_models)
+    n_models = df_friedman_models.shape[1]
+
+    if n_blocks < 2 or n_models < 3:
+        print("Aviso: dados insuficientes para gerar o painel B da Figure 13.")
+        plt.close()
+        return
+
+    friedman_inputs = [df_friedman_models[col].values for col in df_friedman_models.columns]
+    friedman_model_stat, friedman_model_p = stats.friedmanchisquare(*friedman_inputs)
+    kendall_w_model = friedman_model_stat / (n_blocks * (n_models - 1))
+
+    if friedman_model_p >= 0.05:
+        print("Aviso: Friedman por modelo não significativo; painel B da Figure 13 não foi gerado.")
+        plt.close()
+        return
+
+    nemenyi_p = sp.posthoc_nemenyi_friedman(df_friedman_models)
+    nemenyi_p = nemenyi_p.loc[df_friedman_models.columns, df_friedman_models.columns]
+    avg_ranks = df_friedman_models.rank(axis=1, method='average', ascending=False).mean(axis=0)
+    avg_ranks = avg_ranks.sort_values()
+
+    sp.critical_difference_diagram(avg_ranks, nemenyi_p, ax=ax2)
+    for label in ax2.get_xticklabels():
+        label.set_fontsize(70)
+
+    # aumentar ticks da escala
+    ax2.tick_params(axis='x', labelsize=70, length=20, width=4)
+
+    # aumentar título "CD"
+    for text in ax2.texts:
+        if "CD" in text.get_text():
+            text.set_fontsize(80)
+
+
+    model_role_map = {model: _assign_role(model) for model in models_ordered}
+
+    for text in ax2.texts:
+        ## ⬅️ AQUI: NOME DOS MODELOS NO DIAGRAMA B (Aquele que fica nas laterais) (fontsize)
+        text.set_fontsize(95)
+        raw_text = text.get_text().strip()
+        matched_model = None
+        for model in models_ordered:
+            if model in raw_text or model.split('/')[-1] in raw_text:
+                matched_model = model
+                break
+        if matched_model is not None:
+            text.set_color(GROUP_PALETTE[model_role_map[matched_model]])
+
+    ## ⬅️ AQUI: TÍTULO DO DIAGRAMA B (fontsize e distância do gráfico=pad)
+    ax2.set_title('Critical Difference Diagram — Nemenyi (all models)',
+                  fontsize=95, fontweight='bold', pad=40)
+
+    stat_text_b = (
+        f"Friedman χ² = {friedman_model_stat:.2f}, p = {friedman_model_p:.2e} | "
+        f"Kendall's W = {kendall_w_model:.4f}"
+    )
+    
+    ## ⬅️ AQUI: TAMANHO DA FONTE DA CAIXINHA DE ESTATÍSTICA DA FIGURA B (fontsize)
+    ax2.text(
+        0.01, 0.02, stat_text_b,
+        transform=ax2.transAxes,
+        ha='left', va='bottom', fontsize=70,
+        bbox=dict(boxstyle='round,pad=0.4', facecolor='white', alpha=0.9)
+    )
+
+    print("\n" + "═" * 72)
+    print("Figure 13 – Figure 11 + Figure 12 (stacked)")
+    print("═" * 72)
+    print(f" Panel A — Friedman χ² = {friedman_role_stat:.4f}, p = {friedman_role_p:.2e}, W = {kendall_w_role:.4f}")
+    print(f" Panel B — Friedman χ² = {friedman_model_stat:.4f}, p = {friedman_model_p:.2e}, W = {kendall_w_model:.4f}")
+    print("═" * 72 + "\n")
+
+    ## ⬅️ AQUI: LETRAS 'A' e 'B' GIGANTES NO CANTO SUPERIOR ESQUERDO (fontsize e posição Y)
+    fig.text(0.01, 1.20, 'A', fontsize=110, fontweight='bold', va='top', ha='left')
+    fig.text(0.01, 0.48, 'B', fontsize=110, fontweight='bold', va='top', ha='left') # Se mexer no height_ratios lá em cima, ajuste o 0.48 para subir/descer a letra B.
+
+    ## ⬅️ AQUI: MARGENS E ESPAÇAMENTOS GERAIS. 
+    # left/right apertam ou soltam os lados para caber o texto do diagrama B.
+    # hspace é a distância vertical entre o Painel A e o Painel B.
+    plt.subplots_adjust(left=0.23, right=0.77, top=1.2, bottom=0.08, hspace=0.7)
+    fig.canvas.draw()
+
+    ## ⬅️ AQUI: LARGURA FORÇADA DO PAINEL A (O violino). 
+    # [posição_x, posição_y, largura, altura]. 
+    # O 0.03 diz para começar quase na borda esquerda, e o 0.94 diz a largura total que ele vai ocupar.
+    pos1 = ax1.get_position()
+    ax1.set_position([0.03, pos1.y0, 0.94, pos1.height])
+    
+    fig.canvas.draw()
+
+    save_fig(fig, "figure13_likert_and_cd_combined", cfg)
     plt.close()
