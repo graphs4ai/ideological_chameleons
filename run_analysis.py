@@ -47,6 +47,8 @@ def main(cfg: DictConfig) -> None:
     # plotting.plot_figure6_size_vs_chameleon(df_ip, cfg)
     # plotting.plot_figure6_1_size_vs_ipi_nocontext(df_ip, cfg)
     # plotting.plot_figure7_agreement_heatmap(df_validos, cfg)
+    # plotting.plot_figure7_5_agreement_heatmap_topic(df_validos, cfg)
+    plotting.plot_figure7_7_combined_heatmap(df_validos, cfg)
     # plotting.plot_figure8_swing_asymmetry(df_ip, cfg)
     # plotting.plot_figure9_judge_vs_nonjudge(df_ip, df_validos, cfg)
     # plotting.plot_figure10_pipeline_role_neutrality(df_ip, df_validos, cfg)

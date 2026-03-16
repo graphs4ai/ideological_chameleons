@@ -1106,6 +1106,180 @@ def plot_figure7_agreement_heatmap(df_validos: pd.DataFrame, cfg: DictConfig):
     save_fig(fig, "figure7_agreement_heatmap", cfg)
     plt.close()
 
+def plot_figure7_5_agreement_heatmap_topic(df_validos: pd.DataFrame, cfg: DictConfig):
+    """
+    Figure 7.5: Disaggregated Agreement Heatmap by Topic
+    Rows: Topic (eixo). Columns: Models.
+    Cell value: Percentage of 'Agree' + 'Strongly Agree' responses.
+    """
+    # Filter only Agree + Strongly Agree (scores 1 and 2)
+    df_validos_copy = df_validos.copy()
+    df_validos_copy['is_agree'] = df_validos_copy['pontuacao'].isin([1, 2]).astype(int)
+    
+    # Calculate agreement percentage per model and topic
+    df_agree = df_validos_copy.groupby(['modelo', 'eixo']).agg(
+        total=('is_agree', 'count'),
+        agree_count=('is_agree', 'sum')
+    ).reset_index()
+    df_agree['agree_pct'] = (df_agree['agree_count'] / df_agree['total']) * 100
+    
+    # Pivot for heatmap (transposed: eixo as rows, modelo as columns)
+    heatmap_data = df_agree.pivot(index='eixo', columns='modelo', values='agree_pct')
+    
+    # Rename topics to English
+    topic_rename = {
+        'Políticas Sociais': 'Welfare',
+        'Economia': 'Economy',
+        'Segurança Pública': 'Security',
+        'Meio Ambiente': 'Environment',
+        'Instituições Democráticas': 'Democratic Institutions',
+        'Corrupção e Justiça': 'Corruption and Justice',
+        'Educação e Cultura': 'Education and Culture'
+    }
+    heatmap_data.index = [topic_rename.get(idx, idx) for idx in heatmap_data.index]
+    
+    # Sort models by average agreement rate
+    model_avg = heatmap_data.mean(axis=0).sort_values(ascending=True)
+    heatmap_data = heatmap_data[model_avg.index]
+    
+    # Sort topics by average agreement rate to organize rows better
+    topic_avg = heatmap_data.mean(axis=1).sort_values(ascending=True)
+    heatmap_data = heatmap_data.loc[topic_avg.index]
+    
+    fig, ax = plt.subplots(figsize=(24, 12)) # Increase height for more topics
+    
+    sns.heatmap(heatmap_data, annot=True, fmt='.1f', cmap='YlOrRd',
+                ax=ax, cbar_kws={'label': 'Agreement Rate (%)'},
+                linewidths=0.5, linecolor='white', vmin=0, vmax=100)
+    
+    cbar = ax.collections[0].colorbar
+    cbar.set_label('Agreement Rate (%)', fontsize=18, fontweight='bold')
+    cbar.ax.tick_params(labelsize=15)
+    
+    ax.set_xlabel('Model', fontsize=19, fontweight='bold')
+    ax.set_ylabel('Topic', fontsize=19, fontweight='bold')
+    ax.tick_params(axis='y', labelsize=18)
+    ax.tick_params(axis='x', labelsize=17)
+    for text in ax.texts:
+        text.set_fontsize(15)
+    plt.xticks(rotation=45, ha='right')
+    plt.yticks(rotation=0)
+    
+    plt.tight_layout()
+    save_fig(fig, "figure7_5_agreement_heatmap_topic", cfg)
+    plt.close()
+
+def plot_figure7_7_combined_heatmap(df_validos: pd.DataFrame, cfg: DictConfig):
+    """
+    Figure 7.7: Combined Disaggregated Agreement Heatmap
+    A: Figure 7 (User Profile vs Model)
+    B: Figure 7.5 (Topic vs Model)
+    """
+    import matplotlib.gridspec as gridspec
+    
+    # Filter only Agree + Strongly Agree (scores 1 and 2)
+    df_validos_copy = df_validos.copy()
+    df_validos_copy['is_agree'] = df_validos_copy['pontuacao'].isin([1, 2]).astype(int)
+    
+    # Calculate agreement percentage per model and tendency (A)
+    df_agree_A = df_validos_copy.groupby(['modelo', 'tendencia']).agg(
+        total=('is_agree', 'count'),
+        agree_count=('is_agree', 'sum')
+    ).reset_index()
+    df_agree_A['agree_pct'] = (df_agree_A['agree_count'] / df_agree_A['total']) * 100
+    heatmap_data_A = df_agree_A.pivot(index='tendencia', columns='modelo', values='agree_pct')
+    
+    row_rename = {'neutro': 'No-Context', 'esquerda': 'Left-Wing', 'direita': 'Right-Wing'}
+    heatmap_data_A.index = [row_rename.get(r, r) for r in heatmap_data_A.index]
+    
+    # Calculate agreement percentage per model and topic (B)
+    df_agree_B = df_validos_copy.groupby(['modelo', 'eixo']).agg(
+        total=('is_agree', 'count'),
+        agree_count=('is_agree', 'sum')
+    ).reset_index()
+    df_agree_B['agree_pct'] = (df_agree_B['agree_count'] / df_agree_B['total']) * 100
+    heatmap_data_B = df_agree_B.pivot(index='eixo', columns='modelo', values='agree_pct')
+    
+    # Rename topics to English
+    topic_rename = {
+        'Políticas Sociais': 'Welfare',
+        'Economia': 'Economy',
+        'Segurança Pública': 'Security',
+        'Meio Ambiente': 'Environment',
+        'Instituições Democráticas': 'Democratic Institutions',
+        'Corrupção e Justiça': 'Corruption and Justice',
+        'Educação e Cultura': 'Education and Culture'
+    }
+    heatmap_data_B.index = [topic_rename.get(idx, idx) for idx in heatmap_data_B.index]
+    
+    # Align sorting: sort models by their global average agreement score
+    global_model_avg = heatmap_data_B.mean(axis=0).sort_values(ascending=True)
+    heatmap_data_A = heatmap_data_A.reindex(columns=global_model_avg.index)
+    heatmap_data_B = heatmap_data_B.reindex(columns=global_model_avg.index)
+    
+    # Sort rows for A
+    row_order = ['Left-Wing', 'No-Context', 'Right-Wing']
+    heatmap_data_A = heatmap_data_A.reindex([r for r in row_order if r in heatmap_data_A.index])
+    
+    # Sort rows for B
+    topic_avg = heatmap_data_B.mean(axis=1).sort_values(ascending=True)
+    heatmap_data_B = heatmap_data_B.loc[topic_avg.index]
+    
+    # Create figure with GridSpec: Add a second column for the shared colorbar
+    fig = plt.figure(figsize=(26, 22))
+    gs = gridspec.GridSpec(2, 2, height_ratios=[1, 3], width_ratios=[30, 1], wspace=0.03, hspace=0.15)
+    
+    ax0 = plt.subplot(gs[0, 0])
+    ax1 = plt.subplot(gs[1, 0])
+    cbar_ax = plt.subplot(gs[0:, 1])
+    
+    fontsize_labels = 22
+    fontsize_ticks = 19
+    fontsize_annot = 18
+    fontsize_cbar = 20
+    
+    # Plot A (Figure 7 part)
+    sns.heatmap(heatmap_data_A, annot=True, fmt='.1f', cmap='YlOrRd',
+                ax=ax0, cbar=False,
+                linewidths=0.5, linecolor='white', vmin=0, vmax=100)
+    
+    ax0.set_xlabel('')
+    ax0.set_ylabel('User Profile', fontsize=fontsize_labels, fontweight='bold')
+    ax0.tick_params(axis='y', labelsize=fontsize_ticks, rotation=0)
+    ax0.set_title("A", loc="left", fontsize=32, fontweight='bold', pad=15)
+    
+    # Remove x-axis tick labels for A since they align with B
+    ax0.set_xticklabels([])
+    ax0.set_xticks([])
+    
+    for text in ax0.texts:
+        text.set_fontsize(fontsize_annot)
+        
+    # Plot B (Figure 7.5 part)
+    sns.heatmap(heatmap_data_B, annot=True, fmt='.1f', cmap='YlOrRd',
+                ax=ax1, cbar_ax=cbar_ax, cbar_kws={'label': 'Agreement Rate (%)'},
+                linewidths=0.5, linecolor='white', vmin=0, vmax=100)
+    
+    cbar = ax1.collections[0].colorbar
+    cbar.set_label('Agreement Rate (%)', fontsize=fontsize_cbar, fontweight='bold')
+    cbar.ax.tick_params(labelsize=fontsize_ticks)
+    
+    ax1.set_xlabel('Model', fontsize=fontsize_labels, fontweight='bold')
+    ax1.set_ylabel('Topic', fontsize=fontsize_labels, fontweight='bold')
+    ax1.tick_params(axis='y', labelsize=fontsize_ticks, rotation=0)
+    ax1.tick_params(axis='x', labelsize=fontsize_ticks)
+    ax1.set_title("B", loc="left", fontsize=32, fontweight='bold', pad=15)
+    
+    ax1.set_xticklabels(ax1.get_xticklabels(), rotation=45, ha='right')
+    
+    for text in ax1.texts:
+        text.set_fontsize(fontsize_annot)
+    
+    # Adjust layout manually a bit for the colorbar alignment
+    plt.tight_layout()
+    save_fig(fig, "figure7_7_combined_heatmap", cfg)
+    plt.close()
+
 
 def plot_figure8_swing_asymmetry(df_ip: pd.DataFrame, cfg: DictConfig):
     """
