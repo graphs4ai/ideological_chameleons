@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import os
 from math import pi
+import re
 from scipy import stats
 from omegaconf import DictConfig
 from .processing import get_model_size
@@ -2068,6 +2069,9 @@ def plot_figure13_likert_and_cd_combined(df_validos: pd.DataFrame, cfg: DictConf
         ## ⬅️ AQUI: NOME DOS MODELOS NO DIAGRAMA B (Aquele que fica nas laterais) (fontsize)
         text.set_fontsize(95)
         raw_text = text.get_text().strip()
+        clean_text = re.sub(r'\s*\([\d.]+\)\s*', '', raw_text).strip()
+        text.set_text(clean_text)
+
         matched_model = None
         for model in models_ordered:
             if model in raw_text or model.split('/')[-1] in raw_text:
@@ -2080,18 +2084,18 @@ def plot_figure13_likert_and_cd_combined(df_validos: pd.DataFrame, cfg: DictConf
     ax2.set_title('Critical Difference Diagram — Nemenyi (all models)',
                   fontsize=95, fontweight='bold', pad=40)
 
-    stat_text_b = (
-        f"Friedman χ² = {friedman_model_stat:.2f}, p = {friedman_model_p:.2e} | "
-        f"Kendall's W = {kendall_w_model:.4f}"
-    )
+    # stat_text_b = (
+    #     f"Friedman χ² = {friedman_model_stat:.2f}, p = {friedman_model_p:.2e} | "
+    #     f"Kendall's W = {kendall_w_model:.4f}"
+    # )
     
     ## ⬅️ AQUI: TAMANHO DA FONTE DA CAIXINHA DE ESTATÍSTICA DA FIGURA B (fontsize)
-    ax2.text(
-        0.01, 0.02, stat_text_b,
-        transform=ax2.transAxes,
-        ha='left', va='bottom', fontsize=70,
-        bbox=dict(boxstyle='round,pad=0.4', facecolor='white', alpha=0.9)
-    )
+    # ax2.text(
+    #     0.01, 0.02, stat_text_b,
+    #     transform=ax2.transAxes,
+    #     ha='left', va='bottom', fontsize=70,
+    #     bbox=dict(boxstyle='round,pad=0.4', facecolor='white', alpha=0.9)
+    # )
 
     print("\n" + "═" * 72)
     print("Figure 13 – Figure 11 + Figure 12 (stacked)")
