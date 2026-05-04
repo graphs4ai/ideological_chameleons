@@ -183,7 +183,6 @@ def plot_figure2_topic_variation(df_pares: pd.DataFrame, cfg: DictConfig):
     save_fig(fig, "figure2_topic_variation", cfg)
     plt.close()
 
-
 def plot_figure2_and_5_combined(df_pares: pd.DataFrame, cfg: DictConfig):
     """
     Figure 2 and 5 Combined: Topic-Level Analysis
@@ -315,7 +314,6 @@ def plot_figure2_and_5_combined(df_pares: pd.DataFrame, cfg: DictConfig):
     plt.tight_layout()
     save_fig(fig, "figure2_and_5_combined", cfg)
     plt.close()
-
 
 def plot_figure3_likert_distribution(df_validos: pd.DataFrame, cfg: DictConfig):
     """
@@ -460,7 +458,6 @@ def plot_figure4_temperature_robustness(df_ip: pd.DataFrame, cfg: DictConfig):
     save_fig(fig, "figure4_temperature_robustness", cfg)
     plt.close()
 
-
 def _prepare_temperature_data(df_ip: pd.DataFrame):
     """Helper: prepare pivoted temperature data with IPI per tendency and deltas."""
     df_temp_all = df_ip[df_ip['indice_polarizacao'].notna()].copy()
@@ -476,7 +473,6 @@ def _prepare_temperature_data(df_ip: pd.DataFrame):
     df_pivot['delta_right'] = abs(df_pivot['direita'] - df_pivot['neutro'])
     return df_pivot
 
-
 def _build_temp_heatmap(df, value_col):
     """Helper: pivot temperature data into heatmap matrix, sorted by avg, GPT-5 last."""
     hm = df.pivot(index='temperatura', columns='modelo', values=value_col)
@@ -484,7 +480,6 @@ def _build_temp_heatmap(df, value_col):
     gpt5 = [c for c in avg.index if 'gpt-5-nano' in c.lower()]
     others = [c for c in avg.index if c not in gpt5]
     return hm[others + gpt5]
-
 
 def _draw_temp_heatmap(ax, data, cmap, label, fmt='.2f', vmin=None, vmax=None,
                        norm=None, cbar_ticks=None, annot_size=13, label_size=13,
@@ -515,7 +510,6 @@ def _draw_temp_heatmap(ax, data, cmap, label, fmt='.2f', vmin=None, vmax=None,
         ax.set_xticklabels([])
     for t in ax.texts:
         t.set_fontsize(annot_size)
-
 
 def plot_figure4_1_temperature_mixed(df_ip: pd.DataFrame, cfg: DictConfig):
     """

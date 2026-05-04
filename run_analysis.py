@@ -25,9 +25,9 @@ def main(cfg: DictConfig) -> None:
         print("Aviso: Nenhum dado de polarização calculado.")
         return
 
-    # plotting.plot_figure1_user_shifts_chameleon(df_ip, cfg)
-    # plotting.plot_figure2_topic_variation(df_pares, cfg)
-    # plotting.plot_figure3_likert_distribution(df_validos, cfg)
+    plotting.plot_figure1_user_shifts_chameleon(df_ip, cfg)
+    plotting.plot_figure2_topic_variation(df_pares, cfg)
+    plotting.plot_figure3_likert_distribution(df_validos, cfg)
 
     # Figuras comparativas Original vs Negado
     # df_orig, df_neg = processing.carregar_e_processar_ambos(cfg)
@@ -48,13 +48,13 @@ def main(cfg: DictConfig) -> None:
     # plotting.plot_figure6_1_size_vs_ipi_nocontext(df_ip, cfg)
     # plotting.plot_figure7_agreement_heatmap(df_validos, cfg)
     # plotting.plot_figure7_5_agreement_heatmap_topic(df_validos, cfg)
-    plotting.plot_figure7_7_combined_heatmap(df_validos, cfg)
+    # plotting.plot_figure7_7_combined_heatmap(df_validos, cfg)
     # plotting.plot_figure8_swing_asymmetry(df_ip, cfg)
     # plotting.plot_figure9_judge_vs_nonjudge(df_ip, df_validos, cfg)
     # plotting.plot_figure10_pipeline_role_neutrality(df_ip, df_validos, cfg)
     # plotting.plot_figure11_likert_violins_by_role(df_validos, cfg)
     # plotting.plot_figure12_critical_difference_nemenyi(df_validos, cfg)
-    plotting.plot_figure13_likert_and_cd_combined(df_validos, cfg)
+    # plotting.plot_figure13_likert_and_cd_combined(df_validos, cfg)
     statistics.std_v(cfg)
 
 
