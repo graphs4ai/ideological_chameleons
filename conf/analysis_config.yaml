@@ -2,6 +2,7 @@ defaults:
   - _self_
 
 paths:
+  # input_file: "dados/respostas_finais_negados.csv"
   input_file: "dados/respostas_finais.csv"
   output_dir: "analises_figures"
 
