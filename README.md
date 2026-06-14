@@ -77,7 +77,28 @@ Political statements cover 7 thematic axes:
 - **Seaborn/Matplotlib**: Visualization
 - **LLM APIs**: OpenAI, DeepInfra, Maritaca, Grok, Google
 
-## Author
 
-Anderson Soares (a241149@dac.unicamp.br)
-Bruno Veiga (b.veiga74@gmail.com)
+## Associated Publication
+
+This repository contains the code and data used in the following publication:
+
+> **LLMs are ideological chameleons: personalized echo chambers in the Brazilian political context**  
+> Soares, A.L.B., Almeida, B.A.V.d., Ferreira, L.N. et al.  
+> *Scientific Reports* (2026).  
+> https://doi.org/10.1038/s41598-026-52105-6
+
+This repository reproduces the experiments and analyses reported in the paper.
+
+## Citation
+
+If you use this repository, please cite:
+
+```bibtex
+@article{soares2026ideological,
+  title={LLMs are ideological chameleons: personalized echo chambers in the Brazilian political context},
+  author={Soares, Anderson Luis Bento and Almeida, Bruno A. V. de and Ferreira, Leonardo Nascimento and others},
+  journal={Scientific Reports},
+  year={2026},
+  doi={10.1038/s41598-026-52105-6}
+}
+```
